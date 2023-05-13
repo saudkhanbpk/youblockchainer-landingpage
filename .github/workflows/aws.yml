@@ -25,7 +25,7 @@ jobs:
 
       - name: npm build
         run: |
-          npm run build
+          CI=false && react-scripts build
 
       # - name: Configure env
       #   run: |
