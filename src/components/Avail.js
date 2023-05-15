@@ -8,7 +8,7 @@ import avail4 from '../images/avail4.png'
 
 function Avail() {
     return (
-        <div id='Consumers' style={{ marginTop: '3%', padding: '3%' }}>
+        <div id='Consumers' style={{ marginTop: '1%', padding: '3%' }}>
             <Typography variant='h2' sx={{ fontWeight: 'bold', fontFamily: 'Poppins', margin: '0', padding: '0', fontSize: { md: '4rem', sm: '2rem', xs: '2rem' } }}><strong style={{ color: '#3770FF' }}>Consumers</strong> Get connected to organizations to sell your content</Typography>
             <div data-aos="fade-up">
                 <Grid container spacing={3} sx={{ marginTop: '5%' }}>

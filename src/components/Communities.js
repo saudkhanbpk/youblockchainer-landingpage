@@ -5,7 +5,7 @@ import Comm from '../images/Comm.png'
 
 function Communities() {
     return (
-        <div id='Experts' style={{ marginTop: '3%', padding: '3%' }}>
+        <div id='Experts' style={{ marginTop: '0%', padding: '0% 3%' }}>
             <div data-aos="fade-up">
                 <Grid container sx={{ display: { md: 'flex', sm: 'flex', xs: 'none' }, justifyContent: 'center', alignItems: 'center' }}>
                     <Grid item md={6} sm={6}>
