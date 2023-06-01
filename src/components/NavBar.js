@@ -59,7 +59,7 @@ export default function ElevateAppBar(props) {
     return (<>
         <Box sx={{ display: 'flex' }}>
             <CssBaseline />
-            <AppBar component="nav" sx={{ backgroundColor: '#F5F6F8', color: '#3770FF', boxShadow: 'none', padding: '0.2% 3%' }}>
+            <AppBar component="nav" sx={{ backgroundColor: '#F5F6F8', color: '#3770FF', boxShadow: 'none', padding: '0.2% 1.5%' }}>
                 <Toolbar sx={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center' }}>
                     <Box sx={{ display: 'flex', alignItems: 'center' }}>
                         <IconButton
@@ -95,7 +95,7 @@ export default function ElevateAppBar(props) {
                             </Link>
                         </Box>
                     </Box>
-                    <Button onClick={() => window.open('http://app.MYREELDREAMS.xyz/')} sx={{ backgroundColor: '#3770FF', color: 'white', border: '2px solid #3770FF', borderRadius: '50px', padding: '0.5% 2%', textTransform: 'none', '&:hover': { color: '#3770FF', border: '2px solid #3770FF' }, fontSize: { md: '15px', sm: '10px', xs: '10px' } }}>Launch App</Button>
+                    <Button onClick={() => window.open('http://app.myreeldream.ai/')} sx={{ backgroundColor: '#3770FF', color: 'white', border: '2px solid #3770FF', borderRadius: '50px', padding: '0.5% 2%', textTransform: 'none', '&:hover': { color: '#3770FF', border: '2px solid #3770FF' }, fontSize: { md: '15px', sm: '10px', xs: '10px' } }}>Launch App</Button>
 
                 </Toolbar>
             </AppBar>
