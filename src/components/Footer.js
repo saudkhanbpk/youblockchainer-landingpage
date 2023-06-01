@@ -1,6 +1,6 @@
 import { CardMedia, Grid } from '@mui/material'
 import React, { useState } from 'react'
-import logo from '../images/logo.png'
+import logo from '../images/actualLogo.png'
 import BasicModal from './Modal';
 
 function Footer() {
@@ -13,7 +13,7 @@ function Footer() {
 
 
     return (
-        <div style={{ backgroundColor: 'black', padding: '6% 3%' }}>
+        <div style={{ backgroundColor: '#002638', padding: '6% 3%' }}>
             <Grid container>
                 <Grid item md={2} xs={12} sx={{ display: 'flex', flexDirection: 'column', justifyContent: 'center', alignItems: 'center' }}>
                     <CardMedia component='img' image={logo} sx={{ height: '70px', width: 'auto' }} />
@@ -27,7 +27,7 @@ function Footer() {
                 </Grid>
                 <Grid item md={2} xs={12} sx={{ display: 'flex', alignItems: 'center', flexDirection: 'column', justifyContent: 'center' }}>
                     <h4 style={{ color: '#BEBEBE', margin: '0', padding: '0' }} >Contact Us</h4>
-                    <p style={{ fontSize: '12px', color: '#BEBEBE' }} onClick={() => window.open("mailto:support@youblockchainer.xyz", "_blank")}> Email - <strong style={{ cursor: 'pointer' }} >support@ublockchainer.xyz</strong></p>
+                    <p style={{ fontSize: '12px', color: '#BEBEBE' }} onClick={() => window.open("mailto:support@MYREELDREAMS.xyz", "_blank")}> Email - <strong style={{ cursor: 'pointer' }} >support@ublockchainer.xyz</strong></p>
 
                 </Grid>
             </Grid>
