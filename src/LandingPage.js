@@ -11,8 +11,8 @@ function LandingPage() {
     return (
         <>
             <div data-aos="zoom-in"><Herosection /></div>
-            <Brands />
-            <Communities />
+            {/* <Brands />
+            <Communities /> */}
             {/* <Artists /> */}
             <Avail />
         </>

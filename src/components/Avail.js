@@ -4,6 +4,7 @@ import avail1 from '../images/avail1.png'
 import avail2 from '../images/avail2.png'
 import avail3 from '../images/avail3.png'
 import avail4 from '../images/avail4.png'
+import { Icon } from '@iconify/react'
 
 
 function Avail() {
@@ -12,40 +13,154 @@ function Avail() {
             <Typography variant='h2' sx={{ fontWeight: 'bold', fontFamily: 'Poppins', margin: '0', padding: '0', fontSize: { md: '4rem', sm: '2rem', xs: '2rem' } }}><strong style={{ color: '#3770FF' }}>Consumers</strong> Get connected to organizations to sell your content</Typography>
             <div data-aos="fade-up">
                 <Grid container spacing={3} sx={{ marginTop: '5%' }}>
-                    <Grid item md={3} sm={6} xs={12} sx={{ marginBottom: { md: '0', sm: '0', xs: '10%' } }} >
+                    <Grid item onClick={() => window.open('http://app.myreeldream.ai/')} md={4} sm={6} xs={12} sx={{ marginBottom: { md: '0', sm: '0', xs: '10%' } }} >
                         <CardContent sx={{ backgroundColor: 'white', height: '100%', borderRadius: '20px', boxShadow: 'rgba(235, 235, 235, 0.77) 0px 7px 29px 0px' }}>
                             <CardMedia component='img' image={avail1} sx={{ height: '100px', width: 'auto', marginTop: '-4rem' }} />
-                            <h2 style={{ margin: '0', padding: '0' }}>Lorem</h2>
+                            <Grid container style={{display:'flex' , justifyContent:'center', alignItems:'center'}}>
+                            <Grid item md={12}>
+                            <h2 style={{ margin: '0', padding: '0' }}>Ideation</h2>
+                            </Grid>
+                            <Grid item md={2}>
+                            <Icon icon="fluent-mdl2:radio-bullet" width={40} height={40}/>
+                            </Grid>
+                            <Grid item md={10}>
                             <p style={{ fontSize: '14px' }} >
-                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamus, iure ea rerum incidunt soluta ipsa reiciendis et illum sed autem enim inventore modi, dolores ipsam sapiente! Aliquid commodi praesentium voluptates a et.
+                            From your idea to a one minute pitch
                             </p>
+                            </Grid>
+                            <Grid item md={2}>
+                            <Icon icon="fluent-mdl2:radio-bullet" width={40} height={40}/>
+                            </Grid>
+                            <Grid item md={10}>
+                            <p style={{ fontSize: '14px' }} >
+                            Generate content in minutes
+                            </p>
+                            </Grid>
+                            <Grid item md={2}>
+                            <Icon icon="fluent-mdl2:radio-bullet" width={40} height={40}/>
+                            </Grid>
+                            <Grid item md={10}>
+                            <p style={{ fontSize: '14px' }} >
+                            From your 1 Minute pitch to your Synopsis
+                            </p>
+                            </Grid>
+                            <Grid item md={2}>
+                            <Icon icon="fluent-mdl2:radio-bullet" width={40} height={40}/>
+                            </Grid>
+                            <Grid item md={10}>
+                            <p style={{ fontSize: '14px' }} >
+                            Synopis to Full lengh script
+                            </p>
+                            </Grid>
+                            <Grid item md={2}>
+                            <Icon icon="fluent-mdl2:radio-bullet" width={40} height={40}/>
+                            </Grid>
+                            <Grid item md={10}>
+                            <p style={{ fontSize: '14px' }} >
+                            Story board
+                            </p>
+                            </Grid>
+                            </Grid>
                         </CardContent>
                     </Grid>
-                    <Grid item md={3} sm={6} xs={12} sx={{ marginBottom: { md: '0', sm: '0', xs: '10%' } }}>
+                    <Grid item md={4} sm={6} xs={12} sx={{ marginBottom: { md: '0', sm: '0', xs: '10%' } }}>
                         <CardContent sx={{ backgroundColor: 'white', height: '100%', borderRadius: '20px', boxShadow: 'rgba(235, 235, 235, 0.77) 0px 7px 29px 0px' }}>
                             <CardMedia component='img' image={avail2} sx={{ height: '100px', width: 'auto', marginTop: '-4rem' }} />
-                            <h2 style={{ margin: '0', padding: '0' }}>Ipsum</h2>
+                            <Grid container style={{display:'flex' , justifyContent:'center', alignItems:'center'}}>
+                            <Grid item md={12}>
+                            <h2 style={{ margin: '0', padding: '0' }}>Pre-Production</h2>
+                            </Grid>
+                            <Grid item md={2}>
+                            <Icon icon="fluent-mdl2:radio-bullet" width={40} height={40}/>
+                            </Grid>
+                            <Grid item md={10}>
                             <p style={{ fontSize: '14px' }} >
-                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste similique incidunt porro illo optio, officiis, qui ullam ut animi commodi in inventore eaque dignissimos cumque repellendus quos aliquam sequi ex ipsum.
+                            Casting
                             </p>
+                            </Grid>
+                            <Grid item md={2}>
+                            <Icon icon="fluent-mdl2:radio-bullet" width={40} height={40}/>
+                            </Grid>
+                            <Grid item md={10}>
+                            <p style={{ fontSize: '14px' }} >
+                            Location scouting
+                            </p>
+                            </Grid>
+                            <Grid item md={2}>
+                            <Icon icon="fluent-mdl2:radio-bullet" width={40} height={40}/>
+                            </Grid>
+                            <Grid item md={10}>
+                            <p style={{ fontSize: '14px' }} >
+                            Production schedule
+                            </p>
+                            </Grid>
+                            <Grid item md={2}>
+                            <Icon icon="fluent-mdl2:radio-bullet" width={40} height={40}/>
+                            </Grid>
+                            <Grid item md={10}>
+                            <p style={{ fontSize: '14px' }} >
+                            Designing sets & Costumes
+                            </p>
+                            </Grid>
+                            <Grid item md={2}>
+                            <Icon icon="fluent-mdl2:radio-bullet" width={40} height={40}/>
+                            </Grid>
+                            <Grid item md={10}>
+                            <p style={{ fontSize: '14px' }} >
+                            Filming on location/Studio
+                            </p>
+                            </Grid>
+                            </Grid>
                         </CardContent>
                     </Grid>
-                    <Grid item md={3} sm={6} xs={12} sx={{ marginBottom: { md: '0', sm: '0', xs: '10%' } }}>
-                        <CardContent sx={{ backgroundColor: 'white', height: '100%', borderRadius: '20px', boxShadow: 'rgba(235, 235, 235, 0.77) 0px 7px 29px 0px' }}>
-                            <CardMedia component='img' image={avail3} sx={{ height: '100px', width: 'auto', marginTop: '-4rem' }} />
-                            <h2 style={{ margin: '0', padding: '0' }}>Dolar</h2>
-                            <p style={{ fontSize: '14px' }} >
-                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Quidem possimus repellat laborum praesentium. Repudiandae atque vitae voluptates accusantium sequi deleniti libero ullam eum distinctio, culpa minus?
-                            </p>
-                        </CardContent>
-                    </Grid>
-                    <Grid item md={3} sm={6} xs={12}>
+                    <Grid item md={4} sm={6} xs={12}>
                         <CardContent sx={{ backgroundColor: 'white', height: '100%', borderRadius: '20px', boxShadow: 'rgba(235, 235, 235, 0.77) 0px 7px 29px 0px' }}>
                             <CardMedia component='img' image={avail4} sx={{ height: '100px', width: 'auto', marginTop: '-4rem' }} />
-                            <h2 style={{ margin: '0', padding: '0' }}>Sit</h2>
+                            <Grid container style={{display:'flex' , justifyContent:'center', alignItems:'center'}}>
+                            <Grid item md={12}>
+                            <h2 style={{ margin: '0', padding: '0' }}>Post-Production & Distribution</h2>
+                            </Grid>
+                            <Grid item md={2}>
+                            <Icon icon="fluent-mdl2:radio-bullet" width={40} height={40}/>
+                            </Grid>
+                            <Grid item md={10}>
                             <p style={{ fontSize: '14px' }} >
-                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum nobis odit quas, adipisci, error esse iure reiciendis, iste voluptates illo labore dolor nesciunt eveniet. Laudantium non necessitatibus vero dolorem qui ullam mollitia!
+                            Film Editing
                             </p>
+                            </Grid>
+                            <Grid item md={2}>
+                            <Icon icon="fluent-mdl2:radio-bullet" width={40} height={40}/>
+                            </Grid>
+                            <Grid item md={10}>
+                            <p style={{ fontSize: '14px' }} >
+                            Marketing
+                            </p>
+                            </Grid>
+                            <Grid item md={2}>
+                            <Icon icon="fluent-mdl2:radio-bullet" width={40} height={40}/>
+                            </Grid>
+                            <Grid item md={10}>
+                            <p style={{ fontSize: '14px' }} >
+                            Distribution
+                            </p>
+                            </Grid>
+                            <Grid item md={2}>
+                            <Icon icon="fluent-mdl2:radio-bullet" width={40} height={40}/>
+                            </Grid>
+                            <Grid item md={10}>
+                            <p style={{ fontSize: '14px' }} >
+                            Release
+                            </p>
+                            </Grid>
+                            <Grid item md={2}>
+                            <Icon icon="fluent-mdl2:radio-bullet" width={40} height={40}/>
+                            </Grid>
+                            <Grid item md={10}>
+                            <p style={{ fontSize: '14px' }} >
+                            Post-release
+                            </p>
+                            </Grid>
+                            </Grid>
                         </CardContent>
                     </Grid>
                 </Grid>
