@@ -102,7 +102,7 @@ function Item(props) {
                             <Typography sx={{ color: 'white', fontFamily: 'Poppins', fontSize: { md: '5rem', sm: '2rem', xs: '1.4rem' }, fontWeight: 'bolder ', margin: '0', padding: '0' }} >{props.item.name}</Typography>
                             {props.i && <Button onClick={() => window.open('https://app.myreeldream.ai/')} sx={{ backgroundColor: '#3770FF', color: 'white', border: '2px solid #3770FF', borderRadius: '50px', padding: '0.5% 2%', textTransform: 'none', '&:hover': { color: '#3770FF', border: '2px solid #3770FF' }, fontSize: { md: '15px', sm: '10px', xs: '10px' } }}>Launch App</Button>}
                             {!props.i && <Link to={props.item.nav} spy={true} smooth={true}>
-                                <Typography variant='p' sx={{ margin: '0', color: 'black', fontSize: { md: '16px', xs: '12px' }, padding: '0', display: 'flex', alignItems: 'center' }}>{props.item.description} <ArrowForwardIcon sx={{ cursor: 'pointer', display: { md: 'flex', xs: 'none' } }} /></Typography>
+                                <Typography variant='p' sx={{ margin: '0', color: 'white', fontSize: { md: '16px', xs: '12px' }, padding: '0', display: 'flex', alignItems: 'center' }}>{props.item.description} <ArrowForwardIcon sx={{ cursor: 'pointer', display: { md: 'flex', xs: 'none' } }} /></Typography>
                             </Link>}
                         </div>
                     </Grid>
