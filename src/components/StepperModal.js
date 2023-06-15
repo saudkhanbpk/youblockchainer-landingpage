@@ -7,7 +7,7 @@ import Button from '@mui/material/Button';
 import Typography from '@mui/material/Typography';
 import { Alert, Checkbox, Chip } from '@mui/material';
 
-const steps = ['Introductory video', 'Are you an actorr/movie professional'];
+const steps = ['Introductory video', 'Are you an actor/movie professional'];
 
 export default function HorizontalLinearStepper({setOpen}) {
   const [activeStep, setActiveStep] = React.useState(0);
@@ -25,7 +25,9 @@ export default function HorizontalLinearStepper({setOpen}) {
 
   const handleNext = () => {
     let newSkipped = skipped;
-    if(activeStep === 1) setOpen(false)
+    if(activeStep === 1) {
+      window.open('https://app.myreeldream.ai/')
+      setOpen(false)}
     else if(isStepSkipped(activeStep)) {
       newSkipped = new Set(newSkipped.values());
       newSkipped.delete(activeStep);
@@ -123,7 +125,7 @@ export default function HorizontalLinearStepper({setOpen}) {
                 />Movie professional</Button>
 </Box>
                 {
-                  checked ? <Alert sx={{marginTop:'5%'}} severity="info">Sell your services to aspiring artists and or to movie buyers, distributors, productors</Alert> : checked2 ? <Alert sx={{marginTop:'5%'}} severity="info">Elevate Your Career: Connect with Aspiring Talents and Expand Your Reach to Movie Buyers, Distributors, and Producers.</Alert> : ""
+                  checked ? <Alert sx={{marginTop:'5%'}} severity="info">Elevate Your Career: Connect with Aspiring Talents and Expand Your Reach to Movie Buyers, Distributors, and Producers.</Alert> : checked2 ? <Alert sx={{marginTop:'5%'}} severity="info">Sell your services to aspiring artists and or to movie buyers, distributors, productors</Alert>  : ""
                 }
             </>
           }
