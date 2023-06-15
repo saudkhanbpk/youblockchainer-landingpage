@@ -72,7 +72,7 @@ export default function ElevateAppBar(props) {
                             <MenuIcon />
                         </IconButton>
                         <CardMedia component='img' image={logo} sx={{ height: '40px', width: 'auto' }} />
-                        <Box sx={{ display: { xs: 'none', sm: 'block' } }}>
+                        {/* <Box sx={{ display: { xs: 'none', sm: 'block' } }}>
                             <Link to={'Home'} spy={true} smooth={true}>
                                 <Button sx={{ color: '#3770FF', textTransform: 'none', fontWeight: 'bold' }}>
                                     Home
@@ -93,7 +93,7 @@ export default function ElevateAppBar(props) {
                                     Consumers
                                 </Button>
                             </Link>
-                        </Box>
+                        </Box> */}
                     </Box>
                     <Button onClick={() => window.open('https://app.myreeldream.ai/')} sx={{ backgroundColor: '#3770FF', color: 'white', border: '2px solid #3770FF', borderRadius: '50px', padding: '0.5% 2%', textTransform: 'none', '&:hover': { color: '#3770FF', border: '2px solid #3770FF' }, fontSize: { md: '15px', sm: '10px', xs: '10px' } }}>Launch App</Button>
 

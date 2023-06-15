@@ -17,7 +17,7 @@ function Footer() {
             <Grid container>
                 <Grid item md={2} xs={12} sx={{ display: 'flex', flexDirection: 'column', justifyContent: 'center', alignItems: 'center' }}>
                     <CardMedia component='img' image={logo} sx={{ height: '70px', width: 'auto' }} />
-                    <p style={{ fontSize: '12px', color: '#BEBEBE', textAlign: 'center' }}> Lorem ipsum dolor sit amet consectetur. </p>
+                    <p style={{ fontSize: '12px', color: '#BEBEBE', textAlign: 'center' }}> My Movie Studio </p>
                 </Grid>
                 <Grid item md={8} xs={12} sx={{ textAlign: 'center' }} >
                     {/* <p id='0' onClick={onClick} style={{ color: '#BEBEBE', cursor: 'pointer' }} >Privacy Policy</p>
