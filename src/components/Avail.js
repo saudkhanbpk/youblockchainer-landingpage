@@ -19,7 +19,7 @@ function Avail() {
                             <CardMedia component='img' image={avail1} sx={{ height: '100px', width: 'auto', marginTop: '-4rem' }} />
                             <Grid container style={{display:'flex' , justifyContent:'center', alignItems:'center'}}>
                             <Grid item md={12}>
-                            <h2 style={{ margin: '0', padding: '0', display:'flex', alignItems:'center' }}>Ideation <ArrowForwardIcon onClick={() => window.open('http://app.myreeldream.ai/')} sx={{ cursor: 'pointer', display: { md: 'flex', xs: 'none' } }} /></h2>
+                            <h2 style={{ margin: '0', padding: '0', display:'flex', alignItems:'center' }}>Ideation <ArrowForwardIcon onClick={() => window.open('https://app.myreeldream.ai/')} sx={{ cursor: 'pointer', display: { md: 'flex', xs: 'none' } }} /></h2>
                             </Grid>
                             <Grid item md={1}>
                             <Icon icon="charm:tick-double" width={28} height={28} color="#3770FF5c"/>

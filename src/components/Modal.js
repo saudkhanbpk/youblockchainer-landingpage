@@ -2,6 +2,7 @@ import * as React from 'react';
 import Box from '@mui/material/Box';
 import Typography from '@mui/material/Typography';
 import Modal from '@mui/material/Modal';
+import HorizontalLinearStepper from './StepperModal'
 
 const style = {
     position: 'absolute',
@@ -15,7 +16,7 @@ const style = {
     p: 4,
 };
 
-export default function BasicModal({ open, setOpen, num }) {
+export default function BasicModal({ open, setOpen }) {
 
     const arr = [{
         heading: 'Modal 1',
@@ -43,12 +44,7 @@ export default function BasicModal({ open, setOpen, num }) {
                 sx={{ "& .css-1m2x5u7": { border: 'none', borderRadius: '10px' } }}
             >
                 <Box sx={style}>
-                    <Typography id="modal-modal-title" sx={{ fontWeight: 'bold' }} variant="h6" component="h2">
-                        {arr[num].heading}
-                    </Typography>
-                    <Typography id="modal-modal-description" sx={{ mt: 2 }}>
-                        {arr[num].detail}
-                    </Typography>
+                    <HorizontalLinearStepper setOpen={setOpen}/>
                 </Box>
             </Modal>
         </div>

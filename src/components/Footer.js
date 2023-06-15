@@ -20,9 +20,9 @@ function Footer() {
                     <p style={{ fontSize: '12px', color: '#BEBEBE', textAlign: 'center' }}> Lorem ipsum dolor sit amet consectetur. </p>
                 </Grid>
                 <Grid item md={8} xs={12} sx={{ textAlign: 'center' }} >
-                    <p id='0' onClick={onClick} style={{ color: '#BEBEBE', cursor: 'pointer' }} >Privacy Policy</p>
+                    {/* <p id='0' onClick={onClick} style={{ color: '#BEBEBE', cursor: 'pointer' }} >Privacy Policy</p>
                     <p id='1' onClick={onClick} style={{ color: '#BEBEBE', cursor: 'pointer' }} >Terms of use</p>
-                    <p id='2' onClick={onClick} style={{ color: '#BEBEBE', cursor: 'pointer' }} >Security Policy</p>
+                    <p id='2' onClick={onClick} style={{ color: '#BEBEBE', cursor: 'pointer' }} >Security Policy</p> */}
 
                 </Grid>
                 <Grid item md={2} xs={12} sx={{ display: 'flex', alignItems: 'center', flexDirection: 'column', justifyContent: 'center' }}>
