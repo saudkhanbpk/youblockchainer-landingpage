@@ -9,7 +9,8 @@ import IconButton from '@mui/material/IconButton';
 import MenuIcon from '@mui/icons-material/Menu';
 import Toolbar from '@mui/material/Toolbar';
 import logo from '../images/logo.png'
-import { CardMedia } from '@mui/material';
+import text from '../images/text.png'
+import { CardMedia, Typography } from '@mui/material';
 import { Link } from 'react-scroll';
 import CTA from './CTA';
 import Footer from './Footer';
@@ -72,6 +73,8 @@ export default function ElevateAppBar(props) {
                             <MenuIcon />
                         </IconButton>
                         <CardMedia component='img' image={logo} sx={{ height: '40px', width: 'auto' }} />
+                        <CardMedia component='img' image={text} sx={{ height: '25px', width: 'auto', marginLeft:'10px' }} />
+
                         {/* <Box sx={{ display: { xs: 'none', sm: 'block' } }}>
                             <Link to={'Home'} spy={true} smooth={true}>
                                 <Button sx={{ color: '#3770FF', textTransform: 'none', fontWeight: 'bold' }}>

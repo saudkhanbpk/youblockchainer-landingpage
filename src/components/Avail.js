@@ -16,7 +16,9 @@ function Avail() {
                 <Grid container spacing={3} sx={{ marginTop: '5%' }}>
                     <Grid item  md={4} sm={6} xs={12} sx={{ marginBottom: { md: '0', sm: '0', xs: '10%' } }} >
                         <CardContent sx={{ backgroundColor: 'white', height: '100%', borderRadius: '20px', boxShadow: 'rgba(235, 235, 235, 0.77) 0px 7px 29px 0px' }}>
-                            <CardMedia component='img' image={avail1} sx={{ height: '100px', width: 'auto', marginTop: '-4rem' }} />
+                            {/* <CardMedia component='img' image={avail1} sx={{ height: '100px', width: 'auto', marginTop: '-4rem' }} /> */}
+                            <Icon icon="eva:bulb-outline" style={{ height: '100px', width: 'auto', marginTop: '-4rem', color:'#3770FF' }} />
+
                             <Grid container style={{display:'flex' , justifyContent:'center', alignItems:'center'}}>
                             <Grid item md={12}>
                             <h2 style={{ margin: '0', padding: '0', display:'flex', alignItems:'center' }}>Ideation <ArrowForwardIcon onClick={() => window.open('https://app.myreeldream.ai/')} sx={{ cursor: 'pointer', display: { md: 'flex', xs: 'none' } }} /></h2>
@@ -66,7 +68,8 @@ function Avail() {
                     </Grid>
                     <Grid item md={4} sm={6} xs={12} sx={{ marginBottom: { md: '0', sm: '0', xs: '10%' } }}>
                         <CardContent sx={{ backgroundColor: 'white', height: '100%', borderRadius: '20px', boxShadow: 'rgba(235, 235, 235, 0.77) 0px 7px 29px 0px' }}>
-                            <CardMedia component='img' image={avail2} sx={{ height: '100px', width: 'auto', marginTop: '-4rem' }} />
+                            {/* <CardMedia component='img' image={avail2} sx={{ height: '100px', width: 'auto', marginTop: '-4rem' }} /> */}
+                            <Icon icon="mdi:movie-edit" style={{ height: '100px', width: 'auto', marginTop: '-4rem', color:'#3770FF' }} />
                             <Grid container style={{display:'flex' , justifyContent:'center', alignItems:'center'}}>
                             <Grid item md={12}>
                             <h2 style={{ margin: '0', padding: '0' }}>Pre-Production</h2>
@@ -116,7 +119,8 @@ function Avail() {
                     </Grid>
                     <Grid item md={4} sm={6} xs={12}>
                         <CardContent sx={{ backgroundColor: 'white', height: '100%', borderRadius: '20px', boxShadow: 'rgba(235, 235, 235, 0.77) 0px 7px 29px 0px' }}>
-                            <CardMedia component='img' image={avail4} sx={{ height: '100px', width: 'auto', marginTop: '-4rem' }} />
+                            {/* <CardMedia component='img' image={avail4} sx={{ height: '100px', width: 'auto', marginTop: '-4rem' }} /> */}
+                            <Icon icon="ri:movie-2-line" style={{ height: '100px', width: 'auto', marginTop: '-4rem', color:'#3770FF' }} />
                             <Grid container style={{display:'flex' , justifyContent:'center', alignItems:'center'}}>
                             <Grid item md={12}>
                             <h2 style={{ margin: '0', padding: '0' }}>Post-Production & Distribution</h2>

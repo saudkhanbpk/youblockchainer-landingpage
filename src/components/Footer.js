@@ -27,7 +27,7 @@ function Footer() {
                 </Grid>
                 <Grid item md={2} xs={12} sx={{ display: 'flex', alignItems: 'center', flexDirection: 'column', justifyContent: 'center' }}>
                     <h4 style={{ color: '#BEBEBE', margin: '0', padding: '0' }} >Contact Us</h4>
-                    <p style={{ fontSize: '12px', color: '#BEBEBE' }} onClick={() => window.open("mailto:support@MYREELDREAMS.xyz", "_blank")}> Email - <strong style={{ cursor: 'pointer' }} >support@ublockchainer.xyz</strong></p>
+                    <p style={{ fontSize: '12px', color: '#BEBEBE' }} onClick={() => window.open("mailto:support@myreeldream.ai", "_blank")}> Email - <strong style={{ cursor: 'pointer' }} >support@myreeldream.ai</strong></p>
 
                 </Grid>
             </Grid>
