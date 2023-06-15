@@ -27,6 +27,8 @@ function Footer() {
                 </Grid>
                 <Grid item md={2} xs={12} sx={{ display: 'flex', alignItems: 'center', flexDirection: 'column', justifyContent: 'center' }}>
                     <h4 style={{ color: '#BEBEBE', margin: '0', padding: '0' }} >Contact Us</h4>
+                    <p style={{ fontSize: '12px', color: '#BEBEBE', textAlign:'center' }} onClick={() => window.open("https://www.google.com/maps/search/?api=1&query=113+B+Paola+Road,+Tarxien+1807+Malta", "_blank")}> Address - <strong style={{ cursor: 'pointer' }} >113 B Paola Road , Tarxien 1807 Malta <img style={{width:'12px'}} src="https://wallpapercave.com/wp/wp4212576.jpg" alt="Flag of Malta"/></strong></p>
+
                     <p style={{ fontSize: '12px', color: '#BEBEBE' }} onClick={() => window.open("mailto:support@myreeldream.ai", "_blank")}> Email - <strong style={{ cursor: 'pointer' }} >support@myreeldream.ai</strong></p>
 
                 </Grid>
