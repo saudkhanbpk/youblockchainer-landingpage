@@ -97,7 +97,7 @@ export default function HorizontalLinearStepper({setOpen}) {
             activeStep === 0 ? <>
               <iframe width="100%" height="315"
                 allow='autoplay'
-                src="https://www.youtube.com/embed/tgbNymZ7vqY">
+                src="https://www.youtube.com/embed/GwOP0QnXLcI">
               </iframe>
             </> : <>
               <Typography variant='h5' sx={{ fontWeight: 'bold', textAlign: 'center', fontFamily: 'Poppins', margin: '0', padding: '0', padding: '5%', fontSize: { md: '1.2rem', sm: '1rem', xs: '1rem' } }}><strong style={{ color: '#3770FF' }}>Start Your Journey and Unlock Opportunities</strong><br /> Join the Spotlight as an aspiring talent or Collaborate with the Best as a movie professional</Typography>
