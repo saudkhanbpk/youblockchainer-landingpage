@@ -14,7 +14,7 @@ function Footer() {
 
     return (
         <div style={{ backgroundColor: '#002638', padding: '6% 3%' }}>
-            <Grid container>
+            <Grid container rowSpacing={4}>
                 <Grid item md={2} xs={12} sx={{ display: 'flex', flexDirection: 'column', justifyContent: 'center', alignItems: 'center' }}>
                     <CardMedia component='img' image={logo} sx={{ height: '70px', width: 'auto' }} />
                     <p style={{ fontSize: '12px', color: '#BEBEBE', textAlign: 'center' }}> My Movie Studio </p>

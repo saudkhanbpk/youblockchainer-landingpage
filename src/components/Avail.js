@@ -20,45 +20,45 @@ function Avail() {
                             <Icon icon="eva:bulb-outline" style={{ height: '100px', width: 'auto', marginTop: '-4rem', color:'#3770FF' }} />
 
                             <Grid container style={{display:'flex' , justifyContent:'center', alignItems:'center'}}>
-                            <Grid item md={12}>
+                            <Grid item md={12} xs={12}>
                             <h2 style={{ margin: '0', padding: '0', display:'flex', alignItems:'center', marginBottom:'5%' }}>Ideation <ArrowForwardIcon  sx={{ cursor: 'pointer', display: { md: 'flex', xs: 'none' } }} /></h2>
                             </Grid>
-                            <Grid item md={1}>
+                            <Grid item md={1} xs={1}>
                             <Icon icon="charm:tick-double" width={28} height={28} color="#3770FF5c"/>
                             </Grid>
-                            <Grid item md={11}>
+                            <Grid item md={11} xs={11}>
                             <p style={{ fontSize: '14px' }} >
                             From your idea to a one minute pitch
                             </p>
                             </Grid>
-                            <Grid item md={1}>
+                            <Grid item md={1} xs={1}>
                             <Icon icon="charm:tick-double" width={28} height={28} color="#3770FF5c"/>
                             </Grid>
-                            <Grid item md={11}>
+                            <Grid item md={11} xs={11}>
                             <p style={{ fontSize: '14px' }} >
                             Generate content in minutes
                             </p>
                             </Grid>
-                            <Grid item md={1}>
+                            <Grid item md={1} xs={1}>
                             <Icon icon="charm:tick-double" width={28} height={28} color="#3770FF5c"/>
                             </Grid>
-                            <Grid item md={11}>
+                            <Grid item md={11} xs={11}>
                             <p style={{ fontSize: '14px' }} >
                             From your 1 Minute pitch to your Synopsis
                             </p>
                             </Grid>
-                            <Grid item md={1}>
+                            <Grid item md={1} xs={1}>
                             <Icon icon="charm:tick-double" width={28} height={28} color="#3770FF5c"/>
                             </Grid>
-                            <Grid item md={11}>
+                            <Grid item md={11} xs={11}>
                             <p style={{ fontSize: '14px' }} >
                             Synopis to Full lengh script
                             </p>
                             </Grid>
-                            <Grid item md={1}>
+                            <Grid item md={1} xs={1}>
                             <Icon icon="charm:tick-double" width={28} height={28} color="#3770FF5c"/>
                             </Grid>
-                            <Grid item md={11}>
+                            <Grid item md={11} xs={11}>
                             <p style={{ fontSize: '14px' }} >
                             Story board
                             </p>
@@ -71,45 +71,45 @@ function Avail() {
                             {/* <CardMedia component='img' image={avail2} sx={{ height: '100px', width: 'auto', marginTop: '-4rem' }} /> */}
                             <Icon icon="mdi:movie-edit" style={{ height: '100px', width: 'auto', marginTop: '-4rem', color:'#3770FF' }} />
                             <Grid container style={{display:'flex' , justifyContent:'center', alignItems:'center'}}>
-                            <Grid item md={12}>
+                            <Grid item md={12} xs={12}>
                             <h2 style={{ margin: '0', padding: '0', marginBottom:'5%' }}>Pre-Production</h2>
                             </Grid>
-                            <Grid item md={1}>
+                            <Grid item md={1} xs={1}>
                             <Icon icon="charm:tick-double" width={28} height={28} color="#3770FF5c"/>
                             </Grid>
-                            <Grid item md={11}>
+                            <Grid item md={11} xs={11}>
                             <p style={{ fontSize: '14px' }} >
                             Casting
                             </p>
                             </Grid>
-                            <Grid item md={1}>
+                            <Grid item md={1} xs={1}>
                             <Icon icon="charm:tick-double" width={28} height={28} color="#3770FF5c"/>
                             </Grid>
-                            <Grid item md={11}>
+                            <Grid item md={11} xs={11}>
                             <p style={{ fontSize: '14px' }} >
                             Location scouting
                             </p>
                             </Grid>
-                            <Grid item md={1}>
+                            <Grid item md={1} xs={1}>
                             <Icon icon="charm:tick-double" width={28} height={28} color="#3770FF5c"/>
                             </Grid>
-                            <Grid item md={11}>
+                            <Grid item md={11} xs={11}>
                             <p style={{ fontSize: '14px' }} >
                             Production schedule
                             </p>
                             </Grid>
-                            <Grid item md={1}>
+                            <Grid item md={1} xs={1}>
                             <Icon icon="charm:tick-double" width={28} height={28} color="#3770FF5c"/>
                             </Grid>
-                            <Grid item md={11}>
+                            <Grid item md={11} xs={11}>
                             <p style={{ fontSize: '14px' }} >
                             Designing sets & Costumes
                             </p>
                             </Grid>
-                            <Grid item md={1}>
+                            <Grid item md={1} xs={1}>
                             <Icon icon="charm:tick-double" width={28} height={28} color="#3770FF5c"/>
                             </Grid>
-                            <Grid item md={11}>
+                            <Grid item md={11} xs={11}>
                             <p style={{ fontSize: '14px' }} >
                             Filming on location/Studio
                             </p>
@@ -122,45 +122,45 @@ function Avail() {
                             {/* <CardMedia component='img' image={avail4} sx={{ height: '100px', width: 'auto', marginTop: '-4rem' }} /> */}
                             <Icon icon="ri:movie-2-line" style={{ height: '100px', width: 'auto', marginTop: '-4rem', color:'#3770FF' }} />
                             <Grid container style={{display:'flex' , justifyContent:'center', alignItems:'center'}}>
-                            <Grid item md={12}>
+                            <Grid item md={12} xs={12}>
                             <h2 style={{ margin: '0', padding: '0', paddingBottom:'5%' }}>Post-Production & Distribution</h2>
                             </Grid>
-                            <Grid item md={1}>
+                            <Grid item md={1} xs={1}>
                             <Icon icon="charm:tick-double" width={28} height={28} color="#3770FF5c"/>
                             </Grid>
-                            <Grid item md={11}>
+                            <Grid item md={11} xs={11}>
                             <p style={{ fontSize: '14px' }} >
                             Film Editing
                             </p>
                             </Grid>
-                            <Grid item md={1}>
+                            <Grid item md={1} xs={1}>
                             <Icon icon="charm:tick-double" width={28} height={28} color="#3770FF5c"/>
                             </Grid>
-                            <Grid item md={11}>
+                            <Grid item md={11} xs={11}>
                             <p style={{ fontSize: '14px' }} >
                             Marketing
                             </p>
                             </Grid>
-                            <Grid item md={1}>
+                            <Grid item md={1} xs={1}>
                             <Icon icon="charm:tick-double" width={28} height={28} color="#3770FF5c"/>
                             </Grid>
-                            <Grid item md={11}>
+                            <Grid item md={11} xs={11}>
                             <p style={{ fontSize: '14px' }} >
                             Distribution
                             </p>
                             </Grid>
-                            <Grid item md={1}>
+                            <Grid item md={1} xs={1}>
                             <Icon icon="charm:tick-double" width={28} height={28} color="#3770FF5c"/>
                             </Grid>
-                            <Grid item md={11}>
+                            <Grid item md={11} xs={11}>
                             <p style={{ fontSize: '14px' }} >
                             Release
                             </p>
                             </Grid>
-                            <Grid item md={1}>
+                            <Grid item md={1} xs={1}>
                             <Icon icon="charm:tick-double" width={28} height={28} color="#3770FF5c"/>
                             </Grid>
-                            <Grid item md={11}>
+                            <Grid item md={11} xs={11}>
                             <p style={{ fontSize: '14px' }} >
                             Post-release
                             </p>

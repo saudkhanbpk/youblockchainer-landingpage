@@ -31,7 +31,7 @@ export default function ElevateAppBar(props) {
             <CardMedia component='img' image={logo} sx={{ height: '40px', width: 'auto', marginBottom: '8%' }} />
 
             <Divider />
-            <Link to={'Home'} spy={true} smooth={true}>
+            {/* <Link to={'Home'} spy={true} smooth={true}>
                 <Button sx={{ color: 'black', textTransform: 'none' }}>
                     Home
                 </Button>
@@ -50,7 +50,7 @@ export default function ElevateAppBar(props) {
                 <Button sx={{ color: 'black', textTransform: 'none' }}>
                     Consumers
                 </Button>
-            </Link>
+            </Link> */}
 
         </Box>
     );
@@ -63,7 +63,7 @@ export default function ElevateAppBar(props) {
             <AppBar component="nav" sx={{ backgroundColor: '#F5F6F8', color: '#3770FF', boxShadow: 'none', padding: '0.2% 1.5%' }}>
                 <Toolbar sx={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center' }}>
                     <Box sx={{ display: 'flex', alignItems: 'center' }}>
-                        <IconButton
+                        {/* <IconButton
                             color="inherit"
                             aria-label="open drawer"
                             edge="start"
@@ -71,7 +71,7 @@ export default function ElevateAppBar(props) {
                             sx={{ mr: 2, display: { sm: 'none' } }}
                         >
                             <MenuIcon />
-                        </IconButton>
+                        </IconButton> */}
                         <CardMedia component='img' image={logo} sx={{ height: '40px', width: 'auto' }} />
                         <CardMedia component='img' image={text} sx={{ height: '25px', width: 'auto', marginLeft:'10px' }} />
 
@@ -103,7 +103,7 @@ export default function ElevateAppBar(props) {
                 </Toolbar>
             </AppBar>
             <Box component="nav">
-                <Drawer
+                {/* <Drawer
                     container={container}
                     variant="temporary"
                     open={mobileOpen}
@@ -117,7 +117,7 @@ export default function ElevateAppBar(props) {
                     }}
                 >
                     {drawer}
-                </Drawer>
+                </Drawer> */}
             </Box>
             <Box component="main" sx={{ p: 2, width: '100%' }}>
                 <Toolbar />

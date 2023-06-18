@@ -18,16 +18,16 @@ function LandingPage() {
             <Communities /> */}
             {/* <Artists /> */}
             <Avail />
-            <Box sx={{padding:'10% 25%'}}>
-            <Typography variant='h4' sx={{ fontWeight: 'bold', textAlign:'center', fontFamily: 'Poppins', margin: '0', padding: '0', fontSize: { md: '2rem', sm: '2rem', xs: '2rem' } }}><strong style={{ color: '#3770FF' }}>Get Started and Explore</strong><br/> the capacities of your movie studio as an aspiring talent or a movie expert</Typography>
+            <Box sx={{padding:{md:'10% 25%', xs:'10% 10%'}}}>
+            <Typography variant='h4' sx={{ fontWeight: 'bold', textAlign:'center', fontFamily: 'Poppins', margin: '0', padding: '0', fontSize: { md: '2rem', sm: '2rem', xs: '1.5rem' } }}><strong style={{ color: '#3770FF' }}>Get Started and Explore</strong><br/> the capacities of your movie studio as an aspiring talent or a movie expert</Typography>
             <Box sx={{display:'flex', justifyContent:'space-evenly'}}>
             <Box sx={{display:'flex',marginTop:'5%', justifyContent:'center', flexDirection:'column'}}>
-                <p style={{fontSize:'12px'}}>New to this website?</p>
-            <Button onClick={() => setOpen(true)} sx={{ backgroundColor: '#3770FF', color: 'white',  border: '2px solid #3770FF', borderRadius: '50px', padding: '2% 2%', textTransform: 'none', '&:hover': { color: '#3770FF', border: '2px solid #3770FF' }, fontSize: { md: '15px', sm: '10px', xs: '10px' } }}>Get started</Button>
+                <p style={{fontSize:'12px'}}>New to this website? </p>
+            <Button onClick={() => setOpen(true)} sx={{ backgroundColor: '#3770FF', color: 'white',  border: '2px solid #3770FF', borderRadius: '50px', padding: '2% 2%', textTransform: 'none', '&:hover': { color: '#3770FF', border: '2px solid #3770FF' }, fontSize: { md: '15px', sm: '10px', xs: '10px' } }}>Get started now</Button>
             </Box>
             <Box sx={{display:'flex',marginTop:'5%', justifyContent:'center', flexDirection:'column'}}>
                 <p style={{fontSize:'12px'}}>Already have an account?</p>
-            <Button onClick={() => window.open('https://app.myreeldream.ai/')} sx={{ backgroundColor: 'white', color: '#3770FF',  border: '2px solid #3770FF', borderRadius: '50px', padding: '2% 2%', textTransform: 'none', '&:hover': { bgcolor: '#3770FF', color:'white', border: '2px solid #3770FF' }, fontSize: { md: '15px', sm: '10px', xs: '10px' } }}>Access account</Button>
+            <Button onClick={() => window.open('https://app.myreeldream.ai/')} sx={{ backgroundColor: '#3770FF', color: 'white',  border: '2px solid #3770FF', borderRadius: '50px', padding: '2% 2%', textTransform: 'none', '&:hover': { color: '#3770FF', border: '2px solid #3770FF' }, fontSize: { md: '15px', sm: '10px', xs: '10px' } }}>Access account</Button>
             </Box>
             </Box>
             </Box>
