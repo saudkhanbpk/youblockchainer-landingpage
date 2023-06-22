@@ -16,21 +16,7 @@ const style = {
     p: 4,
 };
 
-export default function BasicModal({ open, setOpen }) {
-
-    const arr = [{
-        heading: 'Modal 1',
-        detail: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book"
-    },
-    {
-        heading: 'Modal 2',
-        detail: "dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book"
-    },
-    {
-        heading: 'Modal 3',
-        detail: "is simply dummy  Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book"
-    }
-    ]
+export default function BasicModal({ open, setOpen, video }) {
 
     const handleClose = () => setOpen(false);
 
@@ -44,7 +30,7 @@ export default function BasicModal({ open, setOpen }) {
                 sx={{ "& .css-1m2x5u7": { border: 'none', borderRadius: '10px' } }}
             >
                 <Box sx={style}>
-                    <HorizontalLinearStepper setOpen={setOpen}/>
+                    <HorizontalLinearStepper setOpen={setOpen} video={video}/>
                 </Box>
             </Modal>
         </div>

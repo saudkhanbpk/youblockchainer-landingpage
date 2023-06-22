@@ -9,7 +9,7 @@ import { Alert, Checkbox, Chip } from '@mui/material';
 
 const steps = ['Introductory video', 'Are you an actor/movie professional'];
 
-export default function HorizontalLinearStepper({setOpen}) {
+export default function HorizontalLinearStepper({setOpen, video}) {
   const [activeStep, setActiveStep] = React.useState(0);
   const [skipped, setSkipped] = React.useState(new Set());
   const [checked, setChecked] = React.useState(false)
@@ -95,10 +95,9 @@ export default function HorizontalLinearStepper({setOpen}) {
         <React.Fragment>
           {
             activeStep === 0 ? <>
-              <iframe width="100%" height="315"
-                allow='autoplay'
-                src="https://www.youtube.com/embed/GwOP0QnXLcI">
-              </iframe>
+            <video width="100%" height="315" controls style={{borderRadius:'5px'}} autoPlay>
+            <source src={video} type="video/mp4"  />
+          </video>
             </> : <>
               <Typography variant='h5' sx={{ fontWeight: 'bold', textAlign: 'center', fontFamily: 'Poppins', margin: '0', padding: '0', padding: '5%', fontSize: { md: '1.2rem', sm: '1rem', xs: '1rem' } }}><strong style={{ color: '#3770FF' }}>Start Your Journey and Unlock Opportunities</strong><br /> Join the Spotlight as an aspiring talent or Collaborate with the Best as a movie professional</Typography>
 <Box sx={{display:'flex', justifyContent:'space-evenly'}}>

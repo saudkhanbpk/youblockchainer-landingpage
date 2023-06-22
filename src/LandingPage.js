@@ -1,4 +1,4 @@
-import React, {useState} from 'react'
+import React, {useEffect, useState} from 'react'
 import About from './components/About'
 import Artists from './components/Artists'
 import Avail from './components/Avail'
@@ -8,9 +8,19 @@ import CountUp from './components/CountUp'
 import Herosection from './components/Herosection'
 import { Box, Typography, Button } from '@mui/material'
 import BasicModal from './components/Modal'
+import axios from 'axios'
 
 function LandingPage() {
     const [open, setOpen] = useState(false);
+    const [video, setVideo] = useState(null)
+    useEffect(() => {
+const func = async() => {
+    let res = await axios.get('https://app.myreeldream.ai/api/v1/admin/')
+    setVideo(res.data.video1)
+}
+func()
+    },[])
+
     return (
         <>
             {/* <div data-aos="zoom-in"><Herosection /></div> */}
@@ -31,7 +41,7 @@ function LandingPage() {
             </Box>
             </Box>
             </Box>
-<BasicModal open={open} setOpen={setOpen} />
+<BasicModal open={open} setOpen={setOpen} video={video} />
         </>
     )
 }
