@@ -34,7 +34,6 @@ export default function ElevateAppBar(props) {
     const drawer = (
         <Box onClick={handleDrawerToggle} sx={{ textAlign: 'center', display: 'flex', flexDirection: 'column', alignItems: 'flex-start', padding: '10%' }}>
             <CardMedia component='img' image={logo} sx={{ height: '40px', width: 'auto', marginBottom: '8%' }} />
-
             <Divider />
             {/* <Link to={'Home'} spy={true} smooth={true}>
                 <Button sx={{ color: 'black', textTransform: 'none' }}>
@@ -65,7 +64,7 @@ export default function ElevateAppBar(props) {
     return (<>
         <Box sx={{ display: 'flex' }}>
             <CssBaseline />
-            <AppBar component="nav" sx={{ backgroundColor: '#F5F6F8', color: '#3770FF', boxShadow: 'none', padding: '0.2% 1.5%' }}>
+            <AppBar component="nav" sx={{ backgroundColor: '#F5F6F8', color: '#3770FF', boxShadow: 'none', padding: '0% 1.5%' }}>
                 <Toolbar sx={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center' }}>
                     <Box sx={{ display: 'flex', alignItems: 'center' }}>
                         {/* <IconButton
@@ -79,7 +78,6 @@ export default function ElevateAppBar(props) {
                         </IconButton> */}
                         <CardMedia component='img' image={logo} sx={{ height: '40px', width: 'auto' }} />
                         <CardMedia component='img' onClick={() => navigate('/')} image={text} sx={{ height: '25px',cursor:'pointer', width: 'auto', marginLeft:'10px' }} />
-
                         {/* <Box sx={{ display: { xs: 'none', sm: 'block' } }}>
                             <Link to={'Home'} spy={true} smooth={true}>
                                 <Button sx={{ color: '#3770FF', textTransform: 'none', fontWeight: 'bold' }}>
@@ -127,7 +125,7 @@ export default function ElevateAppBar(props) {
                     {drawer}
                 </Drawer> */}
             </Box>
-            <Box component="main" sx={{ p: 2, width: '100%' }}>
+            <Box component="main" sx={{ padding: '0 1%', width: '100%' }}>
                 <Toolbar />
                 {children}
             </Box>
@@ -135,7 +133,9 @@ export default function ElevateAppBar(props) {
         <CTA />
         <Footer />
         <div style={{ backgroundColor: '#181818', padding: '1%' }}>
-            <p style={{ color: '#BEBEBE', textAlign: 'center', margin: '0', fontFamily: 'Poppins', fontSize: '15px' }} >Copyright &copy; 2023, <strong> MYREELDREAMS. </strong> All rights reserved. </p>
+            <p style={{ color: '#BEBEBE', textAlign: 'center', margin: '0', fontFamily: 'Poppins', fontSize: '15px', display:'flex', justifyContent:'center', alignItems:'center' }} >Copyright &copy; 2023, <strong> MYREELDREAMS. </strong> All rights reserved. 
+            <p style={{  color: '#BEBEBE' }} onClick={() => navigate('/privacy-policy')}> <strong style={{ cursor: 'pointer' }} > &nbsp; Privacy policy</strong></p>
+            </p>
         </div>
     </>
     );
