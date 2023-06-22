@@ -139,7 +139,7 @@ export default function HorizontalLinearStepper({ setOpen, video }) {
               Back
             </Button>
 
-            <Button onClick={handleNext}>
+            <Button onClick={handleNext} disabled={activeStep === steps.length - 1 && !checked && !checked2}>
               {activeStep === steps.length - 1 ? 'Proceed' : 'Next'}
             </Button>
           </Box>
