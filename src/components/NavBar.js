@@ -15,16 +15,21 @@ import { Link } from 'react-scroll';
 import CTA from './CTA';
 import Footer from './Footer';
 import { Button } from '@mui/material'
+import { useNavigate } from 'react-router-dom';
 
 const drawerWidth = 240;
 
 export default function ElevateAppBar(props) {
     const { window2, children } = props;
     const [mobileOpen, setMobileOpen] = React.useState(false);
+    const navigate = useNavigate()
 
     const handleDrawerToggle = () => {
         setMobileOpen((prevState) => !prevState);
     };
+
+    const url = window.location.href.split('/')[3]
+    console.log(url)
 
     const drawer = (
         <Box onClick={handleDrawerToggle} sx={{ textAlign: 'center', display: 'flex', flexDirection: 'column', alignItems: 'flex-start', padding: '10%' }}>
@@ -73,7 +78,7 @@ export default function ElevateAppBar(props) {
                             <MenuIcon />
                         </IconButton> */}
                         <CardMedia component='img' image={logo} sx={{ height: '40px', width: 'auto' }} />
-                        <CardMedia component='img' image={text} sx={{ height: '25px', width: 'auto', marginLeft:'10px' }} />
+                        <CardMedia component='img' onClick={() => navigate('/')} image={text} sx={{ height: '25px',cursor:'pointer', width: 'auto', marginLeft:'10px' }} />
 
                         {/* <Box sx={{ display: { xs: 'none', sm: 'block' } }}>
                             <Link to={'Home'} spy={true} smooth={true}>
@@ -98,8 +103,11 @@ export default function ElevateAppBar(props) {
                             </Link>
                         </Box> */}
                     </Box>
+                    {
+                        url === '' ? 
                     <Button onClick={() => window.open('https://app.myreeldream.ai/')} sx={{ backgroundColor: '#3770FF', color: 'white', border: '2px solid #3770FF', borderRadius: '50px', padding: '0.5% 2%', textTransform: 'none', '&:hover': { color: '#3770FF', border: '2px solid #3770FF' }, fontSize: { md: '15px', sm: '10px', xs: '10px' } }}>Launch App</Button>
-
+                    : ""
+                    }
                 </Toolbar>
             </AppBar>
             <Box component="nav">
