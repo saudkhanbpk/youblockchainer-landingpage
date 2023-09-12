@@ -65,7 +65,7 @@ function Avail() {
                                 </Grid>
                                 <Grid item md={11} xs={11}>
                                     <p style={{ fontSize: '14px' }} >
-                                        Script Doctors
+                                        Script doctors
                                     </p>
                                 </Grid>
                                 <Grid item md={1} xs={1}>
