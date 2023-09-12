@@ -34,7 +34,7 @@ function Herosection() {
 
     var items = [
         {
-            name: "MYREELDREAMS",
+            name: "MYREELDREAM",
             description: "Incentivising NFT Holding",
             img: img0,
             nav: 'Avail'

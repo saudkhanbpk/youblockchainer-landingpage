@@ -33,7 +33,7 @@ function Avail() {
                                 </Grid>
                                 <Grid item md={11} xs={11}>
                                     <p style={{ fontSize: '14px' }} >
-                                        From your idea to a one minute pitch
+                                        Idea to one minute pitch
                                     </p>
                                 </Grid>
                                 <Grid item md={1} xs={1}>
@@ -41,7 +41,7 @@ function Avail() {
                                 </Grid>
                                 <Grid item md={11} xs={11}>
                                     <p style={{ fontSize: '14px' }} >
-                                        From your 1 Minute pitch to your Synopsis
+                                        One minute pitch to synopsis
                                     </p>
                                 </Grid>
                                 <Grid item md={1} xs={1}>
@@ -49,7 +49,7 @@ function Avail() {
                                 </Grid>
                                 <Grid item md={11} xs={11}>
                                     <p style={{ fontSize: '14px' }} >
-                                        Synopis to Full lengh script
+                                        Synopsis to full length script
                                     </p>
                                 </Grid>
                                 <Grid item md={1} xs={1}>
@@ -68,6 +68,14 @@ function Avail() {
                                         Script Doctors
                                     </p>
                                 </Grid>
+                                <Grid item md={1} xs={1}>
+                                    <Icon icon="charm:tick-double" width={28} height={28} color="#3770FF5c" />
+                                </Grid>
+                                <Grid item md={11} xs={11}>
+                                    <p style={{ fontSize: '14px' }} >
+                                        Trailer
+                                    </p>
+                                </Grid>
                             </Grid>
                         </CardContent>
                     </Grid>
@@ -80,7 +88,7 @@ function Avail() {
                             </Box>
                             <Grid container style={{ display: 'flex', justifyContent: 'center', alignItems: 'center' }}>
                                 <Grid item md={12} xs={12} sx={{ display: 'flex', alignItems: 'center', marginBottom: '5%' }}>
-                                    <h3 style={{ margin: '0', padding: '0', marginRight: '5%' }}>Pre-Production</h3>
+                                    <h3 style={{ margin: '0', padding: '0', marginRight: '5%' }}>Pre-production</h3>
                                 </Grid>
                                 <Grid item md={1} xs={1}>
                                     <Icon icon="charm:tick-double" width={28} height={28} color="#3770FF5c" />
@@ -111,7 +119,7 @@ function Avail() {
                                 </Grid>
                                 <Grid item md={11} xs={11}>
                                     <p style={{ fontSize: '14px' }} >
-                                        Designing sets & Costumes
+                                        Designing sets & costumes
                                     </p>
                                 </Grid>
                                 <Grid item md={1} xs={1}>
@@ -119,7 +127,7 @@ function Avail() {
                                 </Grid>
                                 <Grid item md={11} xs={11}>
                                     <p style={{ fontSize: '14px' }} >
-                                        Filming on location/Studio
+                                        Filming on location/studio
                                     </p>
                                 </Grid>
                             </Grid>
@@ -141,7 +149,7 @@ function Avail() {
                                 </Grid>
                                 <Grid item md={11} xs={11}>
                                     <p style={{ fontSize: '14px' }} >
-                                        Film Editing
+                                        Film editing
                                     </p>
                                 </Grid>
                                 <Grid item md={1} xs={1}>
