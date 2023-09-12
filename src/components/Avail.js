@@ -88,7 +88,7 @@ function Avail() {
                             </Box>
                             <Grid container style={{ display: 'flex', justifyContent: 'center', alignItems: 'center' }}>
                                 <Grid item md={12} xs={12} sx={{ display: 'flex', alignItems: 'center', marginBottom: '5%' }}>
-                                    <h3 style={{ margin: '0', padding: '0', marginRight: '5%' }}>Pre-production</h3>
+                                    <h3 style={{ margin: '0', padding: '0', marginRight: '5%' }}>Pre-Production</h3>
                                 </Grid>
                                 <Grid item md={1} xs={1}>
                                     <Icon icon="charm:tick-double" width={28} height={28} color="#3770FF5c" />
