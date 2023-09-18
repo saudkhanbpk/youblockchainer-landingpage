@@ -15,18 +15,18 @@ function Avail() {
             <div >
                 <Grid container spacing={3} sx={{ marginTop: '0%' }}>
                     <Grid 
-                    // onClick={() => window.open('https://app.myreeldream.ai/')}
-                     item md={4} sm={6} xs={12} sx={{ marginBottom: { md: '0', sm: '0', xs: '10%' }}} >
+                    onClick={() => window.open('https://app.myreeldream.ai/')}
+                     item md={4} sm={6} xs={12} sx={{ marginBottom: { md: '0', sm: '0', xs: '10%' }, cursor: 'pointer' }} >
                         <CardContent sx={{ backgroundColor: 'white', height: '100%', borderRadius: '20px', boxShadow: 'rgba(235, 235, 235, 0.77) 0px 7px 29px 0px' }}>
                             {/* <CardMedia component='img' image={avail1} sx={{ height: '100px', width: 'auto', marginTop: '-4rem' }} /> */}
                             <Box sx={{ display: 'flex', justifyContent: 'space-between' }}>
                                 <Icon icon="eva:bulb-outline" style={{ height: '100px', width: 'auto', marginTop: '-4rem', color: '#3770FF' }} />
-                                <Chip label='Coming soon' />
+                                {/* <Chip label='Coming soon' /> */}
                             </Box>
 
                             <Grid container style={{ display: 'flex', justifyContent: 'center', alignItems: 'center' }}>
                                 <Grid item md={12} xs={12}>
-                                    <h3 style={{ margin: '0', padding: '0', display: 'flex', alignItems: 'center', marginBottom: '5%' }}>Ideation <ArrowForwardIcon sx={{ cursor: 'pointer', display: { md: 'flex', xs: 'none' } }} /></h3>
+                                    <h3 style={{ margin: '0', padding: '0', display: 'flex', alignItems: 'center', marginBottom: '5%'}}>Ideation <ArrowForwardIcon sx={{ display: { md: 'flex', xs: 'none' } }} /></h3>
                                 </Grid>
                                 <Grid item md={1} xs={1}>
                                     <Icon icon="charm:tick-double" width={28} height={28} color="#3770FF5c" />
@@ -53,26 +53,26 @@ function Avail() {
                                     </p>
                                 </Grid>
                                 <Grid item md={1} xs={1}>
-                                    <Icon icon="charm:tick-double" width={28} height={28} color="#3770FF5c" />
+                                    <Icon icon="charm:tick-double" width={28} height={28} color="#EBEBE4" />
                                 </Grid>
                                 <Grid item md={11} xs={11}>
-                                    <p style={{ fontSize: '14px' }} >
+                                    <p style={{ fontSize: '14px', color: '#909090' }}>
                                         Story board
                                     </p>
                                 </Grid>
                                 <Grid item md={1} xs={1}>
-                                    <Icon icon="charm:tick-double" width={28} height={28} color="#3770FF5c" />
+                                    <Icon icon="charm:tick-double" width={28} height={28} color="#EBEBE4" />
                                 </Grid>
                                 <Grid item md={11} xs={11}>
-                                    <p style={{ fontSize: '14px' }} >
+                                    <p style={{ fontSize: '14px', color: '#909090' }} >
                                         Script doctors
                                     </p>
                                 </Grid>
                                 <Grid item md={1} xs={1}>
-                                    <Icon icon="charm:tick-double" width={28} height={28} color="#3770FF5c" />
+                                    <Icon icon="charm:tick-double" width={28} height={28} color="#EBEBE4" />
                                 </Grid>
                                 <Grid item md={11} xs={11}>
-                                    <p style={{ fontSize: '14px' }} >
+                                    <p style={{ fontSize: '14px', color: '#909090' }} >
                                         Trailer
                                     </p>
                                 </Grid>
