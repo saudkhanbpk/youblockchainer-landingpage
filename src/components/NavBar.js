@@ -133,7 +133,7 @@ export default function ElevateAppBar(props) {
         <CTA />
         <Footer />
         <div style={{ backgroundColor: '#181818', padding: '1%' }}>
-            <p style={{ color: '#BEBEBE', textAlign: 'center', margin: '0', fontFamily: 'Poppins', fontSize: '15px', display:'flex', justifyContent:'center', alignItems:'center' }} >Copyright &copy; 2023, <strong> MYREELDREAM. </strong> All rights reserved. 
+            <p style={{ color: '#BEBEBE', textAlign: 'center', margin: '0', fontFamily: 'Poppins', fontSize: '15px', display:'flex', justifyContent:'center', alignItems:'center' }} >Copyright &copy; {new Date().getFullYear()}, <strong> MYREELDREAM. </strong> All rights reserved. 
             <p style={{  color: '#BEBEBE' }} onClick={() => navigate('/privacy-policy')}> <strong style={{ cursor: 'pointer' }} > &nbsp; Privacy policy</strong></p>
             </p>
         </div>
