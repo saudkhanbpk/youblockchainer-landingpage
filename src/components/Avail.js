@@ -1,196 +1,262 @@
-import { CardContent, CardMedia, Grid, Typography, Box, Chip } from '@mui/material'
-import React from 'react'
-import avail1 from '../images/avail1.png'
-import avail2 from '../images/avail2.png'
-import avail3 from '../images/avail3.png'
-import avail4 from '../images/avail4.png'
-import { Icon } from '@iconify/react'
+import {
+  CardContent,
+  CardMedia,
+  Grid,
+  Typography,
+  Box,
+  Chip,
+} from '@mui/material';
+import React, { useState, useEffect } from 'react';
+import avail1 from '../images/avail1.png';
+import avail2 from '../images/avail2.png';
+import avail3 from '../images/avail3.png';
+import avail4 from '../images/avail4.png';
+import { Icon } from '@iconify/react';
 import ArrowForwardIcon from '@mui/icons-material/ArrowForward';
-
+import axios from 'axios';
 
 function Avail() {
-    return (
-        <Box id='Consumers' sx={{ marginTop: { md: '0%', xs: '23%' }, padding: '3%' }}>
-            {/* <Typography variant='h2' sx={{ fontWeight: 'bold', fontFamily: 'Poppins', margin: '0', padding: '0', fontSize: { md: '4rem', sm: '2rem', xs: '2rem' } }}><strong style={{ color: '#3770FF' }}>Consumers</strong> Get connected to organizations to sell your content</Typography> */}
-            <div >
-                <Grid container spacing={3} sx={{ marginTop: '0%' }}>
-                    <Grid 
-                    onClick={() => window.open('https://app.myreeldream.ai/')}
-                     item md={4} sm={6} xs={12} sx={{ marginBottom: { md: '0', sm: '0', xs: '10%' }, cursor: 'pointer' }} >
-                        <CardContent sx={{ backgroundColor: 'white', height: '100%', borderRadius: '20px', boxShadow: 'rgba(235, 235, 235, 0.77) 0px 7px 29px 0px' }}>
-                            {/* <CardMedia component='img' image={avail1} sx={{ height: '100px', width: 'auto', marginTop: '-4rem' }} /> */}
-                            <Box sx={{ display: 'flex', justifyContent: 'space-between' }}>
-                                <Icon icon="eva:bulb-outline" style={{ height: '100px', width: 'auto', marginTop: '-4rem', color: '#3770FF' }} />
-                                {/* <Chip label='Coming soon' /> */}
-                            </Box>
+  const [ideation, setIdea] = useState([]);
+  const [pre, setPre] = useState([]);
+  const [post, setPost] = useState([]);
 
-                            <Grid container style={{ display: 'flex', justifyContent: 'center', alignItems: 'center' }}>
-                                <Grid item md={12} xs={12}>
-                                    <h3 style={{ margin: '0', padding: '0', display: 'flex', alignItems: 'center', marginBottom: '5%'}}>Ideation <ArrowForwardIcon sx={{ display: { md: 'flex', xs: 'none' } }} /></h3>
-                                </Grid>
-                                <Grid item md={1} xs={1}>
-                                    <Icon icon="charm:tick-double" width={28} height={28} color="#3770FF5c" />
-                                </Grid>
-                                <Grid item md={11} xs={11}>
-                                    <p style={{ fontSize: '14px' }} >
-                                        Idea to one minute pitch
-                                    </p>
-                                </Grid>
-                                <Grid item md={1} xs={1}>
-                                    <Icon icon="charm:tick-double" width={28} height={28} color="#3770FF5c" />
-                                </Grid>
-                                <Grid item md={11} xs={11}>
-                                    <p style={{ fontSize: '14px' }} >
-                                        One minute pitch to synopsis
-                                    </p>
-                                </Grid>
-                                <Grid item md={1} xs={1}>
-                                    <Icon icon="charm:tick-double" width={28} height={28} color="#3770FF5c" />
-                                </Grid>
-                                <Grid item md={11} xs={11}>
-                                    <p style={{ fontSize: '14px' }} >
-                                        Synopsis to full length script
-                                    </p>
-                                </Grid>
-                                <Grid item md={1} xs={1}>
-                                    <Icon icon="charm:tick-double" width={28} height={28} color="#EBEBE4" />
-                                </Grid>
-                                <Grid item md={11} xs={11}>
-                                    <p style={{ fontSize: '14px', color: '#909090' }}>
-                                        Story board
-                                    </p>
-                                </Grid>
-                                <Grid item md={1} xs={1}>
-                                    <Icon icon="charm:tick-double" width={28} height={28} color="#EBEBE4" />
-                                </Grid>
-                                <Grid item md={11} xs={11}>
-                                    <p style={{ fontSize: '14px', color: '#909090' }} >
-                                        Script doctors
-                                    </p>
-                                </Grid>
-                                <Grid item md={1} xs={1}>
-                                    <Icon icon="charm:tick-double" width={28} height={28} color="#EBEBE4" />
-                                </Grid>
-                                <Grid item md={11} xs={11}>
-                                    <p style={{ fontSize: '14px', color: '#909090' }} >
-                                        Trailer
-                                    </p>
-                                </Grid>
-                            </Grid>
-                        </CardContent>
-                    </Grid>
-                    <Grid item md={4} sm={6} xs={12} sx={{ marginBottom: { md: '0', sm: '0', xs: '10%' } }}>
-                        <CardContent sx={{ backgroundColor: 'white', height: '100%', borderRadius: '20px', boxShadow: 'rgba(235, 235, 235, 0.77) 0px 7px 29px 0px' }}>
-                            {/* <CardMedia component='img' image={avail2} sx={{ height: '100px', width: 'auto', marginTop: '-4rem' }} /> */}
-                            <Box sx={{ display: 'flex', justifyContent: 'space-between' }}>
-                                <Icon icon="mdi:movie-edit" style={{ height: '100px', width: 'auto', marginTop: '-4rem', color: '#3770FF' }} />
-                                <Chip label='Coming soon' />
-                            </Box>
-                            <Grid container style={{ display: 'flex', justifyContent: 'center', alignItems: 'center' }}>
-                                <Grid item md={12} xs={12} sx={{ display: 'flex', alignItems: 'center', marginBottom: '5%' }}>
-                                    <h3 style={{ margin: '0', padding: '0', marginRight: '5%' }}>Pre-Production</h3>
-                                </Grid>
-                                <Grid item md={1} xs={1}>
-                                    <Icon icon="charm:tick-double" width={28} height={28} color="#3770FF5c" />
-                                </Grid>
-                                <Grid item md={11} xs={11}>
-                                    <p style={{ fontSize: '14px' }} >
-                                        Casting
-                                    </p>
-                                </Grid>
-                                <Grid item md={1} xs={1}>
-                                    <Icon icon="charm:tick-double" width={28} height={28} color="#3770FF5c" />
-                                </Grid>
-                                <Grid item md={11} xs={11}>
-                                    <p style={{ fontSize: '14px' }} >
-                                        Location scouting
-                                    </p>
-                                </Grid>
-                                <Grid item md={1} xs={1}>
-                                    <Icon icon="charm:tick-double" width={28} height={28} color="#3770FF5c" />
-                                </Grid>
-                                <Grid item md={11} xs={11}>
-                                    <p style={{ fontSize: '14px' }} >
-                                        Production schedule
-                                    </p>
-                                </Grid>
-                                <Grid item md={1} xs={1}>
-                                    <Icon icon="charm:tick-double" width={28} height={28} color="#3770FF5c" />
-                                </Grid>
-                                <Grid item md={11} xs={11}>
-                                    <p style={{ fontSize: '14px' }} >
-                                        Designing sets & costumes
-                                    </p>
-                                </Grid>
-                                <Grid item md={1} xs={1}>
-                                    <Icon icon="charm:tick-double" width={28} height={28} color="#3770FF5c" />
-                                </Grid>
-                                <Grid item md={11} xs={11}>
-                                    <p style={{ fontSize: '14px' }} >
-                                        Filming on location/studio
-                                    </p>
-                                </Grid>
-                            </Grid>
-                        </CardContent>
-                    </Grid>
-                    <Grid item md={4} sm={6} xs={12}>
-                        <CardContent sx={{ backgroundColor: 'white', height: '100%', borderRadius: '20px', boxShadow: 'rgba(235, 235, 235, 0.77) 0px 7px 29px 0px' }}>
-                            {/* <CardMedia component='img' image={avail4} sx={{ height: '100px', width: 'auto', marginTop: '-4rem' }} /> */}
-                            <Box sx={{ display: 'flex', justifyContent: 'space-between' }}>
-                                <Icon icon="ri:movie-2-line" style={{ height: '100px', width: 'auto', marginTop: '-4rem', color: '#3770FF' }} />
-                                <Chip label='Coming soon' />
-                            </Box>
-                            <Grid container style={{ display: 'flex', justifyContent: 'center', alignItems: 'center' }}>
-                                <Grid item md={12} xs={12} sx={{ display: 'flex', alignItems: 'center', marginBottom: '5%' }}>
-                                    <h3 style={{ margin: '0', padding: '0', marginRight: '5%' }}>Post-Production & Distribution</h3>
-                                </Grid>
-                                <Grid item md={1} xs={1}>
-                                    <Icon icon="charm:tick-double" width={28} height={28} color="#3770FF5c" />
-                                </Grid>
-                                <Grid item md={11} xs={11}>
-                                    <p style={{ fontSize: '14px' }} >
-                                        Film editing
-                                    </p>
-                                </Grid>
-                                <Grid item md={1} xs={1}>
-                                    <Icon icon="charm:tick-double" width={28} height={28} color="#3770FF5c" />
-                                </Grid>
-                                <Grid item md={11} xs={11}>
-                                    <p style={{ fontSize: '14px' }} >
-                                        Marketing
-                                    </p>
-                                </Grid>
-                                <Grid item md={1} xs={1}>
-                                    <Icon icon="charm:tick-double" width={28} height={28} color="#3770FF5c" />
-                                </Grid>
-                                <Grid item md={11} xs={11}>
-                                    <p style={{ fontSize: '14px' }} >
-                                        Distribution
-                                    </p>
-                                </Grid>
-                                <Grid item md={1} xs={1}>
-                                    <Icon icon="charm:tick-double" width={28} height={28} color="#3770FF5c" />
-                                </Grid>
-                                <Grid item md={11} xs={11}>
-                                    <p style={{ fontSize: '14px' }} >
-                                        Release
-                                    </p>
-                                </Grid>
-                                <Grid item md={1} xs={1}>
-                                    <Icon icon="charm:tick-double" width={28} height={28} color="#3770FF5c" />
-                                </Grid>
-                                <Grid item md={11} xs={11}>
-                                    <p style={{ fontSize: '14px' }} >
-                                        Post-release
-                                    </p>
-                                </Grid>
-                            </Grid>
-                        </CardContent>
-                    </Grid>
+  const fetchHomeList = async () => {
+    const res = await axios.get(`https://app.myreeldream.ai/api/v1/admin/home`);
+    if (res && res.data && res.data.ideation) {
+      const { ideation, pre, post } = res.data;
+      setIdea(ideation);
+      setPre(pre);
+      setPost(post);
+    }
+  };
+
+  useEffect(() => {
+    fetchHomeList();
+  }, []);
+
+  return (
+    <Box
+      id='Consumers'
+      sx={{ marginTop: { md: '0%', xs: '23%' }, padding: '3%' }}
+    >
+      {/* <Typography variant='h2' sx={{ fontWeight: 'bold', fontFamily: 'Poppins', margin: '0', padding: '0', fontSize: { md: '4rem', sm: '2rem', xs: '2rem' } }}><strong style={{ color: '#3770FF' }}>Consumers</strong> Get connected to organizations to sell your content</Typography> */}
+      <div>
+        <Grid container spacing={3} sx={{ marginTop: '0%' }}>
+          <Grid
+            onClick={() => window.open('https://app.myreeldream.ai/')}
+            item
+            md={4}
+            sm={6}
+            xs={12}
+            sx={{
+              marginBottom: { md: '0', sm: '0', xs: '10%' },
+              cursor: 'pointer',
+            }}
+          >
+            <CardContent
+              sx={{
+                backgroundColor: 'white',
+                height: '100%',
+                borderRadius: '20px',
+                boxShadow: 'rgba(235, 235, 235, 0.77) 0px 7px 29px 0px',
+              }}
+            >
+              {/* <CardMedia component='img' image={avail1} sx={{ height: '100px', width: 'auto', marginTop: '-4rem' }} /> */}
+              <Box sx={{ display: 'flex', justifyContent: 'space-between' }}>
+                <Icon
+                  icon='eva:bulb-outline'
+                  style={{
+                    height: '100px',
+                    width: 'auto',
+                    marginTop: '-4rem',
+                    color: '#3770FF',
+                  }}
+                />
+                {/* <Chip label='Coming soon' /> */}
+              </Box>
+
+              <Grid
+                container
+                style={{
+                  display: 'flex',
+                  justifyContent: 'center',
+                  alignItems: 'center',
+                }}
+              >
+                <Grid item md={12} xs={12}>
+                  <h3
+                    style={{
+                      margin: '0',
+                      padding: '0',
+                      display: 'flex',
+                      alignItems: 'center',
+                      marginBottom: '5%',
+                    }}
+                  >
+                    Ideation{' '}
+                    <ArrowForwardIcon
+                      sx={{ display: { md: 'flex', xs: 'none' } }}
+                    />
+                  </h3>
                 </Grid>
-            </div>
-        </Box >
-    )
+                {ideation.map((idea, index) => (
+                  <>
+                    <Grid item md={1} xs={1} key={index}>
+                      <Icon
+                        icon='charm:tick-double'
+                        width={28}
+                        height={28}
+                        color='#3770FF5c'
+                      />
+                    </Grid>
+                    <Grid item md={11} xs={11} key={index+100}>
+                      <p style={{ fontSize: '14px' }}>
+                        {idea}
+                      </p>
+                    </Grid>
+                  </>
+                ))}
+              </Grid>
+            </CardContent>
+          </Grid>
+          <Grid
+            item
+            md={4}
+            sm={6}
+            xs={12}
+            sx={{ marginBottom: { md: '0', sm: '0', xs: '10%' } }}
+          >
+            <CardContent
+              sx={{
+                backgroundColor: 'white',
+                height: '100%',
+                borderRadius: '20px',
+                boxShadow: 'rgba(235, 235, 235, 0.77) 0px 7px 29px 0px',
+              }}
+            >
+              {/* <CardMedia component='img' image={avail2} sx={{ height: '100px', width: 'auto', marginTop: '-4rem' }} /> */}
+              <Box sx={{ display: 'flex', justifyContent: 'space-between' }}>
+                <Icon
+                  icon='mdi:movie-edit'
+                  style={{
+                    height: '100px',
+                    width: 'auto',
+                    marginTop: '-4rem',
+                    color: '#3770FF',
+                  }}
+                />
+                <Chip label='Coming soon' />
+              </Box>
+              <Grid
+                container
+                style={{
+                  display: 'flex',
+                  justifyContent: 'center',
+                  alignItems: 'center',
+                }}
+              >
+                <Grid
+                  item
+                  md={12}
+                  xs={12}
+                  sx={{
+                    display: 'flex',
+                    alignItems: 'center',
+                    marginBottom: '5%',
+                  }}
+                >
+                  <h3 style={{ margin: '0', padding: '0', marginRight: '5%' }}>
+                    Pre-Production
+                  </h3>
+                </Grid>
+                {pre.map((idea, index) => (
+                  <>
+                    <Grid item md={1} xs={1} key={index}>
+                      <Icon
+                        icon='charm:tick-double'
+                        width={28}
+                        height={28}
+                        color='#3770FF5c'
+                      />
+                    </Grid>
+                    <Grid item md={11} xs={11} key={index+100}>
+                      <p style={{ fontSize: '14px' }}>
+                        {idea}
+                      </p>
+                    </Grid>
+                  </>
+                ))}
+              </Grid>
+            </CardContent>
+          </Grid>
+          <Grid item md={4} sm={6} xs={12}>
+            <CardContent
+              sx={{
+                backgroundColor: 'white',
+                height: '100%',
+                borderRadius: '20px',
+                boxShadow: 'rgba(235, 235, 235, 0.77) 0px 7px 29px 0px',
+              }}
+            >
+              {/* <CardMedia component='img' image={avail4} sx={{ height: '100px', width: 'auto', marginTop: '-4rem' }} /> */}
+              <Box sx={{ display: 'flex', justifyContent: 'space-between' }}>
+                <Icon
+                  icon='ri:movie-2-line'
+                  style={{
+                    height: '100px',
+                    width: 'auto',
+                    marginTop: '-4rem',
+                    color: '#3770FF',
+                  }}
+                />
+                <Chip label='Coming soon' />
+              </Box>
+              <Grid
+                container
+                style={{
+                  display: 'flex',
+                  justifyContent: 'center',
+                  alignItems: 'center',
+                }}
+              >
+                <Grid
+                  item
+                  md={12}
+                  xs={12}
+                  sx={{
+                    display: 'flex',
+                    alignItems: 'center',
+                    marginBottom: '5%',
+                  }}
+                >
+                  <h3 style={{ margin: '0', padding: '0', marginRight: '5%' }}>
+                    Post-Production & Distribution
+                  </h3>
+                </Grid>
+                {post.map((idea, index) => (
+                  <>
+                    <Grid item md={1} xs={1} key={index}>
+                      <Icon
+                        icon='charm:tick-double'
+                        width={28}
+                        height={28}
+                        color='#3770FF5c'
+                      />
+                    </Grid>
+                    <Grid item md={11} xs={11} key={index+100}>
+                      <p style={{ fontSize: '14px' }}>
+                        {idea}
+                      </p>
+                    </Grid>
+                  </>
+                ))}
+              </Grid>
+            </CardContent>
+          </Grid>
+        </Grid>
+      </div>
+    </Box>
+  );
 }
 
-export default Avail
+export default Avail;
