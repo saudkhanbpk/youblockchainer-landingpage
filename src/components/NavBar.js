@@ -148,7 +148,7 @@ export default function ElevateAppBar(props) {
                     textTransform: 'none',
                     fontWeight: 'bold',
                   }}
-                  onClick={() => navigate('/blogs')}
+                  onClick={() => navigate('/blog')}
                 >
                   Blogs
                 </Button>

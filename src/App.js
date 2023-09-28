@@ -7,21 +7,32 @@ import { BrowserRouter as Router } from 'react-router-dom';
 import { Navigate, Outlet, Route, Routes } from 'react-router-dom';
 import PrivacyPolicy from './components/PrivacyPolicy';
 import Knowledge from './components/Knowledge';
+import Blog from './components/Blog';
+import BlogDetails from './components/BlogDetails';
 
 function App() {
   return (
     <Router>
       <Routes>
-      <Route
+        <Route
           exact
-          path='/blogs'
+          path='/blog'
           element={
             <NavBar>
-              <PrivacyPolicy />
+              <Blog />
             </NavBar>
           }
         />
-      <Route
+        <Route
+          exact
+          path='/blog/:blogId'
+          element={
+            <NavBar>
+              <BlogDetails />
+            </NavBar>
+          }
+        />
+        <Route
           exact
           path='/knowledge'
           element={

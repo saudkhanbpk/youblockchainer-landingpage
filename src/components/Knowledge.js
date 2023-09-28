@@ -1,6 +1,7 @@
 import { useEffect, useState } from 'react';
 import { truncate } from 'lodash';
 import axios from 'axios';
+import { Typography } from '@mui/material';
 
 export default function Knowledge() {
   const [knowledgeData, setKnowledgeData] = useState([]);
@@ -53,6 +54,7 @@ export default function Knowledge() {
         }
       />
       <meta name='description' content={knowledgeSeo[0]?.meta_description} /> */}
+      <h2 style={{ marginLeft: '1vw' }}>Knowledge</h2>
       <main className='w-auto h-auto d-flex flex-column mt-5'>
         <div className='shc-dashboard-container'>
           <div className='row row-gap-lg-0 row-gap-4'>
