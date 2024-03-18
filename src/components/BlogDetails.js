@@ -1,12 +1,13 @@
 import { useEffect, useState } from "react";
 import axios from "axios";
 import { useParams } from "react-router-dom";
+import { Typography, Card, CardContent, CardMedia, Avatar } from '@mui/material';
 
 export default function BlogDetails() {
   const [blogs, setBlogs] = useState([]);
   const [loading, setLoading] = useState([]);
   const { blogId } = useParams();
-  
+
   const fetchBlogs = () => {
     axios
       .get(`https://app.myreeldream.ai/api/v1/blog/`)
@@ -21,10 +22,46 @@ export default function BlogDetails() {
   useEffect(() => {
     fetchBlogs();
   }, [blogId]);
+  const post = {
+    title: 'First Post',
+    content: 'Content of the first post. This is just a dummy content for demonstration purposes.',
+    author: {
+      name: 'John Doe',
+      picture: 'https://via.placeholder.com/50',
+    },
+    date: 'March 18, 2024',
+    image: 'https://picsum.photos/id/3/5000/3333',
+  };
+
 
   return (
     <>
-      <main>
+      <Card style={{ maxWidth: 600, margin: 'auto', marginTop: 20, padding: 20, boxShadow: '0px 2px 4px rgba(0, 0, 0, 0.1)' }}>
+        <CardMedia
+          component="img"
+          height="300"
+          image={post.image}
+          title={post.title}
+        />
+        <CardContent>
+          <Typography variant="h5" component="h2" gutterBottom>
+            {post.title}
+          </Typography>
+          <Typography variant="body1" paragraph>
+            {post.content}
+          </Typography>
+          <div style={{ display: 'flex', alignItems: 'center' }}>
+            <Avatar src={post.author.picture} alt={post.author.name} />
+            <Typography variant="body2" style={{ marginLeft: 5, fontWeight: 'bold' }}>
+              {post.author.name}
+            </Typography>
+          </div>
+          <Typography variant="body2" style={{ color: 'gray', marginTop: 5 }}>
+            {post.date}
+          </Typography>
+        </CardContent>
+      </Card>
+      {/* <main>
         { (
           <div className="container-fluid">
             <div >
@@ -50,7 +87,7 @@ export default function BlogDetails() {
             </div>
           </div>
         )}
-      </main>
+      </main> */}
     </>
   );
 }
