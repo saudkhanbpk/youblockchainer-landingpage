@@ -10,6 +10,7 @@ import Knowledge from "./components/Knowledge";
 import Blog from "./components/Blog";
 import BlogDetails from "./components/BlogDetails";
 import ContactUs from "./components/ContactUs";
+import About from "./components/About";
 
 function App() {
   return (
@@ -39,6 +40,15 @@ function App() {
           element={
             <NavBar>
               <Knowledge />
+            </NavBar>
+          }
+        />
+        <Route
+          exact
+          path="/about"
+          element={
+            <NavBar>
+              <About/>
             </NavBar>
           }
         />
