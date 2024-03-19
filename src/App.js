@@ -9,6 +9,8 @@ import PrivacyPolicy from './components/PrivacyPolicy';
 import Knowledge from './components/Knowledge';
 import Blog from './components/Blog';
 import BlogDetails from './components/BlogDetails';
+import About from './components/About';
+import Team from './components/Team';
 
 function App() {
   return (
@@ -47,6 +49,24 @@ function App() {
           element={
             <NavBar>
               <PrivacyPolicy />
+            </NavBar>
+          }
+        />
+        <Route
+          exact
+          path='/about'
+          element={
+            <NavBar>
+              <About />
+            </NavBar>
+          }
+        />
+        <Route
+          exact
+          path='/team'
+          element={
+            <NavBar>
+              <Team />
             </NavBar>
           }
         />

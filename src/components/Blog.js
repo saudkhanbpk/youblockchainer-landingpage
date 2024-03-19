@@ -25,7 +25,10 @@ export default function Blogs() {
       {/* <Head>
         <title>Blogs - My Reel Dream AI</title>
       </Head> */}
+      <section id="blog" style={{height:'300px', border:'1px solid blue'}}>
+       
       <h2 style={{ marginLeft: '1vw' }}>Blogs</h2>
+    </section>
       <main>
         <div className="shc-dashboard-container">
           <div className="mt-5">

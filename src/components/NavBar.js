@@ -138,9 +138,12 @@ export default function ElevateAppBar(props) {
                     textTransform: 'none',
                     fontWeight: 'bold',
                   }}
-                  onClick={() => navigate('/knowledge')}
+                  // onClick={() => navigate('/knowledge')}
                 >
+                  <a href='#knowledge' style={{ textDecoration: 'none' }}>
+                    
                   Knowledge
+                  </a>
                 </Button>
                 <Button
                   sx={{
@@ -148,9 +151,42 @@ export default function ElevateAppBar(props) {
                     textTransform: 'none',
                     fontWeight: 'bold',
                   }}
-                  onClick={() => navigate('/blog')}
+                  // onClick={() => navigate('/blog')}
                 >
+                  
+                  <a href='#blog' style={{ textDecoration: 'none' }}>
+                    
                   Blogs
+                  </a>
+                </Button>
+                <Button
+                  sx={{
+                    color: '#3770FF',
+                    textTransform: 'none',
+                    fontWeight: 'bold',
+                  }}
+                  // onClick={() => navigate('/team')}
+                >
+                  
+                  <a href='#team' style={{ textDecoration: 'none' }}>
+                    
+                  Team
+                    </a>
+                </Button>
+                <Button
+                  sx={{
+                    color: '#3770FF',
+                    textTransform: 'none',
+                    fontWeight: 'bold',
+                  }}
+                  // onClick={() => navigate('/about')}
+                >
+                  
+                  <a href='#about' style={{ textDecoration: 'none' }}>
+                    
+                  About Us
+                    </a>
+                   
                 </Button>
               </Box>
             </Box>
