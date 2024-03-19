@@ -69,321 +69,321 @@
 
 // export default Team;
 
-// import React from "react";
-// import {
-//   Box,
-//   Typography,
-//   Grid,
-//   Container,
-//   Card,
-//   CardContent,
-//   CardMedia,
-// } from "@mui/material";
+import React from "react";
+import {
+  Box,
+  Typography,
+  Grid,
+  Container,
+  Card,
+  CardContent,
+  CardMedia,
+} from "@mui/material";
 
-// const Team = () => {
-//   return (
-//     <Container maxWidth="100%"  style={{ backgroundColor: "#002638", display:'flex', flexDirection:'column', justifyContent:'center' ,height:'600px' }}>
-//       <Box
-//         sx={{ mb: 4 }}
-//         style={{
-
-//           display: "flex",
-//           justifyContent: "center",
-//           flexDirection: "column",
-//           alignItems: "center",
-//           padding: "10px",
-//         }}
-//       >
-//         <Typography
-//           variant="h2"
-//           gutterBottom
-//           component="div"
-//           style={{
-//             fontFamily:
-//               'Jost, ui-sans-serif, system-ui, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji"',
-//             fontWeight: 700,
-//             fontSize: "36px",
-//             lineHeight: "40px",
-//             color: "#ffffff",
-//           }}
-//         >
-//           Meet our team
-//         </Typography>
-//         <Typography variant="body1"
-//         component="div"
-//         style={{
-//           fontFamily:
-//             'Jost, ui-sans-serif, system-ui, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji"',
-//           fontWeight: 500,
-//           fontSize: "16px",
-//           lineHeight: "40px",
-//           color: "gray",
-//         }}>Here is Our Team to Meet.</Typography>
-//       </Box>
-//       <Grid container spacing={4} style={{   display:'flex', justifyContent:'center', justifySelf:'center'}}>
-//         <Grid item xs={12} sm={4}>
-//           <Card
-//             sx={{
-//               borderRadius: 4,
-//               boxShadow: 3,
-//               display: "flex",
-//               justifyContent: "center",
-//               flexDirection: "column",
-//               alignItems: "center",
-//               padding: "10px",
-//             }}
-//           >
-//             <CardMedia
-//               style={{}}
-//               component="img"
-//               image="https://www.pageport.com/img/profiles/max.jpg"
-//               alt="Team Member 2"
-//               sx={{ width: 150, height: 150, borderRadius: "50%" }}
-//             />
-//             <CardContent
-//              style={{
-
-//                 display: "flex",
-//                 justifyContent: "center",
-//                 flexDirection: "column",
-//                 alignItems: "center",
-
-//               }}>
-//               <Typography variant="h5" gutterBottom component="div"
-//               style={{
-//                 fontFamily:
-//                   'Inter var',
-//                 fontWeight: 700,
-//                 fontSize: "22px",
-//                 lineHeight: "40px",
-//                 color: "Gray",
-//               }}>
-//                 John Doe
-//               </Typography>
-//               <Typography variant="body2" color="text.secondary"
-//               style={{
-//                 fontFamily:
-//                   'Inter var',
-//                 fontWeight: 500,
-//                 fontSize: "18px",
-//                 lineHeight: "40px",
-//                 color: "black",
-//               }}>
-//                 Producer
-//               </Typography>
-//             </CardContent>
-//           </Card>
-//         </Grid>
-//         <Grid item xs={12} sm={4}>
-//           <Card
-//             sx={{
-//               borderRadius: 4,
-//               boxShadow: 3,
-//               display: "flex",
-//               justifyContent: "center",
-//               flexDirection: "column",
-//               alignItems: "center",
-//               padding: "10px",
-//             }}
-//           >
-//             <CardMedia
-//               style={{}}
-//               component="img"
-//               image="https://www.pageport.com/img/profiles/max.jpg"
-//               alt="Team Member 2"
-//               sx={{ width: 150, height: 150, borderRadius: "50%" }}
-//             />
-//             <CardContent
-//              style={{
-
-//                 display: "flex",
-//                 justifyContent: "center",
-//                 flexDirection: "column",
-//                 alignItems: "center",
-
-//               }}>
-//               <Typography variant="h5" gutterBottom component="div"
-//               style={{
-//                 fontFamily:
-//                   'Inter var',
-//                 fontWeight: 700,
-//                 fontSize: "22px",
-//                 lineHeight: "40px",
-//                 color: "Gray",
-//               }}>
-//                 John Doe
-//               </Typography>
-//               <Typography variant="body2" color="text.secondary"
-//               style={{
-//                 fontFamily:
-//                   'Inter var',
-//                 fontWeight: 500,
-//                 fontSize: "18px",
-//                 lineHeight: "40px",
-//                 color: "black",
-//               }}>
-//                 Producer
-//               </Typography>
-//             </CardContent>
-//           </Card>
-//         </Grid>
-
-//       </Grid>
-//     </Container>
-//   );
-// };
-
-// export default Team;
-
-import React from 'react';
-import { makeStyles } from '@material-ui/core/styles';
-import Card from '@material-ui/core/Card';
-import CardContent from '@material-ui/core/CardContent';
-import Typography from '@material-ui/core/Typography';
-import Button from '@material-ui/core/Button';
-import Grid from '@material-ui/core/Grid';
-import { Box } from '@mui/material';
-
-const useStyles = makeStyles((theme) => ({
-  root: {
-    flexGrow: 1,
-    padding: theme.spacing(4),
-  },
-  card: {
-    display: 'flex',
-    flexDirection: 'column',
-            color: "#ffffff",
-
-    borderRadius: theme.spacing(1),
-    boxShadow: '0px 4px 8px rgba(0, 0, 0, 0.1)',
-    transition: 'box-shadow 0.3s ease',
-    '&:hover': {
-      boxShadow: '0px 8px 16px rgba(0, 0, 0, 1)',
-    },
-    // border:'5px solid red',
-    width:'310px',
-    height:'400px'
-  },
-  title: {
-    fontSize: '24px',
-    fontWeight: 'bold',
-    marginBottom: theme.spacing(1),
-  },
-  price: {
-    fontSize: '36px',
-    fontWeight: 'bold',
-    display:'flex',
-    flexDirection:'column',
-    marginBottom: theme.spacing(1),
-  },
-  button: {
-    marginTop: theme.spacing(2),
-    backgroundColor:'yellow',
-    // width:'100%'
-  },
-  featureList: {
-    marginTop: theme.spacing(1),
-  },
-  feature: {
-    fontSize: '16px',
-    marginBottom: theme.spacing(0.5),
-    display: 'flex',
-    alignItems: 'center',
-
-  },
-}));
-
-function Pricing() {
-  const classes = useStyles();
-
-  const plans = [
-    {
-      title: 'Free',
-      // price: 0,
-      features: [
-        '10 mins/wk of AI generation',
-        '10 GB storage',
-        'Limited exports',
-        '4 exports/wk with invideo logo',
-        '2.5M-standard media',
-      ],
-      buttonLabel: 'Try For Free',
-    },
-    {
-      title: 'Business',
-      price: 20,
-      features: [
-        '50 mins/mo of AI generation',
-        '100 GB storage',
-        'Unlimited exports',
-        'Up to 1 user',
-        '40/mo iStock',
-      ],
-      buttonLabel: 'Subscribe Now',
-    },
-    {
-      title: 'Professional',
-      price: 40,
-      features: [
-        '200 mins/mo of AI generation',
-        '400 GB storage',
-        'Unlimited exports',
-        'Up to 1 user',
-        '160/mo iStock',
-      ],
-      buttonLabel: 'Buy Now',
-    },
-  ];
-
+const Team = () => {
   return (
-    <div className={classes.root}>
-      <Grid container spacing={3}>
-        {plans.map((plan) => (
-          <Grid item xs={12} sm={6} md={4} key={plan.title}>
-            <Card className={classes.card} style={{backgroundColor: "#002638",}}>
-              <CardContent>
-                <Typography className={classes.title}>{plan.title}</Typography>
-                {/* <Typography  className={classes.price}>${plan.price}
-                <span style={{fontSize:'16px'}}>
-                PER MONTH </span>
-                 </Typography> */}
-                <Button variant="contained"  className={classes.button}>
-                  {plan.buttonLabel}
-                </Button>
-                <div style={{paddingTop:'12px'}}>
-                    <Typography style={{fontSize:'20px',
+    <Container maxWidth="100%"  style={{ backgroundColor: "#002638", display:'flex', flexDirection:'column', justifyContent:'center' ,height:'600px' }}>
+      <Box
+        sx={{ mb: 4 }}
+        style={{
+
+          display: "flex",
+          justifyContent: "center",
+          flexDirection: "column",
+          alignItems: "center",
+          padding: "10px",
+        }}
+      >
+        <Typography
+          variant="h2"
+          gutterBottom
+          component="div"
+          style={{
             fontFamily:
               'Jost, ui-sans-serif, system-ui, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji"',
             fontWeight: 700,
-            fontSize: "26px",
+            fontSize: "36px",
             lineHeight: "40px",
             color: "#ffffff",
-          }}>Features</Typography>
-                </div>
+          }}
+        >
+          Meet our team
+        </Typography>
+        <Typography variant="body1"
+        component="div"
+        style={{
+          fontFamily:
+            'Jost, ui-sans-serif, system-ui, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji"',
+          fontWeight: 500,
+          fontSize: "16px",
+          lineHeight: "40px",
+          color: "gray",
+        }}>Here is Our Team to Meet.</Typography>
+      </Box>
+      <Grid container spacing={4} style={{   display:'flex', justifyContent:'center', justifySelf:'center'}}>
+        <Grid item xs={12} sm={4}>
+          <Card
+            sx={{
+              borderRadius: 4,
+              boxShadow: 3,
+              display: "flex",
+              justifyContent: "center",
+              flexDirection: "column",
+              alignItems: "center",
+              padding: "10px",
+            }}
+          >
+            <CardMedia
+              style={{}}
+              component="img"
+              image="https://www.pageport.com/img/profiles/max.jpg"
+              alt="Team Member 2"
+              sx={{ width: 150, height: 150, borderRadius: "50%" }}
+            />
+            <CardContent
+             style={{
 
-                <div className={classes.featureList}>
-                  {plan.features.map((feature, index) => (
+                display: "flex",
+                justifyContent: "center",
+                flexDirection: "column",
+                alignItems: "center",
 
-                      <Typography key={index} className={classes.feature}>
+              }}>
+              <Typography variant="h5" gutterBottom component="div"
+              style={{
+                fontFamily:
+                  'Inter var',
+                fontWeight: 700,
+                fontSize: "22px",
+                lineHeight: "40px",
+                color: "Gray",
+              }}>
+                John Doe
+              </Typography>
+              <Typography variant="body2" color="text.secondary"
+              style={{
+                fontFamily:
+                  'Inter var',
+                fontWeight: 500,
+                fontSize: "18px",
+                lineHeight: "40px",
+                color: "black",
+              }}>
+                Producer
+              </Typography>
+            </CardContent>
+          </Card>
+        </Grid>
+        <Grid item xs={12} sm={4}>
+          <Card
+            sx={{
+              borderRadius: 4,
+              boxShadow: 3,
+              display: "flex",
+              justifyContent: "center",
+              flexDirection: "column",
+              alignItems: "center",
+              padding: "10px",
+            }}
+          >
+            <CardMedia
+              style={{}}
+              component="img"
+              image="https://www.pageport.com/img/profiles/max.jpg"
+              alt="Team Member 2"
+              sx={{ width: 150, height: 150, borderRadius: "50%" }}
+            />
+            <CardContent
+             style={{
 
-                      <span role="img" aria-label="Checkmark">
-                        ✔️
-                      </span>
-                     <span style={{marginLeft:'4px'}}>{feature}</span> 
-                    </Typography>
+                display: "flex",
+                justifyContent: "center",
+                flexDirection: "column",
+                alignItems: "center",
 
-                  ))}
-                </div>
-              </CardContent>
-            </Card>
-          </Grid>
-        ))}
+              }}>
+              <Typography variant="h5" gutterBottom component="div"
+              style={{
+                fontFamily:
+                  'Inter var',
+                fontWeight: 700,
+                fontSize: "22px",
+                lineHeight: "40px",
+                color: "Gray",
+              }}>
+                John Doe
+              </Typography>
+              <Typography variant="body2" color="text.secondary"
+              style={{
+                fontFamily:
+                  'Inter var',
+                fontWeight: 500,
+                fontSize: "18px",
+                lineHeight: "40px",
+                color: "black",
+              }}>
+                Producer
+              </Typography>
+            </CardContent>
+          </Card>
+        </Grid>
+
       </Grid>
-    </div>
+    </Container>
   );
-}
+};
 
-export default Pricing;
+export default Team;
+
+// import React from 'react';
+// import { makeStyles } from '@material-ui/core/styles';
+// import Card from '@material-ui/core/Card';
+// import CardContent from '@material-ui/core/CardContent';
+// import Typography from '@material-ui/core/Typography';
+// import Button from '@material-ui/core/Button';
+// import Grid from '@material-ui/core/Grid';
+// import { Box } from '@mui/material';
+
+// const useStyles = makeStyles((theme) => ({
+//   root: {
+//     flexGrow: 1,
+//     padding: theme.spacing(4),
+//   },
+//   card: {
+//     display: 'flex',
+//     flexDirection: 'column',
+//             color: "#ffffff",
+
+//     borderRadius: theme.spacing(1),
+//     boxShadow: '0px 4px 8px rgba(0, 0, 0, 0.1)',
+//     transition: 'box-shadow 0.3s ease',
+//     '&:hover': {
+//       boxShadow: '0px 8px 16px rgba(0, 0, 0, 1)',
+//     },
+//     // border:'5px solid red',
+//     width:'310px',
+//     height:'400px'
+//   },
+//   title: {
+//     fontSize: '24px',
+//     fontWeight: 'bold',
+//     marginBottom: theme.spacing(1),
+//   },
+//   price: {
+//     fontSize: '36px',
+//     fontWeight: 'bold',
+//     display:'flex',
+//     flexDirection:'column',
+//     marginBottom: theme.spacing(1),
+//   },
+//   button: {
+//     marginTop: theme.spacing(2),
+//     backgroundColor:'yellow',
+//     // width:'100%'
+//   },
+//   featureList: {
+//     marginTop: theme.spacing(1),
+//   },
+//   feature: {
+//     fontSize: '16px',
+//     marginBottom: theme.spacing(0.5),
+//     display: 'flex',
+//     alignItems: 'center',
+
+//   },
+// }));
+
+// function Pricing() {
+//   const classes = useStyles();
+
+//   const plans = [
+//     {
+//       title: 'Free',
+//       // price: 0,
+//       features: [
+//         '10 mins/wk of AI generation',
+//         '10 GB storage',
+//         'Limited exports',
+//         '4 exports/wk with invideo logo',
+//         '2.5M-standard media',
+//       ],
+//       buttonLabel: 'Try For Free',
+//     },
+//     {
+//       title: 'Business',
+//       price: 20,
+//       features: [
+//         '50 mins/mo of AI generation',
+//         '100 GB storage',
+//         'Unlimited exports',
+//         'Up to 1 user',
+//         '40/mo iStock',
+//       ],
+//       buttonLabel: 'Subscribe Now',
+//     },
+//     {
+//       title: 'Professional',
+//       price: 40,
+//       features: [
+//         '200 mins/mo of AI generation',
+//         '400 GB storage',
+//         'Unlimited exports',
+//         'Up to 1 user',
+//         '160/mo iStock',
+//       ],
+//       buttonLabel: 'Buy Now',
+//     },
+//   ];
+
+//   return (
+//     <div className={classes.root}>
+//       <Grid container spacing={3}>
+//         {plans.map((plan) => (
+//           <Grid item xs={12} sm={6} md={4} key={plan.title}>
+//             <Card className={classes.card} style={{backgroundColor: "#002638",}}>
+//               <CardContent>
+//                 <Typography className={classes.title}>{plan.title}</Typography>
+//                 {/* <Typography  className={classes.price}>${plan.price}
+//                 <span style={{fontSize:'16px'}}>
+//                 PER MONTH </span>
+//                  </Typography> */}
+//                 <Button variant="contained"  className={classes.button}>
+//                   {plan.buttonLabel}
+//                 </Button>
+//                 <div style={{paddingTop:'12px'}}>
+//                     <Typography style={{fontSize:'20px',
+//             fontFamily:
+//               'Jost, ui-sans-serif, system-ui, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji"',
+//             fontWeight: 700,
+//             fontSize: "26px",
+//             lineHeight: "40px",
+//             color: "#ffffff",
+//           }}>Features</Typography>
+//                 </div>
+
+//                 <div className={classes.featureList}>
+//                   {plan.features.map((feature, index) => (
+
+//                       <Typography key={index} className={classes.feature}>
+
+//                       <span role="img" aria-label="Checkmark">
+//                         ✔️
+//                       </span>
+//                      <span style={{marginLeft:'4px'}}>{feature}</span> 
+//                     </Typography>
+
+//                   ))}
+//                 </div>
+//               </CardContent>
+//             </Card>
+//           </Grid>
+//         ))}
+//       </Grid>
+//     </div>
+//   );
+// }
+
+// export default Pricing;
 
 // import React from "react";
 // import { makeStyles } from "@material-ui/core/styles";
