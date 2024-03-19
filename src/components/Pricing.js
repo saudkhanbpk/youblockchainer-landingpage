@@ -135,6 +135,8 @@ function Pricing() {
   ];
 
   return (
+    <section id='pricing'>
+
     <div className={classes.root}>
       <Grid
         container
@@ -300,6 +302,7 @@ function Pricing() {
         </div>
       </Modal>
     </div>
+    </section>
   );
 }
 

@@ -132,13 +132,14 @@ export default function ElevateAppBar(props) {
                                     Creators
                                 </Button>
                             </Link> */}
+                
                 <Button
                   sx={{
                     color: '#3770FF',
                     textTransform: 'none',
                     fontWeight: 'bold',
                   }}
-                  // onClick={() => navigate('/knowledge')}
+                  onClick={() => navigate('/knowledge')}
                 >
                   <a href='#knowledge' style={{ textDecoration: 'none' }}>
                     
@@ -187,6 +188,20 @@ export default function ElevateAppBar(props) {
                   About Us
                     </a>
                    
+                </Button>
+                <Button
+                  sx={{
+                    color: '#3770FF',
+                    textTransform: 'none',
+                    fontWeight: 'bold',
+                  }}
+                  // onClick={() => navigate('/contactus')}
+                >
+                  <a href='#contact' style={{ textDecoration: 'none' }}>
+                    
+                  Contact Us
+                  
+                  </a>
                 </Button>
               </Box>
             </Box>

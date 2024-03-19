@@ -417,6 +417,8 @@ function Avail() {
   ];
 
   return (
+    <section id="avail">
+
     <div className={classes.root}>
       <Grid
         container
@@ -582,6 +584,7 @@ function Avail() {
         </div>
       </Modal>
     </div>
+    </section>
   );
 }
 

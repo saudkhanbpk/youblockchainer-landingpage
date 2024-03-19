@@ -82,6 +82,7 @@ import {
 
 const Team = () => {
   return (
+    <section id='team'>
     <Container maxWidth="100%"  style={{ backgroundColor: "#002638", display:'flex', flexDirection:'column', justifyContent:'center' ,height:'600px' }}>
       <Box
         sx={{ mb: 4 }}
@@ -230,6 +231,8 @@ const Team = () => {
 
       </Grid>
     </Container>
+
+    </section>
   );
 };
 
