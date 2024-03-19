@@ -1,14 +1,15 @@
-import NavBar from './components/NavBar';
-import LandingPage from './LandingPage';
-import Aos from 'aos';
-import 'aos/dist/aos.css';
-import { useEffect } from 'react';
-import { BrowserRouter as Router } from 'react-router-dom';
-import { Navigate, Outlet, Route, Routes } from 'react-router-dom';
-import PrivacyPolicy from './components/PrivacyPolicy';
-import Knowledge from './components/Knowledge';
-import Blog from './components/Blog';
-import BlogDetails from './components/BlogDetails';
+import NavBar from "./components/NavBar";
+import LandingPage from "./LandingPage";
+import Aos from "aos";
+import "aos/dist/aos.css";
+import { useEffect } from "react";
+import { BrowserRouter as Router } from "react-router-dom";
+import { Navigate, Outlet, Route, Routes } from "react-router-dom";
+import PrivacyPolicy from "./components/PrivacyPolicy";
+import Knowledge from "./components/Knowledge";
+import Blog from "./components/Blog";
+import BlogDetails from "./components/BlogDetails";
+import ContactUs from "./components/ContactUs";
 
 function App() {
   return (
@@ -16,7 +17,7 @@ function App() {
       <Routes>
         <Route
           exact
-          path='/blog'
+          path="/blog"
           element={
             <NavBar>
               <Blog />
@@ -25,7 +26,7 @@ function App() {
         />
         <Route
           exact
-          path='/blog/:blogId'
+          path="/blog/:blogId"
           element={
             <NavBar>
               <BlogDetails />
@@ -34,7 +35,7 @@ function App() {
         />
         <Route
           exact
-          path='/knowledge'
+          path="/knowledge"
           element={
             <NavBar>
               <Knowledge />
@@ -43,7 +44,7 @@ function App() {
         />
         <Route
           exact
-          path='/privacy-policy'
+          path="/privacy-policy"
           element={
             <NavBar>
               <PrivacyPolicy />
@@ -51,7 +52,16 @@ function App() {
           }
         />
         <Route
-          path='*'
+          exact
+          path="/contactus"
+          element={
+            <NavBar>
+              <ContactUs />
+            </NavBar>
+          }
+        />
+        <Route
+          path="*"
           element={
             <NavBar>
               <LandingPage />
