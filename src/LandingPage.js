@@ -9,6 +9,10 @@ import Herosection from './components/Herosection'
 import { Box, Typography, Button } from '@mui/material'
 import BasicModal from './components/Modal'
 import axios from 'axios'
+import Knowledge from './components/Knowledge'
+import Team from './components/Team'
+import Blogs from './components/Blog'
+import ContactUs from './components/ContactUs'
 
 function LandingPage() {
     const [open, setOpen] = useState(false);
@@ -27,7 +31,13 @@ func()
             {/* <Brands />
             <Communities /> */}
             {/* <Artists /> */}
-            <Avail />
+            <Avail  />
+            <Knowledge />
+            <Blogs/>
+            <Team />
+            <About />
+            {/* <About/> */}
+            <ContactUs/>
             <Box sx={{padding:{md:'0% 20%', xs:'0% 10%'}}}>
             <Typography variant='h2' sx={{ fontWeight: 'bold', textAlign:'center', fontFamily: 'Poppins', margin: '0', padding: '0', fontSize: { md: '1.5rem', sm: '2rem', xs: '1.5rem' } }}><strong style={{ color: '#3770FF' }}>Get Started</strong> with your own movie production studio for Free</Typography>
             <Box sx={{display:'flex', justifyContent:'space-evenly'}}>

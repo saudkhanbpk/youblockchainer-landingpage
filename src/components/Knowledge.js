@@ -54,7 +54,9 @@ export default function Knowledge() {
         }
       />
       <meta name='description' content={knowledgeSeo[0]?.meta_description} /> */}
+      <section id="knowledge" style={{height:'300px', border:'1px solid green'}}>   
       <h2 style={{ marginLeft: '1vw' }}>Knowledge</h2>
+    </section>
       <main className='w-auto h-auto d-flex flex-column mt-5'>
         <div className='shc-dashboard-container'>
           <div className='row row-gap-lg-0 row-gap-4'>
