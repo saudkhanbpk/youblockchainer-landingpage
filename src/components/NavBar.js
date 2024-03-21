@@ -8,7 +8,7 @@ import Drawer from '@mui/material/Drawer';
 import IconButton from '@mui/material/IconButton';
 import MenuIcon from '@mui/icons-material/Menu';
 import Toolbar from '@mui/material/Toolbar';
-import logo from '../images/logo.png';
+import logo from '../images/artboard_2_copy_3_2_.png';
 import text from '../images/text.png';
 import { CardMedia, Typography } from '@mui/material';
 import { Link } from 'react-scroll';
@@ -104,19 +104,19 @@ export default function ElevateAppBar(props) {
                         >
                             <MenuIcon />
                         </IconButton> */}
-              <CardMedia
+              {/* <CardMedia
                 component='img'
                 image={logo}
                 sx={{ height: '40px', width: 'auto' }}
-              />
+              /> */}
               <CardMedia
                 component='img'
                 onClick={() => navigate('/')}
-                image={text}
+                image={logo}
                 sx={{
-                  height: '25px',
+                  height: '30px',
                   cursor: 'pointer',
-                  width: 'auto',
+                  width: '150px',
                   marginLeft: '10px',
                   marginRight: '2vw',
                 }}
@@ -132,7 +132,7 @@ export default function ElevateAppBar(props) {
                                     Creators
                                 </Button>
                             </Link> */}
-                
+
                 <Button
                   sx={{
                     color: '#3770FF',
@@ -141,9 +141,11 @@ export default function ElevateAppBar(props) {
                   }}
                   onClick={() => navigate('/knowledge')}
                 >
-                  <a href='#knowledge' style={{ textDecoration: 'none' }}>
-                    
-                  Knowledge
+                  <a href='#knowledge' style={{
+                    textDecoration: 'none', color: '#3770FF',
+                  }}>
+
+                    Knowledge
                   </a>
                 </Button>
                 <Button
@@ -152,12 +154,14 @@ export default function ElevateAppBar(props) {
                     textTransform: 'none',
                     fontWeight: 'bold',
                   }}
-                  // onClick={() => navigate('/blog')}
+                // onClick={() => navigate('/blog')}
                 >
-                  
-                  <a href='#blog' style={{ textDecoration: 'none' }}>
-                    
-                  Blogs
+
+                  <a href='#blog' style={{
+                    textDecoration: 'none', color: '#3770FF',
+                  }}>
+
+                    Blogs
                   </a>
                 </Button>
                 <Button
@@ -166,13 +170,15 @@ export default function ElevateAppBar(props) {
                     textTransform: 'none',
                     fontWeight: 'bold',
                   }}
-                  // onClick={() => navigate('/team')}
+                // onClick={() => navigate('/team')}
                 >
-                  
-                  <a href='#team' style={{ textDecoration: 'none' }}>
-                    
-                  Team
-                    </a>
+
+                  <a href='#team' style={{
+                    textDecoration: 'none', color: '#3770FF',
+                  }}>
+
+                    Team
+                  </a>
                 </Button>
                 <Button
                   sx={{
@@ -180,14 +186,16 @@ export default function ElevateAppBar(props) {
                     textTransform: 'none',
                     fontWeight: 'bold',
                   }}
-                  // onClick={() => navigate('/about')}
+                // onClick={() => navigate('/about')}
                 >
-                  
-                  <a href='#about' style={{ textDecoration: 'none' }}>
-                    
-                  About Us
-                    </a>
-                   
+
+                  <a href='#about' style={{
+                    textDecoration: 'none', color: '#3770FF',
+                  }}>
+
+                    About Us
+                  </a>
+
                 </Button>
                 <Button
                   sx={{
@@ -195,12 +203,14 @@ export default function ElevateAppBar(props) {
                     textTransform: 'none',
                     fontWeight: 'bold',
                   }}
-                  // onClick={() => navigate('/contactus')}
+                // onClick={() => navigate('/contactus')}
                 >
-                  <a href='#contact' style={{ textDecoration: 'none' }}>
-                    
-                  Contact Us
-                  
+                  <a href='#contact' style={{
+                    textDecoration: 'none', color: '#3770FF',
+                  }}>
+
+                    Contact Us
+
                   </a>
                 </Button>
               </Box>

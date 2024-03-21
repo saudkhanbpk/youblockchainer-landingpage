@@ -1,3 +1,163 @@
+import React from "react";
+import {
+  Box,
+  Typography,
+  Grid,
+  Container,
+  Card,
+  CardContent,
+  CardMedia,
+} from "@mui/material";
+import { motion } from "framer-motion";
+import { useInView } from "react-intersection-observer";
+
+const Team = () => {
+  const { ref, inView } = useInView({
+    triggerOnce: false,
+    threshold: 0.5,
+  });
+
+  return (
+    <section id="team">
+      <motion.div
+        ref={ref}
+        initial={{ opacity: 0, y: 20 }}
+        animate={inView ? { opacity: 1, y: 0 } : {}}
+        transition={{ duration: 0.6 }}
+        style={{
+          backgroundColor: "#002638",
+          display: "flex",
+          flexDirection: "column",
+          justifyContent: "center",
+          height: "600px",
+        }}
+      >
+        <Container maxWidth="100%">
+          <Box
+            sx={{
+              mb: 4,
+            }}
+            style={{
+              display: "flex",
+              justifyContent: "center",
+              flexDirection: "column",
+              alignItems: "center",
+              padding: "10px",
+            }}
+          >
+            <Typography
+              variant="h2"
+              gutterBottom
+              component="div"
+              style={{
+                fontFamily:
+                  'Jost, ui-sans-serif, system-ui, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji"',
+                fontWeight: 700,
+                fontSize: "36px",
+                lineHeight: "40px",
+                color: "#ffffff",
+              }}
+            >
+              Meet our team
+            </Typography>
+            <Typography
+              variant="body1"
+              component="div"
+              style={{
+                fontFamily:
+                  'Jost, ui-sans-serif, system-ui, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji"',
+                fontWeight: 500,
+                fontSize: "16px",
+                lineHeight: "40px",
+                color: "gray",
+              }}
+            >
+              Here is Our Team to Meet.
+            </Typography>
+          </Box>
+          <Grid
+            container
+            spacing={4}
+            style={{
+              display: "flex",
+              justifyContent: "center",
+              justifySelf: "center",
+            }}
+          >
+            {Array.from({ length: 2 }).map((_, index) => (
+              <Grid item xs={12} sm={4} key={index}>
+                <motion.div
+                  initial={{ opacity: 0, y: 20 }}
+                  animate={inView ? { opacity: 1, y: 0 } : {}}
+                  transition={{ duration: 0.6, delay: index * 0.2 }}
+                >
+                  <Card
+                    sx={{
+                      borderRadius: 4,
+                      boxShadow: 3,
+                      display: "flex",
+                      justifyContent: "center",
+                      flexDirection: "column",
+                      alignItems: "center",
+                      padding: "10px",
+                    }}
+                  >
+                    <CardMedia
+                      style={{}}
+                      component="img"
+                      image="https://www.pageport.com/img/profiles/max.jpg"
+                      alt="Team Member 2"
+                      sx={{ width: 150, height: 150, borderRadius: "50%" }}
+                    />
+                    <CardContent
+                      style={{
+                        display: "flex",
+                        justifyContent: "center",
+                        flexDirection: "column",
+                        alignItems: "center",
+                      }}
+                    >
+                      <Typography
+                        variant="h5"
+                        gutterBottom
+                        component="div"
+                        style={{
+                          fontFamily: "Inter var",
+                          fontWeight: 700,
+                          fontSize: "22px",
+                          lineHeight: "40px",
+                          color: "Gray",
+                        }}
+                      >
+                        John Doe
+                      </Typography>
+                      <Typography
+                        variant="body2"
+                        color="text.secondary"
+                        style={{
+                          fontFamily: "Inter var",
+                          fontWeight: 500,
+                          fontSize: "18px",
+                          lineHeight: "40px",
+                          color: "black",
+                        }}
+                      >
+                        Producer
+                      </Typography>
+                    </CardContent>
+                  </Card>
+                </motion.div>
+              </Grid>
+            ))}
+          </Grid>
+        </Container>
+      </motion.div>
+    </section>
+  );
+};
+
+export default Team;
+
 // // import React from 'react'
 
 // // const Team = () => {
@@ -68,176 +228,6 @@
 // };
 
 // export default Team;
-
-import React from "react";
-import {
-  Box,
-  Typography,
-  Grid,
-  Container,
-  Card,
-  CardContent,
-  CardMedia,
-} from "@mui/material";
-
-const Team = () => {
-  return (
-    <section id='team'>
-    <Container maxWidth="100%"  style={{ backgroundColor: "#002638", display:'flex', flexDirection:'column', justifyContent:'center' ,height:'600px' }}>
-      <Box
-        sx={{ mb: 4 }}
-        style={{
-
-          display: "flex",
-          justifyContent: "center",
-          flexDirection: "column",
-          alignItems: "center",
-          padding: "10px",
-        }}
-      >
-        <Typography
-          variant="h2"
-          gutterBottom
-          component="div"
-          style={{
-            fontFamily:
-              'Jost, ui-sans-serif, system-ui, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji"',
-            fontWeight: 700,
-            fontSize: "36px",
-            lineHeight: "40px",
-            color: "#ffffff",
-          }}
-        >
-          Meet our team
-        </Typography>
-        <Typography variant="body1"
-        component="div"
-        style={{
-          fontFamily:
-            'Jost, ui-sans-serif, system-ui, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji"',
-          fontWeight: 500,
-          fontSize: "16px",
-          lineHeight: "40px",
-          color: "gray",
-        }}>Here is Our Team to Meet.</Typography>
-      </Box>
-      <Grid container spacing={4} style={{   display:'flex', justifyContent:'center', justifySelf:'center'}}>
-        <Grid item xs={12} sm={4}>
-          <Card
-            sx={{
-              borderRadius: 4,
-              boxShadow: 3,
-              display: "flex",
-              justifyContent: "center",
-              flexDirection: "column",
-              alignItems: "center",
-              padding: "10px",
-            }}
-          >
-            <CardMedia
-              style={{}}
-              component="img"
-              image="https://www.pageport.com/img/profiles/max.jpg"
-              alt="Team Member 2"
-              sx={{ width: 150, height: 150, borderRadius: "50%" }}
-            />
-            <CardContent
-             style={{
-
-                display: "flex",
-                justifyContent: "center",
-                flexDirection: "column",
-                alignItems: "center",
-
-              }}>
-              <Typography variant="h5" gutterBottom component="div"
-              style={{
-                fontFamily:
-                  'Inter var',
-                fontWeight: 700,
-                fontSize: "22px",
-                lineHeight: "40px",
-                color: "Gray",
-              }}>
-                John Doe
-              </Typography>
-              <Typography variant="body2" color="text.secondary"
-              style={{
-                fontFamily:
-                  'Inter var',
-                fontWeight: 500,
-                fontSize: "18px",
-                lineHeight: "40px",
-                color: "black",
-              }}>
-                Producer
-              </Typography>
-            </CardContent>
-          </Card>
-        </Grid>
-        <Grid item xs={12} sm={4}>
-          <Card
-            sx={{
-              borderRadius: 4,
-              boxShadow: 3,
-              display: "flex",
-              justifyContent: "center",
-              flexDirection: "column",
-              alignItems: "center",
-              padding: "10px",
-            }}
-          >
-            <CardMedia
-              style={{}}
-              component="img"
-              image="https://www.pageport.com/img/profiles/max.jpg"
-              alt="Team Member 2"
-              sx={{ width: 150, height: 150, borderRadius: "50%" }}
-            />
-            <CardContent
-             style={{
-
-                display: "flex",
-                justifyContent: "center",
-                flexDirection: "column",
-                alignItems: "center",
-
-              }}>
-              <Typography variant="h5" gutterBottom component="div"
-              style={{
-                fontFamily:
-                  'Inter var',
-                fontWeight: 700,
-                fontSize: "22px",
-                lineHeight: "40px",
-                color: "Gray",
-              }}>
-                John Doe
-              </Typography>
-              <Typography variant="body2" color="text.secondary"
-              style={{
-                fontFamily:
-                  'Inter var',
-                fontWeight: 500,
-                fontSize: "18px",
-                lineHeight: "40px",
-                color: "black",
-              }}>
-                Producer
-              </Typography>
-            </CardContent>
-          </Card>
-        </Grid>
-
-      </Grid>
-    </Container>
-
-    </section>
-  );
-};
-
-export default Team;
-
 // import React from 'react';
 // import { makeStyles } from '@material-ui/core/styles';
 // import Card from '@material-ui/core/Card';
@@ -372,7 +362,7 @@ export default Team;
 //                       <span role="img" aria-label="Checkmark">
 //                         ✔️
 //                       </span>
-//                      <span style={{marginLeft:'4px'}}>{feature}</span> 
+//                      <span style={{marginLeft:'4px'}}>{feature}</span>
 //                     </Typography>
 
 //                   ))}
@@ -630,7 +620,7 @@ export default Team;
 //     </Card>
 
 //         </Grid>
-        
+
 
 //         {/* <Grid item xs={12} sm={6} md={4}>
 //           <Card className={classes.card}>
