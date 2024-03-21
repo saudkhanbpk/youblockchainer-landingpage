@@ -23,6 +23,9 @@ import Team from './components/Team';
 // import Blog from "./components/Blog";
 // import BlogDetails from "./components/BlogDetails";
 import ContactUs from "./components/ContactUs";
+import FilmLocation from './components/FilmLocation';
+import Festival from './components/Festival';
+
 // import About from "./components/About";
 
 function App() {
@@ -36,6 +39,28 @@ function App() {
             <NavBar>
               <Blog />
             </NavBar>
+          }
+        />
+        <Route
+          exact
+          path="/film"
+          element={
+            
+            <NavBar>
+              <FilmLocation/>
+            </NavBar>
+            
+          }
+        />
+        <Route
+          exact
+          path="/festival"
+          element={
+            
+            <NavBar>
+              <Festival />
+            </NavBar>
+            
           }
         />
         <Route
