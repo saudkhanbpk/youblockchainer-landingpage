@@ -25,6 +25,8 @@ import Team from './components/Team';
 import ContactUs from "./components/ContactUs";
 import FilmLocation from './components/FilmLocation';
 import Festival from './components/Festival';
+import Auditions from './components/Auditions';
+import SmartContracts from './components/SmartContracts';
 
 // import About from "./components/About";
 
@@ -48,6 +50,28 @@ function App() {
             
             <NavBar>
               <FilmLocation/>
+            </NavBar>
+            
+          }
+        />
+        <Route
+          exact
+          path="/audition"
+          element={
+            
+            <NavBar>
+              <Auditions/>
+            </NavBar>
+            
+          }
+        />
+         <Route
+          exact
+          path="/contract"
+          element={
+            
+            <NavBar>
+              <SmartContracts/>
             </NavBar>
             
           }

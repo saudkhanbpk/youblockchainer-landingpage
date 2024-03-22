@@ -253,7 +253,9 @@ export default function ElevateAppBar(props) {
                     {drawer}
                 </Drawer> */}
         </Box>
-        <Box component='main' sx={{ padding: '0 1%', width: '100%' }}>
+        <Box component='main' sx={{ 
+          // padding: '0 1%', 
+          width: '100%' }}>
           <Toolbar />
           {children}
         </Box>
