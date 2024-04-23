@@ -16,7 +16,7 @@ import CTA from './CTA';
 import Footer from './Footer';
 import { Button } from '@mui/material';
 import { useNavigate } from 'react-router-dom';
-
+import headlogo from "../images/headlogo.png"
 const drawerWidth = 240;
 
 export default function ElevateAppBar(props) {
@@ -81,8 +81,8 @@ export default function ElevateAppBar(props) {
         <AppBar
           component='nav'
           sx={{
-            backgroundColor: '#F5F6F8',
-            color: '#3770FF',
+            backgroundColor: '#2F133C',
+            color: 'white',
             boxShadow: 'none',
             padding: '0% 1.5%',
           }}
@@ -112,106 +112,216 @@ export default function ElevateAppBar(props) {
               <CardMedia
                 component='img'
                 onClick={() => navigate('/')}
-                image={logo}
+                image={headlogo}
                 sx={{
                   height: '30px',
                   cursor: 'pointer',
-                  width: '150px',
+                  width: '270px',
                   marginLeft: '10px',
                   marginRight: '2vw',
                 }}
               />
               <Box sx={{ display: { xs: 'none', sm: 'block' } }}>
                 {/* <Link to={'Home'} spy={true} smooth={true}>
-                                <Button sx={{ color: '#3770FF', textTransform: 'none', fontWeight: 'bold' }}>
+                                <Button sx={{ color: 'white', textTransform: 'none', fontWeight: 'bold' }}>
                                     Home
                                 </Button>
                             </Link> */}
                 {/* <Link to={'Creators'} spy={true} smooth={true}>
-                                <Button sx={{ color: '#3770FF', textTransform: 'none', fontWeight: 'bold' }}>
+                                <Button sx={{ color: 'white', textTransform: 'none', fontWeight: 'bold' }}>
                                     Creators
                                 </Button>
                             </Link> */}
 
                 <Button
                   sx={{
-                    color: '#3770FF',
+                    color: 'white',
                     textTransform: 'none',
                     fontWeight: 'bold',
+                    position: "relative",
+
                   }}
-                  onClick={() => navigate('/knowledge')}
+                  className='about_us'
+                  onClick={() => navigate('/About Us')}
                 >
-                  <a href='#knowledge' style={{
-                    textDecoration: 'none', color: '#3770FF',
-                  }}>
-
-                    Knowledge
-                  </a>
-                </Button>
-                <Button
-                  sx={{
-                    color: '#3770FF',
-                    textTransform: 'none',
-                    fontWeight: 'bold',
-                  }}
-                // onClick={() => navigate('/blog')}
-                >
-
-                  <a href='#blog' style={{
-                    textDecoration: 'none', color: '#3770FF',
-                  }}>
-
-                    Blogs
-                  </a>
-                </Button>
-                <Button
-                  sx={{
-                    color: '#3770FF',
-                    textTransform: 'none',
-                    fontWeight: 'bold',
-                  }}
-                // onClick={() => navigate('/team')}
-                >
-
-                  <a href='#team' style={{
-                    textDecoration: 'none', color: '#3770FF',
-                  }}>
-
-                    Team
-                  </a>
-                </Button>
-                <Button
-                  sx={{
-                    color: '#3770FF',
-                    textTransform: 'none',
-                    fontWeight: 'bold',
-                  }}
-                // onClick={() => navigate('/about')}
-                >
-
-                  <a href='#about' style={{
-                    textDecoration: 'none', color: '#3770FF',
+                  <a href='#About Us' style={{
+                    textDecoration: 'none', color: 'white', textWrap: "nowrap",  fontSize: "20px",
                   }}>
 
                     About Us
                   </a>
+                  <Box sx={{
+                    position: "absolute",
+                    top: "100%",
+                    left: "0px",
+                    fontSize: "20px",
+                    background: "#2F133C"
+                  }}
+                    className="dropdowndata">
+                    <Button
+                      sx={{
+                        color: 'white',
+                        textTransform: 'none',
+                        fontWeight: 'bold',
+                      }}
+                    // onClick={() => navigate('/team')}
+                    >
 
+                      <a href='#team' style={{
+                        textDecoration: 'none', color: 'white', textWrap: "nowrap", padding: '10px'
+                      }}>
+
+                        Our Missions
+                      </a>
+                    </Button>
+                    <Button
+                      sx={{
+                        color: 'white',
+                        textTransform: 'none',
+                        fontWeight: 'bold',
+                      }}
+                      
+                    // onClick={() => navigate('/about')}
+                    >
+
+                      <a href='#about' style={{
+                        textDecoration: 'none', color: 'white', textWrap: "nowrap", padding: '10px'
+                      }}>
+
+                        Vision Statement
+                      </a>
+
+                    </Button>
+                    <Button
+                      sx={{
+                        color: 'white',
+                        textTransform: 'none',
+                        fontWeight: 'bold',
+                      }}
+                    // onClick={() => navigate('/about')}
+                    >
+
+                      <a href='#about' style={{
+                        textDecoration: 'none', color: 'white', textWrap: "nowrap", padding: '10px'
+                      }}>
+
+                        How it Works
+                      </a>
+
+                    </Button>
+
+                  </Box>
                 </Button>
                 <Button
                   sx={{
-                    color: '#3770FF',
+                    color: 'white',
+                    textTransform: 'none',
+                    fontWeight: 'bold',
+                    position: "relative",
+
+                  }}
+                  className='about_us'
+                  onClick={() => navigate('/About Us')}
+                >
+                  <a href='#About Us' style={{
+                    textDecoration: 'none', color: 'white', fontSize: "20px",
+                  }}>
+
+                    Our Services
+                  </a>
+                  <Box sx={{
+                    position: "absolute",
+                    top: "100%",
+                    left: "0px",
+                    fontSize: "20px",
+                    background: "#2F133C"
+                  }}
+                    className="dropdowndata">
+                    <Button
+                      sx={{
+                        color: 'white',
+                        textTransform: 'none',
+                        fontWeight: 'bold',
+                      }}
+                    // onClick={() => navigate('/team')}
+                    >
+
+                      <a href='#team' style={{
+                        textDecoration: 'none', color: 'white', textWrap: "nowrap", padding: '10px'
+                      }}>
+
+                        Movie Professionals
+                      </a>
+                    </Button>
+                    <Button
+                      sx={{
+                        color: 'white',
+                        textTransform: 'none',
+                        fontWeight: 'bold',
+                      }}
+                    // onClick={() => navigate('/about')}
+                    >
+
+                      <a href='#about' style={{
+                        textDecoration: 'none', color: 'white', textWrap: "nowrap", padding: '10px'
+                      }}>
+
+                        Aspiring Talents
+                      </a>
+
+                    </Button>
+                    <Button
+                      sx={{
+                        color: 'white',
+                        textTransform: 'none',
+                        fontWeight: 'bold',
+                      }}
+                    // onClick={() => navigate('/about')}
+                    >
+
+                      <a href='#about' style={{
+                        textDecoration: 'none', color: 'white', padding: '10px'
+                      }}>
+
+                        Corporations
+                      </a>
+
+                    </Button>
+                    <Button
+                  sx={{
+                    color: 'white',
                     textTransform: 'none',
                     fontWeight: 'bold',
                   }}
-                // onClick={() => navigate('/contactus')}
                 >
-                  <a href='#contact' style={{
-                    textDecoration: 'none', color: '#3770FF',
+
+                  <a href='#about' style={{
+                    textDecoration: 'none', color: 'white',
                   }}>
 
-                    Contact Us
-
+                    Community
                   </a>
+
+                </Button>
+
+
+
+                  </Box>
+                </Button>
+               
+                <Button
+                  sx={{
+                    color: 'white',
+                    textTransform: 'none',
+                    fontWeight: 'bold',
+                  }}
+                >
+
+                  <a href='#about' style={{
+                    textDecoration: 'none', color: 'white', fontSize: "20px",
+                  }}>
+
+                    Blog     </a>
                 </Button>
               </Box>
             </Box>
@@ -253,9 +363,10 @@ export default function ElevateAppBar(props) {
                     {drawer}
                 </Drawer> */}
         </Box>
-        <Box component='main' sx={{ 
+        <Box component='main' sx={{
           // padding: '0 1%', 
-          width: '100%' }}>
+          width: '100%'
+        }}>
           <Toolbar />
           {children}
         </Box>
