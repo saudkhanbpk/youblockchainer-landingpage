@@ -620,23 +620,28 @@ const useStyles = makeStyles((theme) => ({
   },
   card: {
     display: "flex",
+    alignItems: 'center',
     flexDirection: "column",
     color: "#ffffff",
     borderRadius: theme.spacing(2),
     boxShadow: "0px 4px 8px rgba(0, 0, 0, 0.1)",
+    textAlign: 'center',
     transition: "box-shadow 0.3s ease",
     "&:hover": {
       boxShadow: "0px 8px 8px rgba(0, 0, 0, 0.5)",
+      
     },
-    width: "300px",
+    width: "350px",
     height: "470px",
-    justifyContent: "center",
-    paddingLeft: "10px",
+    
+      
   },
   title: {
     fontSize: "24px",
     fontWeight: "bold",
     marginBottom: theme.spacing(1),
+    
+    
   },
   price: {
     fontSize: "36px",
@@ -764,7 +769,9 @@ function Avail() {
                   className={classes.card}
                   style={{
                     // backgroundColor: "#002638",
-                    background: 'linear-gradient(91.97deg, #002638 -39.63%, #3770FF 110.12%)',
+                    // background: 'linear-gradient(91.97deg, #002638 -39.63%, #3770FF 110.12%)',
+                    background: 'linear-gradient(135deg, rgba(135, 206, 235, 0.8), rgba(138, 43, 226, 0.8))',
+
                     cursor: "pointer"
                   }}
                   onClick={() => handleOpenModal(plan)}

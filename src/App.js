@@ -27,6 +27,7 @@ import FilmLocation from './components/FilmLocation';
 import Festival from './components/Festival';
 import Auditions from './components/Auditions';
 import SmartContracts from './components/SmartContracts';
+import OurMissions from './components/OurMissions';
 
 // import About from "./components/About";
 
@@ -130,6 +131,17 @@ function App() {
             <NavBar>
               <About />
             </NavBar>
+          }
+        />
+        <Route
+          exact
+          path="/OurMissions"
+          element={
+            
+            <NavBar>
+              <OurMissions />
+            </NavBar>
+            
           }
         />
         <Route

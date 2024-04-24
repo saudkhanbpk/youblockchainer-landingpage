@@ -40,6 +40,7 @@ export default function ElevateAppBar(props) {
         flexDirection: 'column',
         alignItems: 'flex-start',
         padding: '10%',
+
       }}
     >
       <CardMedia
@@ -76,7 +77,7 @@ export default function ElevateAppBar(props) {
 
   return (
     <>
-      <Box sx={{ display: 'flex' }}>
+      <Box sx={{ display: 'flex', background: '#2F133C' }}>
         <CssBaseline />
         <AppBar
           component='nav'
@@ -85,16 +86,20 @@ export default function ElevateAppBar(props) {
             color: 'white',
             boxShadow: 'none',
             padding: '0% 1.5%',
+
+
+
+
           }}
         >
           <Toolbar
             sx={{
               display: 'flex',
               justifyContent: 'space-between',
-              alignItems: 'center',
+             
             }}
           >
-            <Box sx={{ display: 'flex', alignItems: 'center' }}>
+            <Box sx={{ display: 'flex', alignItems: 'center', width: "100%" }}>
               {/* <IconButton
                             color="inherit"
                             aria-label="open drawer"
@@ -121,7 +126,7 @@ export default function ElevateAppBar(props) {
                   marginRight: '2vw',
                 }}
               />
-              <Box sx={{ display: { xs: 'none', sm: 'block' } }}>
+              <Box sx={{ display: { xs: 'none', sm: 'block', marginLeft: 'auto', } }}>
                 {/* <Link to={'Home'} spy={true} smooth={true}>
                                 <Button sx={{ color: 'white', textTransform: 'none', fontWeight: 'bold' }}>
                                     Home
@@ -140,12 +145,13 @@ export default function ElevateAppBar(props) {
                     fontWeight: 'bold',
                     position: "relative",
 
+
                   }}
                   className='about_us'
-                  onClick={() => navigate('/About Us')}
+                  // onClick={() => navigate('/About Us')}
                 >
-                  <a href='#About Us' style={{
-                    textDecoration: 'none', color: 'white', textWrap: "nowrap",  fontSize: "20px",
+                  <a style={{
+                    textDecoration: 'none', color: 'white', textWrap: "nowrap", fontSize: "20px",
                   }}>
 
                     About Us
@@ -155,24 +161,28 @@ export default function ElevateAppBar(props) {
                     top: "100%",
                     left: "0px",
                     fontSize: "20px",
-                    background: "#2F133C"
+                    background: "#2F133C",
+                    width: '180px',
+                    height: '250px',
+                    fontSize: '40px',
+                    
                   }}
                     className="dropdowndata">
                     <Button
+                    // onClick={()=>navigate("/ourmissions")}
                       sx={{
                         color: 'white',
                         textTransform: 'none',
                         fontWeight: 'bold',
                       }}
-                    // onClick={() => navigate('/team')}
+                      style={{
+                        textDecoration: 'none', color: 'white', textWrap: "nowrap", padding: '10px'
+                      }}
+                    onClick={() => navigate('/OurMissions')}
                     >
 
-                      <a href='#team' style={{
-                        textDecoration: 'none', color: 'white', textWrap: "nowrap", padding: '10px'
-                      }}>
 
                         Our Missions
-                      </a>
                     </Button>
                     <Button
                       sx={{
@@ -180,12 +190,12 @@ export default function ElevateAppBar(props) {
                         textTransform: 'none',
                         fontWeight: 'bold',
                       }}
-                      
+
                     // onClick={() => navigate('/about')}
                     >
 
                       <a href='#about' style={{
-                        textDecoration: 'none', color: 'white', textWrap: "nowrap", padding: '10px'
+                        textDecoration: 'none', color: 'white', textWrap: "nowrap",
                       }}>
 
                         Vision Statement
@@ -276,6 +286,22 @@ export default function ElevateAppBar(props) {
                         textTransform: 'none',
                         fontWeight: 'bold',
                       }}
+                    >
+
+                      <a href='#about' style={{
+                        textDecoration: 'none', color: 'white',
+                      }}>
+
+                        Audition
+                      </a>
+
+                    </Button>
+                    <Button
+                      sx={{
+                        color: 'white',
+                        textTransform: 'none',
+                        fontWeight: 'bold',
+                      }}
                     // onClick={() => navigate('/about')}
                     >
 
@@ -287,28 +313,27 @@ export default function ElevateAppBar(props) {
                       </a>
 
                     </Button>
+                    
+                    
                     <Button
-                  sx={{
-                    color: 'white',
-                    textTransform: 'none',
-                    fontWeight: 'bold',
-                  }}
-                >
+                      sx={{
+                        color: 'white',
+                        textTransform: 'none',
+                        fontWeight: 'bold',
+                      }}
+                    >
 
-                  <a href='#about' style={{
-                    textDecoration: 'none', color: 'white',
-                  }}>
+                      <a href='#about' style={{
+                        textDecoration: 'none', color: 'white',
+                      }}>
 
-                    Community
-                  </a>
+                        Community
+                      </a>
 
-                </Button>
-
-
-
+                    </Button>
+                  
                   </Box>
                 </Button>
-               
                 <Button
                   sx={{
                     color: 'white',
@@ -323,9 +348,23 @@ export default function ElevateAppBar(props) {
 
                     Blog     </a>
                 </Button>
+                <Button
+                  sx={{
+                    color: 'white',
+                    textTransform: 'none',
+                    fontWeight: 'bold',
+                  }}
+                >
+
+                  <a href='#about' style={{
+                    textDecoration: 'none', color: 'white', fontSize: "20px",
+                  }}>
+
+                    Contact Us     </a>
+                </Button>
               </Box>
             </Box>
-            {url === '' ? (
+            {/* {url === '' ? (
               <Button
                 onClick={() => window.open('https://app.myreeldream.ai/')}
                 sx={{
@@ -343,7 +382,7 @@ export default function ElevateAppBar(props) {
               </Button>
             ) : (
               ''
-            )}
+            )} */}
           </Toolbar>
         </AppBar>
         <Box component='nav'>
