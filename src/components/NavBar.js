@@ -17,6 +17,7 @@ import Footer from './Footer';
 import { Button } from '@mui/material';
 import { useNavigate } from 'react-router-dom';
 import headlogo from "../images/headlogo.png"
+import '../App.css'
 const drawerWidth = 240;
 
 export default function ElevateAppBar(props) {
@@ -77,7 +78,7 @@ export default function ElevateAppBar(props) {
 
   return (
     <>
-      <Box sx={{ display: 'flex', background: '#2F133C' }}>
+      <Box className="app" sx={{ display: 'flex',  }}>
         <CssBaseline />
         <AppBar
           component='nav'

@@ -1,5 +1,6 @@
 import NavBar from './components/NavBar';
 import LandingPage from './LandingPage';
+import "./App.css";
 import Aos from 'aos';
 import 'aos/dist/aos.css';
 import { useEffect } from 'react';
@@ -33,7 +34,8 @@ import OurMissions from './components/OurMissions';
 
 function App() {
   return (
-    <Router>
+    <div  >
+    <Router >
       <Routes>
         <Route
           exact
@@ -172,6 +174,7 @@ function App() {
         />
       </Routes>
     </Router>
+    </div>
   );
 }
 
