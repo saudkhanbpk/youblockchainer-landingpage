@@ -1,21 +1,32 @@
-import { makeStyles } from '@material-ui/core';
 import React from 'react';
+import { makeStyles } from '@material-ui/core';
+
 const useStyles = makeStyles((theme) => ({
   videoContainer: {
-    display:"flex",
-    justifyContent:"center",
+    display: "flex",
+    justifyContent: "center",
+    alignItems:'center',
     width: '100%',
-    height:"100%",
+    height:"100vh",
     marginTop: "8%",
-    marginBottom:"50%" // 16:9 aspect ratio (height: width)
+    marginBottom: "6%", 
+    [theme.breakpoints.down('sm')]: {
+      height: '50vh', 
+    },
   },
   video: {
-    position: 'absolute',
-    [theme.breakpoints.down('xs')]: {
-        height:"auto"
+    width: '100%', 
+   
+    height: "100%",
+    borderRadius:"40px",
+    [theme.breakpoints.up('md')]: {
+      width: '1100px',
+  
     },
-    width: '100vw',
-    height:"100%", 
+    [theme.breakpoints.down('md')]: {
+      borderRadius:0
+  
+    },
   },
 }));
 
@@ -25,10 +36,14 @@ function Video() {
   return (
     <div>
       <div className={classes.videoContainer}>
-        <video className={classes.video} controls autoPlay muted >
-          <source src="https://www.youtube.com/results?search_query=phatan+trailer" type="video/mp4" />
-          Your browser does not support the video tag.
-        </video>
+      <iframe
+  title="YouTube Video"
+  className={classes.video}
+  src="https://www.youtube.com/embed/vqu4z34wENw?autoplay=1&mute=1"
+  allow="autoplay; encrypted-media"
+  allowFullScreen
+></iframe>
+
       </div>
       {/* Your other content here */}
     </div>

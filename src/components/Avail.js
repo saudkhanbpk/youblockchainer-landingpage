@@ -611,10 +611,11 @@ import { motion } from "framer-motion";
 import { useInView } from "react-intersection-observer";
 import Video from "./Video"
 import { Box } from "@material-ui/core";
+import Main from "./Main";
 const useStyles = makeStyles((theme) => ({
   root: {
     flexGrow: 1,
-    padding: theme.spacing(4),
+    // padding: theme.spacing(4),
     justifyContent: "center",
     display: "flex",
     alignItems: "center",
@@ -746,8 +747,9 @@ function Avail() {
   ];
 
   return (<>
-    <Box sx={{marginBottom:500,display:'block'}}>
-      <Video/>
+  <Main/>
+    <Box className="video">
+      <Video />
     </Box >
     <section id="avail">
 
