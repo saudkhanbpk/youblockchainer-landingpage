@@ -609,7 +609,8 @@ import Modal from "@material-ui/core/Modal";
 import { Icon } from "@iconify/react";
 import { motion } from "framer-motion";
 import { useInView } from "react-intersection-observer";
-
+import Video from "./Video"
+import { Box } from "@material-ui/core";
 const useStyles = makeStyles((theme) => ({
   root: {
     flexGrow: 1,
@@ -739,8 +740,12 @@ function Avail() {
     },
   ];
 
-  return (
+  return (<>
+    <Box sx={{marginBottom:40,display:'block'}}>
+      <Video/>
+    </Box >
     <section id="avail">
+
       <div className={classes.root}>
         <Grid
           container
@@ -924,6 +929,7 @@ function Avail() {
         </Modal>
       </div>
     </section>
+    </>
   );
 }
 
