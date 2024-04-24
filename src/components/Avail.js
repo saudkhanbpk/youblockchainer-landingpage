@@ -749,6 +749,9 @@ function Avail() {
     <Box sx={{marginBottom:500,display:'block'}}>
       <Video/>
     </Box >
+    <section id="services">
+   
+    </section>
     <section id="avail">
 
       <div className={classes.root}>

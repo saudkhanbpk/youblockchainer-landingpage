@@ -49,10 +49,15 @@ body {
 }
 .about_us:hover .dropdowndata{
   display: block;
-  color: "blue";
+}
+.text-hover:hover{
+  color: rgb(0, 183, 255) !important;
 }
 
 .dropdowndata{
   display: none;
   
+}
+.aboutt:hover {
+color: blue !important;
 }

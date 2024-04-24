@@ -139,7 +139,7 @@ export default function ElevateAppBar(props) {
                                 </Button>
                             </Link> */}
 
-                <Button
+                <Button 
                   sx={{
                     color: 'white',
                     textTransform: 'none',
@@ -151,8 +151,8 @@ export default function ElevateAppBar(props) {
                   className='about_us'
                   // onClick={() => navigate('/About Us')}
                 >
-                  <a style={{
-                    textDecoration: 'none', color: 'white', textWrap: "nowrap", fontSize: "20px",
+                  <a  className='aboutt' style={{
+                    textDecoration: 'none', color: 'white', textWrap: "nowrap", fontSize: "20px", 
                   }}>
 
                     About Us
@@ -169,7 +169,7 @@ export default function ElevateAppBar(props) {
                     
                   }}
                     className="dropdowndata">
-                    <Button
+                    <Button className='aboutt'
                     // onClick={()=>navigate("/ourmissions")}
                       sx={{
                         color: 'white',
@@ -195,9 +195,11 @@ export default function ElevateAppBar(props) {
                     // onClick={() => navigate('/about')}
                     >
 
-                      <a href='#about' style={{
+                      <a style={{
                         textDecoration: 'none', color: 'white', textWrap: "nowrap",
-                      }}>
+                      }}
+                      onClick={()=> navigate('/vision')}>
+                        
 
                         Vision Statement
                       </a>
@@ -212,7 +214,7 @@ export default function ElevateAppBar(props) {
                     // onClick={() => navigate('/about')}
                     >
 
-                      <a href='#about' style={{
+                      <a  style={{
                         textDecoration: 'none', color: 'white', textWrap: "nowrap", padding: '10px'
                       }}>
 
@@ -234,7 +236,7 @@ export default function ElevateAppBar(props) {
                   className='about_us'
                   onClick={() => navigate('/About Us')}
                 >
-                  <a href='#About Us' style={{
+                  <a style={{
                     textDecoration: 'none', color: 'white', fontSize: "20px",
                   }}>
 
@@ -257,7 +259,7 @@ export default function ElevateAppBar(props) {
                     // onClick={() => navigate('/team')}
                     >
 
-                      <a href='#team' style={{
+                      <a  style={{
                         textDecoration: 'none', color: 'white', textWrap: "nowrap", padding: '10px'
                       }}>
 
@@ -269,12 +271,13 @@ export default function ElevateAppBar(props) {
                         color: 'white',
                         textTransform: 'none',
                         fontWeight: 'bold',
+                        
                       }}
                     // onClick={() => navigate('/about')}
                     >
 
-                      <a href='#about' style={{
-                        textDecoration: 'none', color: 'white', textWrap: "nowrap", padding: '10px'
+                      <a  style={{
+                        textDecoration: 'none', color: 'white', textWrap: "nowrap", padding: '10px',
                       }}>
 
                         Aspiring Talents
@@ -289,7 +292,7 @@ export default function ElevateAppBar(props) {
                       }}
                     >
 
-                      <a href='#about' style={{
+                      <a  style={{
                         textDecoration: 'none', color: 'white',
                       }}>
 
@@ -306,7 +309,7 @@ export default function ElevateAppBar(props) {
                     // onClick={() => navigate('/about')}
                     >
 
-                      <a href='#about' style={{
+                      <a  style={{
                         textDecoration: 'none', color: 'white', padding: '10px'
                       }}>
 
@@ -324,7 +327,7 @@ export default function ElevateAppBar(props) {
                       }}
                     >
 
-                      <a href='#about' style={{
+                      <a  style={{
                         textDecoration: 'none', color: 'white',
                       }}>
 
@@ -343,7 +346,7 @@ export default function ElevateAppBar(props) {
                   }}
                 >
 
-                  <a href='#about' style={{
+                  <a  style={{
                     textDecoration: 'none', color: 'white', fontSize: "20px",
                   }}>
 
@@ -357,7 +360,7 @@ export default function ElevateAppBar(props) {
                   }}
                 >
 
-                  <a href='#about' style={{
+                  <a  style={{
                     textDecoration: 'none', color: 'white', fontSize: "20px",
                   }}>
 
