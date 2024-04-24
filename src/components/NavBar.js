@@ -154,7 +154,7 @@ export default function ElevateAppBar(props) {
                     textTransform: 'none',
                     fontWeight: 'bold',
                   }}
-                // onClick={() => navigate('/blog')}
+                onClick={() => navigate('/blog')}
                 >
 
                   <a href='#blog' style={{
@@ -170,7 +170,7 @@ export default function ElevateAppBar(props) {
                     textTransform: 'none',
                     fontWeight: 'bold',
                   }}
-                // onClick={() => navigate('/team')}
+                onClick={() => navigate('/team')}
                 >
 
                   <a href='#team' style={{
@@ -186,7 +186,7 @@ export default function ElevateAppBar(props) {
                     textTransform: 'none',
                     fontWeight: 'bold',
                   }}
-                // onClick={() => navigate('/about')}
+                onClick={() => navigate('/about')}
                 >
 
                   <a href='#about' style={{
@@ -203,7 +203,7 @@ export default function ElevateAppBar(props) {
                     textTransform: 'none',
                     fontWeight: 'bold',
                   }}
-                // onClick={() => navigate('/contactus')}
+                onClick={() => navigate('/contactus')}
                 >
                   <a href='#contact' style={{
                     textDecoration: 'none', color: '#3770FF',

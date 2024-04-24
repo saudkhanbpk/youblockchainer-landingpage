@@ -1,5 +1,6 @@
 import NavBar from './components/NavBar';
 import LandingPage from './LandingPage';
+import "./App.css";
 import Aos from 'aos';
 import 'aos/dist/aos.css';
 import { useEffect } from 'react';
@@ -32,7 +33,8 @@ import SmartContracts from './components/SmartContracts';
 
 function App() {
   return (
-    <Router>
+    <div className="app" >
+    <Router >
       <Routes>
         <Route
           exact
@@ -160,6 +162,7 @@ function App() {
         />
       </Routes>
     </Router>
+    </div>
   );
 }
 
