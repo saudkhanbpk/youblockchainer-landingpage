@@ -11,17 +11,22 @@ const useStyles = makeStyles((theme) => ({
     [theme.breakpoints.down('sm')]: {
       width: '100%', 
       padding:"1%",
+      
     },
   },
   text: {
     width:"60%",
     // color:"#2F133C",
+    fontSize: "35px",
     color:"white",
-
+padding:'10px',
+fontFamily:"mono",
     textAlign:'left',
     fontWeight: 1000,
     [theme.breakpoints.down('sm')]: {
         width:"100%",
+        textAlign:"center",
+        fontSize:"20px"
       },
   },
 }));
