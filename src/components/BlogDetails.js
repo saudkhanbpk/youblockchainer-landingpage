@@ -2,6 +2,7 @@ import { useEffect, useState } from "react";
 import axios from "axios";
 import { useParams } from "react-router-dom";
 import { Typography, Card, CardContent, CardMedia, Avatar } from '@mui/material';
+import Video from "./Video";
 
 export default function BlogDetails() {
   const [blogs, setBlogs] = useState([]);
@@ -36,6 +37,7 @@ export default function BlogDetails() {
 
   return (
     <>
+    
       <Card style={{ maxWidth: 600, margin: 'auto', marginTop: 20, padding: 20, boxShadow: '0px 2px 4px rgba(0, 0, 0, 0.1)' }}>
         <CardMedia
           component="img"
@@ -61,6 +63,7 @@ export default function BlogDetails() {
           </Typography>
         </CardContent>
       </Card>
+    
       {/* <main>
         { (
           <div className="container-fluid">

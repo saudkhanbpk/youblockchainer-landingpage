@@ -497,7 +497,7 @@ export default function ElevateAppBar(props) {
         <AppBar
           component='nav'
           sx={{
-            background: 'linear-gradient(to right, #2F133C, #5E2678, #8B3994)',
+            background: 'linear-gradient(91.97deg, #002638 -39.63%, #3770FF 110.12%)',
             color: 'white',
             boxShadow: 'none',
             padding: '0% 1.5%',
@@ -527,7 +527,7 @@ export default function ElevateAppBar(props) {
                   sx={{
 
                     color: 'white',
-                    fontSize: '18px',
+                    fontSize: '16px',
                     textTransform: 'none',
                     fontWeight: '600',
                     position: "relative",
@@ -575,7 +575,7 @@ export default function ElevateAppBar(props) {
                   className='about_us'
                   onClick={() => navigate('/About Us')}
                 >
-                  <a className='hh ani' sx={{ color: 'white', }} style={{ textDecoration: 'none', color: 'white', fontSize: "18px" }}>
+                  <a className='hh ani' sx={{ color: 'white', }} style={{ textDecoration: 'none', color: 'white', fontSize: "16px" }}>
                     Our Services
                   </a>
                   <Box sx={{
@@ -606,10 +606,10 @@ export default function ElevateAppBar(props) {
                   </Box>
                 </Button>
                 <Button sx={{ color: 'white', textTransform: 'none', fontWeight: '600', '&:hover': { color: 'blue' } }}>
-                  <a className='hh ani' style={{ textDecoration: 'none', color: 'white', fontSize: "18px" }}>Blog</a>
+                  <a className='hh ani' style={{ textDecoration: 'none', color: 'white', fontSize: "16px" }}>Blog</a>
                 </Button>
                 <Button sx={{ color: 'white', textTransform: 'none', fontWeight: '600', '&:hover': { color: 'blue' } }}>
-                  <a className='hh ani' style={{ textDecoration: 'none', color: 'white', fontSize: "18px" }}>Contact Us</a>
+                  <a className='hh ani' style={{ textDecoration: 'none', color: 'white', fontSize: "16px" }}>Contact Us</a>
                 </Button>
               </Box>
             </Box>

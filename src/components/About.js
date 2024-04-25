@@ -101,6 +101,7 @@ import { useInView } from 'react-intersection-observer';
 
 const StyledContainer = styled(Container)(({ theme }) => ({
   paddingTop: theme.spacing(8),
+
   paddingBottom: theme.spacing(8),
 }));
 
@@ -131,7 +132,7 @@ const AboutUs = () => {
 
   return (
     <StyledContainer maxWidth="lg" id='#about'>
-      <Typography variant="h2" align="center" gutterBottom>Welcome to MyReelDream.ai</Typography>
+      <Typography variant="h4" align="center" gutterBottom>Welcome to MyReelDream.ai</Typography>
       <Typography variant="body1" align="center" gutterBottom>
         Where dreams become reality and creativity knows no limits.
       </Typography>

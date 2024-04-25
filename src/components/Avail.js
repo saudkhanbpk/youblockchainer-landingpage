@@ -616,13 +616,15 @@ import Slider from 'react-slick';
 import 'slick-carousel/slick/slick.css';
 import 'slick-carousel/slick/slick-theme.css';
 import img6 from '../images/img6.jpg'
+import Main from "./Main";
 const useStyles = makeStyles((theme) => ({
   root: {
     flexGrow: 1,
-    padding: theme.spacing(4),
+    // padding: theme.spacing(4),
     justifyContent: "center",
     display: "flex",
     alignItems: "center",
+    padding:"0px"
   },
   card: {
     display: "flex",
@@ -759,7 +761,8 @@ function Avail() {
   ];
 
   return (<>
-    <Box sx={{ marginBottom: 500, display: 'block' }}>
+  <Main/>
+    <Box className="video">
       <Video />
     </Box >
     <section id="services">
@@ -770,7 +773,7 @@ function Avail() {
       <div className={classes.root}>
         <Grid
           container
-          spacing={4}
+          spacing={1}
           style={{
             display: "flex",
             justifyContent: "space-around",
@@ -791,7 +794,7 @@ function Avail() {
                   style={{
                     // backgroundColor: "#002638",
                     // background: 'linear-gradient(91.97deg, #002638 -39.63%, #3770FF 110.12%)',
-                    background: 'linear-gradient(135deg, rgba(135, 206, 235, 0.8), rgba(138, 43, 226, 0.8))',
+                    background: 'linear-gradient(91.97deg, #002638 -39.63%, #3770FF 110.12%)',
 
                     cursor: "pointer",
                   }}
@@ -954,7 +957,7 @@ function Avail() {
         </Modal>
       </div>
     </section>
-    <section style={{ width: '90%', height: '100vh' }}>
+    <section style={{ width: '90%', height: '100vh', marginTop: '20px', }}>
       <Box style={{ display: 'flex', justifyContent: 'center', marginLeft: '80px', }}>
         <Slider {...settings} style={{ width: '80%', height: '600px', overflowY: "clip", paddingLeft: '10px', paddingRight : '10px',}}>
 
