@@ -611,6 +611,11 @@ import { motion } from "framer-motion";
 import { useInView } from "react-intersection-observer";
 import Video from "./Video"
 import { Box } from "@material-ui/core";
+import { yellow } from "@mui/material/colors";
+import Slider from 'react-slick';
+import 'slick-carousel/slick/slick.css';
+import 'slick-carousel/slick/slick-theme.css';
+import img6 from '../images/img6.jpg'
 const useStyles = makeStyles((theme) => ({
   root: {
     flexGrow: 1,
@@ -630,19 +635,19 @@ const useStyles = makeStyles((theme) => ({
     transition: "box-shadow 0.3s ease",
     "&:hover": {
       boxShadow: "0px 8px 8px rgba(0, 0, 0, 0.5)",
-      
+
     },
     width: "350px",
     height: "470px",
-    
-      
+
+
   },
   title: {
     fontSize: "24px",
     fontWeight: "bold",
     marginBottom: theme.spacing(1),
-    
-    
+
+
   },
   price: {
     fontSize: "36px",
@@ -692,6 +697,14 @@ function Avail() {
     triggerOnce: true,
     threshold: 0.5,
   });
+  const settings = {
+
+    dots: true,
+    infinite: true,
+    speed: 500,
+    slidesToShow: 1,
+    slidesToScroll: 1,
+  };
 
   const handleOpenModal = (plan) => {
     setSelectedPlan(plan);
@@ -746,11 +759,11 @@ function Avail() {
   ];
 
   return (<>
-    <Box sx={{marginBottom:500,display:'block'}}>
-      <Video/>
+    <Box sx={{ marginBottom: 500, display: 'block' }}>
+      <Video />
     </Box >
     <section id="services">
-   
+
     </section>
     <section id="avail">
 
@@ -780,7 +793,7 @@ function Avail() {
                     // background: 'linear-gradient(91.97deg, #002638 -39.63%, #3770FF 110.12%)',
                     background: 'linear-gradient(135deg, rgba(135, 206, 235, 0.8), rgba(138, 43, 226, 0.8))',
 
-                    cursor: "pointer"
+                    cursor: "pointer",
                   }}
                   onClick={() => handleOpenModal(plan)}
                 >
@@ -821,6 +834,8 @@ function Avail() {
             </Grid>
           ))}
         </Grid>
+
+
         <Modal
           open={openModal}
           onClose={handleCloseModal}
@@ -939,7 +954,21 @@ function Avail() {
         </Modal>
       </div>
     </section>
-    </>
+    <section style={{ width: '90%', height: '100vh' }}>
+      <Box style={{ display: 'flex', justifyContent: 'center', marginLeft: '80px', }}>
+        <Slider {...settings} style={{ width: '80%', height: '600px', overflowY: "clip", paddingLeft: '10px', paddingRight : '10px',}}>
+
+          <img src={img6} alt="1"  sx={{objectFit: 'cover',}}/>
+          <img src={img6} alt="2"   sx={{objectFit: 'cover',}}/>
+          <img src={img6} alt="3"  sx={{objectFit: 'cover',}} />
+          <img src={img6} alt="4"  sx={{objectFit: 'cover',}}/>
+          <img src={img6} alt="5"  sx={{objectFit: 'cover',}} />
+
+
+        </Slider>
+      </Box>
+    </section>
+  </>
   );
 }
 

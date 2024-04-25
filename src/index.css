@@ -59,5 +59,13 @@ body {
   
 }
 .aboutt:hover {
-color: blue !important;
+color: rgb(182, 182, 182) !important;
+}
+.hh:hover{
+color: rgb(182, 182, 182) !important;
+}
+
+.ani:hover{
+
+  color: var(--clr-accent);
 }

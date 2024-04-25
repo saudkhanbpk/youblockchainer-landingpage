@@ -33,6 +33,6 @@ function Video() {
       {/* Your other content here */}
     </div>
   );
-}
+} 
 
 export default Video;
