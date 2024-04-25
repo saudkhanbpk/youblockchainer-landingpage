@@ -1,6 +1,6 @@
 import NavBar from './components/NavBar';
 import LandingPage from './LandingPage';
-import "./App.css";
+// import "./App.css";
 import Aos from 'aos';
 import 'aos/dist/aos.css';
 import { useEffect } from 'react';
@@ -30,11 +30,12 @@ import Auditions from './components/Auditions';
 import SmartContracts from './components/SmartContracts';
 import OurMissions from './components/OurMissions';
 
+
 // import About from "./components/About";
 
 function App() {
   return (
-    <div  >
+   
     <Router >
       <Routes>
         <Route
@@ -174,7 +175,6 @@ function App() {
         />
       </Routes>
     </Router>
-    </div>
   );
 }
 

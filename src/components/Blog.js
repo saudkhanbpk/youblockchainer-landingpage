@@ -3,6 +3,7 @@ import axios from "axios";
 import { Link } from "react-router-dom";
 import { Container, Typography, Grid, Card, CardContent, CardMedia, Avatar, Button } from '@mui/material';
 import { motion } from 'framer-motion';
+import Video5 from "./Video5";
 
 export default function Blogs() {
   const [blogData, setBlogData] = useState([]);
@@ -128,6 +129,7 @@ export default function Blogs() {
           )}
         </Grid>
       </Container>
+      <Video5/>
     </>
   );
 }

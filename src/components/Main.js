@@ -4,22 +4,23 @@ import { makeStyles, Typography } from '@material-ui/core';
 const useStyles = makeStyles((theme) => ({
   root: {
     display: 'flex',
-    justifyContent:"center",
+    // justifyContent:"center",
     alignItems:"center",
     padding:"6%",
     width: '100%',
     [theme.breakpoints.down('sm')]: {
       width: '100%', 
-      padding:"3%",
+      padding:"1%",
     },
   },
   text: {
-    width:"73%",
-    color:"#2F133C",
-    textAlign:'center',
+    width:"60%",
+    // color:"#2F133C",
+    color:"white",
+
+    textAlign:'left',
     fontWeight: 1000,
     [theme.breakpoints.down('sm')]: {
-        fontWeight: 700,
         width:"100%",
       },
   },

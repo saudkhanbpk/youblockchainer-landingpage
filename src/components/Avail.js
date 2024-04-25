@@ -619,6 +619,7 @@ const useStyles = makeStyles((theme) => ({
     justifyContent: "center",
     display: "flex",
     alignItems: "center",
+    padding:"0px"
   },
   card: {
     display: "flex",
@@ -756,7 +757,7 @@ function Avail() {
       <div className={classes.root}>
         <Grid
           container
-          spacing={4}
+          spacing={1}
           style={{
             display: "flex",
             justifyContent: "space-around",
