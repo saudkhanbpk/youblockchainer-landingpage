@@ -128,9 +128,10 @@ export default function Blogs() {
             </Button>
           )}
         </Grid>
+        <Video5/>
+      <News/>
       </Container>
-      <Video5/>
-      {/* <News/> */}
+      
       
     </>
   );

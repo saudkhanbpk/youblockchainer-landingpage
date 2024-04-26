@@ -183,7 +183,7 @@ function Video() {
                     {isHovered5 ? (<iframe
                         title="YouTube Video"
                         className={classes2.video2}
-                        src="https://www.youtube.com/embed/9q76fyfGs6o?autoplay=1&mute=1&controls=0"
+                        src="https://www.youtube.com/embed/xtAL2x58hns?autoplay=1&mute=1&controls=0"
                         allow="autoplay; encrypted-media"
                         allowFullScreen
                     ></iframe>
@@ -191,7 +191,7 @@ function Video() {
                         <iframe
                             title="YouTube Video"
                             className={classes2.video2}
-                            src="https://www.youtube.com/embed/9q76fyfGs6o?autoplay=&mute=1&controls=0"
+                            src="https://www.youtube.com/embed/xtAL2x58hns?autoplay=&mute=1&controls=0"
                             allow="autoplay; encrypted-media"
                             allowFullScreen
                         ></iframe>
@@ -204,7 +204,7 @@ function Video() {
                     {isHovered6 ? (<iframe
                         title="YouTube Video"
                         className={classes2.video2}
-                        src="https://www.youtube.com/embed/gcIv4hGDZeE?autoplay=1&mute=1&controls=0"
+                        src="https://www.youtube.com/embed/73_1biulkYk?autoplay=1&mute=1&controls=0"
                         allow="autoplay; encrypted-media"
                         allowFullScreen
                     ></iframe>
@@ -212,7 +212,7 @@ function Video() {
                         <iframe
                             title="YouTube Video"
                             className={classes2.video2}
-                            src="https://www.youtube.com/embed/gcIv4hGDZeE?autoplay=&mute=1&controls=0"
+                            src="https://www.youtube.com/embed/73_1biulkYk?autoplay=&mute=1&controls=0"
                             allow="autoplay; encrypted-media"
                             allowFullScreen
                         ></iframe>
