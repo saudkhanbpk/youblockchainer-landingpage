@@ -748,7 +748,7 @@ function Avail() {
       Icon: "mdi:movie-edit",
     },
     {
-      title: "Co-operation",
+      title: "Corporations",
       price: 40,
       features: [
         "Film editing",
@@ -802,7 +802,7 @@ function Avail() {
                   }}
                   onClick={() => handleOpenModal(plan)}
                 >
-                  <CardContent>
+                  <CardContent style={{width: "90%"}}>
                     <Typography className={classes.title}>{plan.title}</Typography>
                     <Icon icon={plan.Icon} style={{
                       fontSize: "100px",
@@ -823,7 +823,7 @@ function Avail() {
                         Features
                       </Typography>
                     </div>
-                    <div className={classes.featureList}>
+                    <div className={classes.featureList} >
                       {plan.features.map((feature, index) => (
                         <Typography key={index} className={classes.feature}>
                           <span role="img" aria-label="Checkmark">

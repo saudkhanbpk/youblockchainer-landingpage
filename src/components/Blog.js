@@ -76,7 +76,7 @@ export default function Blogs() {
 
   return (
     <>
-      <h2 style={{ color: 'white', marginLeft: '3.5vw', display: "flex", justifyContent: "center" }}>Blogs</h2>
+      <h2 style={{ color: 'white', marginLeft: '3.5vw', display: "flex", justifyContent: "center", }}>Blogs</h2>
       <Container maxWidth="lg">
         <Grid container spacing={3}>
           {posts.slice(0, visiblePosts).map((post) => (
@@ -121,9 +121,9 @@ export default function Blogs() {
             </Grid>
           ))}
         </Grid>
-        <Grid style={{ display: "flex", justifyContent: "center" }}>
+        <Grid style={{ display: "flex", justifyContent: "center", marginBottom: '10px', }}>
           {visiblePosts < posts.length && (
-            <Button style={{ border: "solid 1px", marginBottom: "3vw" }} color="primary" onClick={loadMorePosts}>
+            <Button sx={{  color: 'white', border: '2px solid #3770FF', borderRadius: '20px',  '&:hover': { color: '#3770FF', border: '2px solid #3770FF' }, }}color="primary" onClick={loadMorePosts}>
               Load More
             </Button>
           )}

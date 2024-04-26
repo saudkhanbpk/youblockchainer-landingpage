@@ -72,7 +72,7 @@ const Team = () => {
                 fontWeight: 500,
                 fontSize: "16px",
                 lineHeight: "40px",
-                color: "gray",
+                color: "white",
               }}
             >
               Here is Our Team to Meet.
