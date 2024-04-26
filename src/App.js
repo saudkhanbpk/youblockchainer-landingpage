@@ -29,6 +29,7 @@ import Festival from './components/Festival';
 import Auditions from './components/Auditions';
 import SmartContracts from './components/SmartContracts';
 import OurMissions from './components/OurMissions';
+import Vision from './components/Vision';
 
 
 // import About from "./components/About";
@@ -147,6 +148,18 @@ function App() {
             
           }
         />
+         <Route
+          exact
+          path="/vision"
+          element={
+            
+            <NavBar>
+              <Vision />
+            </NavBar>
+            
+          }
+        />
+        
         <Route
           exact
           path="/contactus"
