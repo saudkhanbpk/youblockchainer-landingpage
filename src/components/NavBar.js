@@ -201,7 +201,8 @@
 //                       onClick={()=> navigate('/vision')}>
 
 
-//                         Vision Statement
+//                         
+
 //                       </a>
 
 //                     </Button>

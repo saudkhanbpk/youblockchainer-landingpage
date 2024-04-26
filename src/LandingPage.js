@@ -37,14 +37,14 @@ function LandingPage() {
             <Team />
             <About />&nbsp;
             <Box sx={{ padding: { md: '0% 20%', xs: '0% 10%', } }}>
-                <Typography variant='h2' sx={{ fontWeight: 'bold', textAlign: 'center', fontFamily: 'Poppins', margin: '0', padding: '0', fontSize: { md: '1.5rem', sm: '2rem', xs: '1.5rem' } }}><strong style={{ color: '#3770FF' }}>Get Started</strong> with your own movie production studio for Free</Typography>
+                <Typography variant='h2' sx={{ fontWeight: 'bold', textAlign: 'center', fontFamily: 'Poppins', margin: '0', padding: '0', color: 'white',  fontSize: { md: '1.5rem', sm: '2rem', xs: '1.5rem' } }}><strong style={{ color: 'white' }}>Get Started</strong> with your own movie production studio for Free</Typography>
                 <Box sx={{ display: 'flex', justifyContent: 'space-evenly' }}>
                     <Box sx={{ display: 'flex', marginTop: '0%', justifyContent: 'center', flexDirection: 'column' }}>
-                        <p style={{ fontSize: '12px' }}>New to this website? </p>
+                        <p style={{ fontSize: '12px', color: 'white', }}>New to this website? </p>
                         <Button onClick={() => setOpen(true)} sx={{ backgroundColor: '#3770FF', color: 'white', border: '2px solid #3770FF', borderRadius: '50px', padding: '2% 2%', textTransform: 'none', '&:hover': { color: '#3770FF', border: '2px solid #3770FF' }, fontSize: { md: '15px', sm: '10px', xs: '10px' } }}>Get started</Button>
                     </Box>
                     <Box sx={{ display: 'flex', marginTop: '0%', justifyContent: 'center', flexDirection: 'column' }}>
-                        <p style={{ fontSize: '12px' }}>Already have an account?</p>
+                        <p style={{ fontSize: '12px', color: 'white', }}>Already have an account?</p>
                         <Button onClick={() => window.open('https://app.myreeldream.ai/')} sx={{ backgroundColor: '#3770FF', color: 'white', border: '2px solid #3770FF', borderRadius: '50px', padding: '2% 2%', textTransform: 'none', '&:hover': { color: '#3770FF', border: '2px solid #3770FF' }, fontSize: { md: '15px', sm: '10px', xs: '10px' } }}>Access account</Button>
                     </Box>
                 </Box>

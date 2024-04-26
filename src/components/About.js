@@ -131,13 +131,16 @@ const AboutUs = () => {
   }, [controls, visionInView]);
 
   return (
-    <StyledContainer maxWidth="lg" id='#about'>
+    <StyledContainer sx={{color: 'white',}} maxWidth="lg" id='#about'>
       <Typography variant="h4" align="center" gutterBottom>Welcome to MyReelDream.ai</Typography>
       <Typography variant="body1" align="center" gutterBottom>
         Where dreams become reality and creativity knows no limits.
       </Typography>
 
-      <StyledMissionVisionContainer>
+      <StyledMissionVisionContainer style={{
+        background: "rgba(0, 0, 0, 0.418)",
+        backdropFilter: 'blur(20px)',
+     color: 'white', }}>
         <Grid container spacing={4} justifyContent="center">
           <Grid item xs={12} md={6}>
             <motion.div
@@ -145,6 +148,7 @@ const AboutUs = () => {
               initial={{ opacity: 0, x: -100 }}
               animate={controls}
               transition={{ duration: 1 }}
+
             >
               <Typography variant="h4" align="center" gutterBottom>Mission Statement</Typography>
               <Typography variant="body1" align="justify">
