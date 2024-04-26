@@ -705,7 +705,7 @@ function Avail() {
 
     dots: true,
     infinite: true,
-    speed: 500,
+    speed: 1000,
     slidesToShow: 1,
     slidesToScroll: 1,
   };
@@ -959,9 +959,9 @@ function Avail() {
         </Modal>
       </div>
     </section>
-    <section style={{ width: '90%', height: '100vh', marginTop: '20px', }}>
+    <section style={{ width: '90%', height: '100vh', marginTop: '6%', }}>
       <Box style={{ display: 'flex', justifyContent: 'center', marginLeft: '80px', }}>
-        <Slider {...settings} style={{ width: '80%', height: '600px', overflowY: "clip", paddingLeft: '10px', paddingRight : '10px',}}>
+        <Slider {...settings} style={{ width: '90%', height: '500px', overflowY: "clip", paddingLeft: '10px', paddingRight : '10px',}}>
 
           <img src={img6} alt="1"  sx={{objectFit: 'cover',}}/>
           <img src={img6} alt="2"   sx={{objectFit: 'cover',}}/>

@@ -117,7 +117,7 @@ function Video() {
     setIsHovered3(false);
   };
   const handleMouseEnter4 = () => {
-    setIsHovered3(true);
+    setIsHovered4(true);
   };
 
   const handleMouseLeave4 = () => {

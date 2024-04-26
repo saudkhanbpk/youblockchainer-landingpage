@@ -18,7 +18,7 @@ const Team = () => {
   });
 
   return (
-    <section id="team">
+    <Box id="team" sx={{marginTop:{xs:"60%", md:"1%"}}}>
       <motion.div
         ref={ref}
         initial={{ opacity: 0, y: 20 }}
@@ -30,7 +30,9 @@ const Team = () => {
           display: "flex",
           flexDirection: "column",
           justifyContent: "center",
-          height: "600px",
+          height: "auto",
+          padding:"20px"
+
         }}
       >
         <Container maxWidth="100%">
@@ -156,7 +158,7 @@ const Team = () => {
           </Grid>
         </Container>
       </motion.div>
-    </section>
+    </Box>
   );
 };
 

@@ -8,20 +8,28 @@ const useStyles = makeStyles((theme) => ({
     alignItems:"center",
     padding:"6%",
     width: '100%',
+    // height: '100vh',
     [theme.breakpoints.down('sm')]: {
       width: '100%', 
       padding:"1%",
+      height: 'auto',
+      
     },
   },
   text: {
     width:"60%",
     // color:"#2F133C",
-    color:"white",
+    fontSize: "33px",
 
+    color:"white",
+padding:'10px',
+fontFamily:"Time",
     textAlign:'left',
     fontWeight: 1000,
     [theme.breakpoints.down('sm')]: {
         width:"100%",
+        textAlign:"center",
+        fontSize:"20px"
       },
   },
 }));

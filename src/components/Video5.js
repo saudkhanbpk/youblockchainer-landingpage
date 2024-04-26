@@ -1,38 +1,10 @@
 import React, { useState } from 'react';
 import { makeStyles } from '@material-ui/core';
 
-const useStyles = makeStyles((theme) => ({
-    videoContainer: {
-        display: "flex",
-        justifyContent: "center",
-        alignItems: 'center',
-        width: '100%',
-        height: "100vh",
-        // marginTop: "8%",
-        // marginBottom: "6%", 
-        [theme.breakpoints.down('sm')]: {
-            height: '50vh',
-        },
-    },
-    video: {
-        width: '100%',
-
-        height: "100%",
-
-        border: "0px",
-        [theme.breakpoints.up('md')]: {
-            width: '1200px',
-
-        },
-        [theme.breakpoints.down('md')]: {
-            borderRadius: 0
-
-        },
-    },
-}));
 const useStyle = makeStyles((theme) => ({
     videoContainer1: {
         display: "flex",
+        gap:"10px",
         justifyContent: "center",
         height: "auto",
         marginBottom: "6%",
@@ -88,20 +60,12 @@ const useStyle1 = makeStyles((theme) => ({
 }));
 
 function Video() {
-    const [isHovered, setIsHovered] = useState(false);
     const [isHovered2, setIsHovered2] = useState(false);
     const [isHovered3, setIsHovered3] = useState(false);
     const [isHovered4, setIsHovered4] = useState(false);
     const [isHovered5, setIsHovered5] = useState(false);
     const [isHovered6, setIsHovered6] = useState(false);
 
-    const handleMouseEnter = () => {
-        setIsHovered(true);
-    };
-
-    const handleMouseLeave = () => {
-        setIsHovered(false);
-    };
     const handleMouseEnter2 = () => {
         setIsHovered2(true);
     };
@@ -117,7 +81,7 @@ function Video() {
         setIsHovered3(false);
     };
     const handleMouseEnter4 = () => {
-        setIsHovered3(true);
+        setIsHovered4(true);
     };
 
     const handleMouseLeave4 = () => {
@@ -137,7 +101,6 @@ function Video() {
     const handleMouseLeave6 = () => {
         setIsHovered6(false);
     };
-    const classes = useStyles();
     const classes1 = useStyle();
     const classes2 = useStyle1();
 
@@ -152,7 +115,7 @@ function Video() {
                     {isHovered2 ? (<iframe
                         title="YouTube Video"
                         className={classes1.video1}
-                        src="https://www.youtube.com/embed/atHBOUvgBI8?autoplay=1&mute=1&controls=0"
+                        src="https://www.youtube.com/embed/tqC9rdkyD8s?autoplay=1&mute=1&controls=0"
                         allow="autoplay; encrypted-media"
                         allowFullScreen
                     ></iframe>
@@ -160,7 +123,7 @@ function Video() {
                         <iframe
                             title="YouTube Video"
                             className={classes1.video1}
-                            src="https://www.youtube.com/embed/atHBOUvgBI8?autoplay=&mute=1&controls=0"
+                            src="https://www.youtube.com/embed/tqC9rdkyD8s?autoplay=&mute=1&controls=0"
                             allow="autoplay; encrypted-media"
                             allowFullScreen
                         ></iframe>
@@ -173,7 +136,7 @@ function Video() {
                     {isHovered3 ? (<iframe
                         title="YouTube Video"
                         className={classes1.video1}
-                        src="https://www.youtube.com/embed/hfnDTvbtDUI?autoplay=1&mute=1&controls=0"
+                        src="https://www.youtube.com/embed/gCcx85zbxz4?autoplay=1&mute=1&controls=0"
                         allow="autoplay; encrypted-media"
                         allowFullScreen
                     ></iframe>
@@ -181,7 +144,7 @@ function Video() {
                         <iframe
                             title="YouTube Video"
                             className={classes1.video1}
-                            src="https://www.youtube.com/embed/hfnDTvbtDUI?autoplay=&mute=1&controls=0"
+                            src="https://www.youtube.com/embed/gCcx85zbxz4?autoplay=&mute=1&controls=0"
                             allow="autoplay; encrypted-media"
                             allowFullScreen
                         ></iframe>
@@ -198,7 +161,7 @@ function Video() {
                         <iframe
                             title="YouTube Video"
                             className={classes2.video2}
-                            src="https://www.youtube.com/embed/3eGP6im8AZA?autoplay=1&mute=1&controls=0"
+                            src="https://www.youtube.com/embed/--8nr2kt4uk?autoplay=1&mute=1&controls=0"
                             allow="autoplay; encrypted-media"
                             allowFullScreen
                         ></iframe>
@@ -206,7 +169,7 @@ function Video() {
                         <iframe
                             title="YouTube Video"
                             className={classes2.video2}
-                            src="https://www.youtube.com/embed/3eGP6im8AZA?autoplay=&mute=1&controls=0"
+                            src="https://www.youtube.com/embed/--8nr2kt4uk?autoplay=&mute=1&controls=0"
                             allow="autoplay; encrypted-media"
                             allowFullScreen
                         ></iframe>
@@ -220,7 +183,7 @@ function Video() {
                     {isHovered5 ? (<iframe
                         title="YouTube Video"
                         className={classes2.video2}
-                        src="https://www.youtube.com/embed/9q76fyfGs6o?autoplay=1&mute=1&controls=0"
+                        src="https://www.youtube.com/embed/xtAL2x58hns?autoplay=1&mute=1&controls=0"
                         allow="autoplay; encrypted-media"
                         allowFullScreen
                     ></iframe>
@@ -228,7 +191,7 @@ function Video() {
                         <iframe
                             title="YouTube Video"
                             className={classes2.video2}
-                            src="https://www.youtube.com/embed/9q76fyfGs6o?autoplay=&mute=1&controls=0"
+                            src="https://www.youtube.com/embed/xtAL2x58hns?autoplay=&mute=1&controls=0"
                             allow="autoplay; encrypted-media"
                             allowFullScreen
                         ></iframe>
@@ -241,7 +204,7 @@ function Video() {
                     {isHovered6 ? (<iframe
                         title="YouTube Video"
                         className={classes2.video2}
-                        src="https://www.youtube.com/embed/gcIv4hGDZeE?autoplay=1&mute=1&controls=0"
+                        src="https://www.youtube.com/embed/73_1biulkYk?autoplay=1&mute=1&controls=0"
                         allow="autoplay; encrypted-media"
                         allowFullScreen
                     ></iframe>
@@ -249,7 +212,7 @@ function Video() {
                         <iframe
                             title="YouTube Video"
                             className={classes2.video2}
-                            src="https://www.youtube.com/embed/gcIv4hGDZeE?autoplay=&mute=1&controls=0"
+                            src="https://www.youtube.com/embed/73_1biulkYk?autoplay=&mute=1&controls=0"
                             allow="autoplay; encrypted-media"
                             allowFullScreen
                         ></iframe>

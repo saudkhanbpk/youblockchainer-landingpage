@@ -17,26 +17,27 @@ body {
 /* ===== Scrollbar CSS ===== */
 /* Firefox */
 * {
-  scrollbar-width: auto;
-  scrollbar-color: #3770ff #ffffff;
+  scrollbar-width: 16px;
+  scrollbar-color: #3770ff ;
 }
 
 /* Chrome, Edge, and Safari */
 *::-webkit-scrollbar {
-  width: 16px;
+  width: 10px;
 }
 
 *::-webkit-scrollbar-track {
-  background: #ffffff;
+  background: transparent;
 }
 
 *::-webkit-scrollbar-thumb {
   background-color: #3770ff;
   border-radius: 10px;
-  border: 3px solid #ffffff;
+  /* border: 3px solid ; */
 }
+
 .background-container {
-  background-image: url('./images/bg.jpg');
+  background-image: url('./images/bg1.jpg');
   background-size: 'cover'; 
   background-position: center; 
   height: 100vh; 
