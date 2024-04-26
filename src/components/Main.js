@@ -3,12 +3,14 @@ import { makeStyles, Typography } from '@material-ui/core';
 
 const useStyles = makeStyles((theme) => ({
   root: {
-    display: 'flex',
+    // display: 'flex',
     // justifyContent:"center",
     alignItems:"center",
-    padding:"6%",
+    padding:"8%",
     width: '100%',
+    color:"white",
     // height: '100vh',
+    fontSize:"33px",
     [theme.breakpoints.down('sm')]: {
       width: '100%', 
       padding:"1%",
@@ -17,15 +19,16 @@ const useStyles = makeStyles((theme) => ({
     },
   },
   text: {
-    width:"60%",
+    width:"70%",
+    // wordSpacing:"1%",
     // color:"#2F133C",
-    fontSize: "33px",
+    // fontSize: "33px",
 
-    color:"white",
+   
 padding:'10px',
 fontFamily:"Time",
     textAlign:'left',
-    fontWeight: 1000,
+    fontWeight: "bold",
     [theme.breakpoints.down('sm')]: {
         width:"100%",
         textAlign:"center",
@@ -39,9 +42,18 @@ function Main() {
 
   return (
     <div className={classes.root}>
-      <Typography variant="h4"  className={classes.text}>
-        Welcome to our platform where cutting-edge technologies converge to revolutionize the world of filmmaking. In this section, we delve into the seamless integration of Artificial Intelligence (AI), Text-to-Video technologies, and Smart Contracts, showcasing how these innovations work together to empower users and elevate the filmmaking process.
+      
+      <Typography variant="h2"  className={classes.text}>
+      Welcome to MyReelDream
+      <Typography variant='h5'>MyReelDreem is your one-stop destination for all things creative. 
+        Whether you're a filmmaker, an artist, a designer, or a storyteller, 
+        our platform is designed to empower you to bring your dreams to fruition.
+        Discover a world of endless possibilities as you connect with like-minded creators, 
+        access top-tier tools and resources, and unlock the secrets to success in your craft.
+         From stunning visual effects to captivating narratives,
+         MyReelDreem is here to help you unleash your full creative potential</Typography>
       </Typography>
+      
     </div>
   );
 }

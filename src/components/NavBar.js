@@ -552,7 +552,7 @@ export default function ElevateAppBar(props) {
                   }}
                     className="dropdowndata">
                     <Button className='aboutt hh ani' onClick={() => navigate('/OurMissions')} sx={{ color: 'white', }}>
-                      Our Missions
+                      Our Mission
                     </Button>
                     <Button className='hh ani' onClick={() => navigate('/vision')} sx={{ color: 'white', }}>
                       Vision Statement
