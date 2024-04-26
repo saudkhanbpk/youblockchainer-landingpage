@@ -76,8 +76,8 @@ export default function Blogs() {
 
   return (
     <>
-      <h2 style={{ marginLeft: '3.5vw', display: "flex", justifyContent: "center" }}>Blogs</h2>
-      <Container maxWidth="lg" >
+      <h2 style={{ color: 'white', marginLeft: '3.5vw', display: "flex", justifyContent: "center" }}>Blogs</h2>
+      <Container maxWidth="lg">
         <Grid container spacing={3}>
           {posts.slice(0, visiblePosts).map((post) => (
             <Grid item xs={12} sm={6} md={4} key={post._id}>
