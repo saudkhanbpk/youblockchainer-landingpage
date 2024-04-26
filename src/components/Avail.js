@@ -635,6 +635,8 @@ const useStyles = makeStyles((theme) => ({
     boxShadow: "0px 4px 8px rgba(0, 0, 0, 0.1)",
     textAlign: 'center',
     transition: "box-shadow 0.3s ease",
+    background: "rgba(0, 0, 0, 0.418)",
+    backdropFilter : 'blur(20px)',
     "&:hover": {
       boxShadow: "0px 8px 8px rgba(0, 0, 0, 0.5)",
 
@@ -794,7 +796,7 @@ function Avail() {
                   style={{
                     // backgroundColor: "#002638",
                     // background: 'linear-gradient(91.97deg, #002638 -39.63%, #3770FF 110.12%)',
-                    background: 'linear-gradient(91.97deg, #002638 -39.63%, #3770FF 110.12%)',
+                   
 
                     cursor: "pointer",
                   }}

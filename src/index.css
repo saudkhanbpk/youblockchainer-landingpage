@@ -68,4 +68,14 @@ color: rgb(182, 182, 182) !important;
 .ani:hover{
 
   color: var(--clr-accent);
+  color: rgb(154, 138, 168)
+}
+/* .hover_text{
+color: white;
+} */
+.textdataaa{
+  color: white;
+}
+.textdataaa:hover{
+  color: gray !important;
 }

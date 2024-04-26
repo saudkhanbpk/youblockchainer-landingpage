@@ -25,7 +25,8 @@ const Team = () => {
         animate={inView ? { opacity: 1, y: 0 } : {}}
         transition={{ duration: 0.6 }}
         style={{
-          backgroundColor: "#002638",
+          background: "rgba(0, 0, 0, 0.418)",
+          backdropFilter : 'blur(20px)',
           display: "flex",
           flexDirection: "column",
           justifyContent: "center",
@@ -82,6 +83,7 @@ const Team = () => {
               display: "flex",
               justifyContent: "center",
               justifySelf: "center",
+              
             }}
           >
             {Array.from({ length: 2 }).map((_, index) => (
@@ -100,6 +102,8 @@ const Team = () => {
                       flexDirection: "column",
                       alignItems: "center",
                       padding: "10px",
+                      
+                      
                     }}
                   >
                     <CardMedia
@@ -107,7 +111,7 @@ const Team = () => {
                       component="img"
                       image="https://www.pageport.com/img/profiles/max.jpg"
                       alt="Team Member 2"
-                      sx={{ width: 150, height: 150, borderRadius: "50%" }}
+                      sx={{ width: 150, height: 150, borderRadius: "50%",  }}
                     />
                     <CardContent
                       style={{

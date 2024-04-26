@@ -466,7 +466,7 @@ import MenuIcon from '@mui/icons-material/Menu';
 import Toolbar from '@mui/material/Toolbar';
 import logo from '../images/artboard_2_copy_3_2_.png';
 import text from '../images/text.png';
-import { CardMedia, Typography } from '@mui/material';
+import { CardMedia, Grid, Typography } from '@mui/material';
 import { Link } from 'react-scroll';
 import CTA from './CTA';
 import Footer from './Footer';
@@ -474,6 +474,7 @@ import { Button } from '@mui/material';
 import { useNavigate } from 'react-router-dom';
 import headlogo from "../images/headlogo.png"
 import '../App.css'
+import { BorderBottom } from '@mui/icons-material';
 
 const drawerWidth = 240;
 
@@ -544,7 +545,7 @@ export default function ElevateAppBar(props) {
                     left: "0px",
                     fontSize: "20px",
                     padding: "5px",
-                    background: "#2F133C",
+                    background: 'linear-gradient(91.97deg, #002638 -39.63%, #3770FF 110.12%)',
                     width: '180px',
                     borderRadius: "10px"
 
@@ -583,7 +584,7 @@ export default function ElevateAppBar(props) {
                     top: "100%",
                     left: "0px",
                     fontSize: "20px",
-                    background: "#2F133C",
+                    background: 'linear-gradient(91.97deg, #002638 -39.63%, #3770FF 110.12%)',
                     width: '180px',
                     borderRadius: "10px"
                   }}
@@ -622,11 +623,12 @@ export default function ElevateAppBar(props) {
       </Box>
       <CTA />
       <Footer />
-      <div style={{ backgroundColor: '#181818', padding: '1%' }}>
-        <p style={{ color: '#BEBEBE', textAlign: 'center', margin: '0', fontFamily: 'Poppins', fontSize: '15px', display: 'flex', justifyContent: 'center', alignItems: 'center' }}>
+      <Box  sx={{borderTop: '1px solid gray', background: 'linear-gradient(91.97deg, #002638 -39.63%, #3770FF 110.12%)',}}></Box>
+      <div style={{  background: 'linear-gradient(91.97deg, #002638 -39.63%, #3770FF 110.12%)',  padding: '1%' }}>
+      <p style={{  background: 'linear-gradient(91.97deg, #002638 -39.63%, #3770FF 110.12%)', color: 'white', textAlign: 'center', margin: '0', fontFamily: 'Poppins', fontSize: '15px',   display: 'flex', justifyContent: 'center', alignItems: 'center' }}>
           Copyright &copy; {new Date().getFullYear()}, <strong> MYREELDREAM. </strong> All rights reserved.
-          <p style={{ color: '#BEBEBE' }} onClick={() => navigate('/privacy-policy')}>
-            <strong style={{ cursor: 'pointer' }}> &nbsp; Privacy policy </strong>
+          <p style={{ color: 'white' }} onClick={() => navigate('/privacy-policy')}>
+            <strong style={{ cursor: 'pointer' }}> &nbsp; Privacy Policy </strong>
           </p>
         </p>
       </div>
