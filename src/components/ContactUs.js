@@ -137,7 +137,7 @@ import LinkedInIcon from '@mui/icons-material/LinkedIn';
 
 const ContactUs = () => {
   return (
-    <div className="container-fluid form-container" style={{ paddingTop: "6rem" }}>
+    <div className="container-fluid form-container" style={{ paddingTop: "6rem",paddingBottom: "6rem" }}>
       <Container maxWidth="lg">
         <motion.div initial={{ opacity: 0, y: -50 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 0.6 }} className="form-card">
           <Grid container className="covero">
