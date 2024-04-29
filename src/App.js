@@ -31,6 +31,8 @@ import SmartContracts from './components/SmartContracts';
 import OurMissions from './components/OurMissions';
 import Vision from './components/Vision';
 import HowItWorks from './components/HowItWorks';
+import Community from './components/Communities';
+import Corporation from './components/Corporation';
 
 
 // import About from "./components/About";
@@ -156,6 +158,28 @@ function App() {
             
             <NavBar>
               <HowItWorks />
+            </NavBar>
+            
+          }
+        />
+         <Route
+          exact
+          path="/community"
+          element={
+            
+            <NavBar>
+              <Community />
+            </NavBar>
+            
+          }
+        />
+          <Route
+          exact
+          path="/corporation"
+          element={
+            
+            <NavBar>
+              <Corporation />
             </NavBar>
             
           }

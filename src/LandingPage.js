@@ -3,7 +3,6 @@ import About from './components/About'
 import Artists from './components/Artists'
 import Avail from './components/Avail'
 import Brands from './components/Brands'
-import Communities from './components/Communities'
 import CountUp from './components/CountUp'
 import Herosection from './components/Herosection'
 import { Box, Typography, Button } from '@mui/material'
@@ -29,7 +28,7 @@ function LandingPage() {
         <>
             {/* <div data-aos="zoom-in"><Herosection /></div> */}
             {/* <Brands />
-            <Communities /> */}
+           
             {/* <Artists /> */}
             <Avail />
             {/* <Knowledge /> */}

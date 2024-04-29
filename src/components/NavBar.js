@@ -575,7 +575,7 @@ export default function ElevateAppBar(props) {
                     },
                   }}
                   className='about_us'
-                  onClick={() => navigate('/About Us')}
+                  // onClick={() => navigate('/')}
                 >
                   <a className='hh ani' sx={{ color: 'white', }} style={{ textDecoration: 'none', color: 'white', fontSize: "16px" }}>
                     Our Services
@@ -599,10 +599,10 @@ export default function ElevateAppBar(props) {
                     <Button className='hh ani' sx={{ color: 'white', }}>
                       Audition
                     </Button>
-                    <Button className='hh ani' sx={{ color: 'white', }}>
+                    <Button onClick={() => navigate('/corporation')} className='hh ani' sx={{ color: 'white', }}>
                       Corporations
                     </Button>
-                    <Button className='hh ani' sx={{ color: 'white', }}>
+                    <Button onClick={() => navigate('/community')} className='hh ani' sx={{ color: 'white', }}>
                       Community
                     </Button>
                   </Box>
