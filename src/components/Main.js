@@ -6,9 +6,10 @@ const useStyles = makeStyles((theme) => ({
     // display: 'flex',
     // justifyContent:"center",
     alignItems:"center",
-    padding:"8%",
-    width: '100%',
+    padding:"8% 0px",
+    width: '90%',
     color:"white",
+    margin: "auto",
     // height: '100vh',
     fontSize:"33px",
     [theme.breakpoints.down('sm')]: {

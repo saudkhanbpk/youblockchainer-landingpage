@@ -558,7 +558,7 @@ export default function ElevateAppBar(props) {
                     <Button className='hh ani' onClick={() => navigate('/vision')} sx={{ color: 'white', }}>
                       Vision Statement
                     </Button>
-                    <Button className='hh ani' sx={{ color: 'white', }}>
+                    <Button onClick={() => navigate('/howitworks')} className='hh ani' sx={{ color: 'white', }}>
                       How it Works
                     </Button>
                   </Box>

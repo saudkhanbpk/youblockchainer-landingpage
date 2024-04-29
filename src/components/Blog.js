@@ -1,7 +1,7 @@
 import { useEffect, useState } from "react";
 import axios from "axios";
 import { Link } from "react-router-dom";
-import { Container, Typography, Grid, Card, CardContent, CardMedia, Avatar, Button } from '@mui/material';
+import { Container, Typography, Grid, Card, CardContent, CardMedia, Avatar, Button, Box } from '@mui/material';
 import { motion } from 'framer-motion';
 import Video5 from "./Video5";
 import News from "./News";
@@ -77,7 +77,9 @@ export default function Blogs() {
   return (
     <>
       <h2 style={{ color: 'white', marginLeft: '3.5vw', display: "flex", justifyContent: "center", }}>Blogs</h2>
-      <Container maxWidth="lg">
+     <Box sx={{width: "90%", margin: "auto"}}>
+
+      <Container maxWidth="xl">
         <Grid container spacing={3}>
           {posts.slice(0, visiblePosts).map((post) => (
             <Grid item xs={12} sm={6} md={4} key={post._id}>
@@ -131,6 +133,7 @@ export default function Blogs() {
         <Video5/>
       <News/>
       </Container>
+     </Box>
       
       
     </>

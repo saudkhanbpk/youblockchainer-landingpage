@@ -621,16 +621,17 @@ const useStyles = makeStyles((theme) => ({
   root: {
     flexGrow: 1,
     // padding: theme.spacing(4),
-    justifyContent: "center",
+    justifyContent: "between",
     display: "flex",
     alignItems: "center",
-    padding:"0px"
+    padding:"0px",
   },
   card: {
     display: "flex",
     alignItems: 'center',
     flexDirection: "column",
     color: "#ffffff",
+    
     borderRadius: theme.spacing(2),
     boxShadow: "0px 4px 8px rgba(0, 0, 0, 0.1)",
     textAlign: 'center',
@@ -764,13 +765,13 @@ function Avail() {
 
   return (<>
   <Main/>
-    <Box className="video">
+    <Box sx={{width: "90%", margin: "auto"}}>
       <Video />
     </Box >
     <section id="services">
 
     </section>
-    <section id="avail">
+    <section id="avail" style={{width : "90%", margin: "auto",}}>
 
       <div className={classes.root}>
         <Grid
@@ -778,7 +779,7 @@ function Avail() {
           spacing={1}
           style={{
             display: "flex",
-            justifyContent: "space-around",
+            justifyContent: "space-between",
             justifyItems: "center",
             padding: "5px",
           }}
@@ -961,7 +962,7 @@ function Avail() {
     </section>
     <section style={{ width: '100%', height: '100vh', marginTop: '6%', }}>
       <Box style={{ display: 'flex', justifyContent: 'center', }}>
-        <Slider {...settings} style={{ width: '80%', height: '500px', overflowY: "clip", paddingLeft: '10px', paddingRight : '10px',}}>
+        <Slider {...settings} style={{ width: '90%', height: '500px', overflowY: "clip", paddingLeft: '10px', paddingRight : '10px',}}>
 
           <img src={img6} alt="1"  sx={{objectFit: 'cover',}}/>
           <img src={img6} alt="2"   sx={{objectFit: 'cover',}}/>

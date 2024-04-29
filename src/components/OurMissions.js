@@ -15,8 +15,8 @@ const useStyles = makeStyles((theme) => ({
     },
     text: {
         color: 'white',
-        maxWidth: 800,
-        margin: '0 auto',
+        maxWidth: "90%",
+        
     },
 }));
 
@@ -26,7 +26,7 @@ const OurMissions = () => {
     return (
         <Container className={classes.container}>
             <Typography variant="h5" className={classes.text}>
-                <p style={{fontWeight: 'bold', fontSize: '40px', }}>Mission Statement:</p>
+                <p style={{fontWeight: 'bold', fontSize: '40px', }}>Mission Statement</p>
                 At myreeldream.ai, we are driven by a singular mission: to democratize the filmmaking process. We believe in empowering individuals from all walks of life, whether seasoned professionals or aspiring amateurs, to unleash their creative potential and bring their cinematic visions to life. By harnessing the power of cutting-edge technologies such as artificial intelligence, text-to-video, and smart contracts, we aim to revolutionize the entertainment industry and redefine the way films are conceived, produced, and showcased.
             </Typography>
         </Container>

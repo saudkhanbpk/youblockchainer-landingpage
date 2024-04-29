@@ -30,6 +30,7 @@ import Auditions from './components/Auditions';
 import SmartContracts from './components/SmartContracts';
 import OurMissions from './components/OurMissions';
 import Vision from './components/Vision';
+import HowItWorks from './components/HowItWorks';
 
 
 // import About from "./components/About";
@@ -144,6 +145,17 @@ function App() {
             
             <NavBar>
               <OurMissions />
+            </NavBar>
+            
+          }
+        />
+              <Route
+          exact
+          path="/howitworks"
+          element={
+            
+            <NavBar>
+              <HowItWorks />
             </NavBar>
             
           }

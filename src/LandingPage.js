@@ -33,6 +33,7 @@ function LandingPage() {
             {/* <Artists /> */}
             <Avail />
             {/* <Knowledge /> */}
+            
             <Blogs />
             <Team />
             <About />&nbsp;
