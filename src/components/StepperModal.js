@@ -14,6 +14,8 @@ export default function HorizontalLinearStepper({ setOpen, video }) {
   const [skipped, setSkipped] = React.useState(new Set());
   const [checked, setChecked] = React.useState(false)
   const [checked2, setChecked2] = React.useState(false)
+  const [checked3, setChecked3] = React.useState(false)
+
 
   const isStepOptional = (step) => {
     return step === 1;
@@ -96,14 +98,13 @@ export default function HorizontalLinearStepper({ setOpen, video }) {
         <React.Fragment>
           {
             activeStep === 0 ? <>
-              <video width="100%" height="315" style={{ borderRadius: '5px' }} autoPlay>
+              {/* <video width="100%" height="315" style={{ borderRadius: '5px' }} autoPlay>
                 <source src={video} type="video/mp4" />
-              </video>
+              </video> */}
             </> : <>
               <Typography variant='h5' sx={{ fontWeight: 'bold', textAlign: 'center', fontFamily: 'Poppins', margin: '0', padding: '0', padding: '5%', fontSize: { md: '1.2rem', sm: '1rem', xs: '1rem' } }}><strong style={{ color: '#3770FF' }}>Start Your Journey and Unlock Opportunities</strong><br /> Join the Spotlight as an aspiring talent or Collaborate with the Best as a movie professional</Typography>
               <Box sx={{ display: 'flex', justifyContent: 'space-evenly' }}>
-                <Button
-                >
+                <Button>
                   <Checkbox
                     checked={checked}
                     size='small'
@@ -113,7 +114,7 @@ export default function HorizontalLinearStepper({ setOpen, video }) {
                     }}
                     inputProps={{ 'aria-label': 'controlled' }}
                   />Aspiring talent</Button>
-                <Button >
+                <Button>
                   <Checkbox
                     checked={checked2}
                     size='small'
@@ -123,6 +124,17 @@ export default function HorizontalLinearStepper({ setOpen, video }) {
                     }}
                     inputProps={{ 'aria-label': 'controlled' }}
                   />Movie professional</Button>
+                   <Button>
+                  <Checkbox
+                    checked={checked3}
+                    size='small'
+                    onChange={() => {
+                      setChecked3(!checked3)
+                      setChecked2(true)
+                      
+                    }}
+                    inputProps={{ 'aria-label': 'controlled' }}
+                  />Corporations</Button>
               </Box>
               {
                 checked ? <Alert sx={{ marginTop: '5%' }} severity="info">Elevate Your Career: Connect with Aspiring Talents and Expand Your Reach to Movie Buyers, Distributors, and Producers.</Alert> : checked2 ? <Alert sx={{ marginTop: '5%' }} severity="info">Sell your services to aspiring artists and or to movie buyers, distributors, productors</Alert> : ""

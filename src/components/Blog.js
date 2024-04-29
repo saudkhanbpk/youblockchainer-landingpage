@@ -25,7 +25,7 @@ export default function Blogs() {
       _id: 2,
       title: 'Second Post',
       content: 'Content of the second post',
-      image: 'https://picsum.photos/id/29/4000/2670',
+      image: 'https://picsum.photos/id/29/4000/2670',  
       author: {
         name: 'Jane Smith',
         picture: 'https://picsum.photos/200/300',
