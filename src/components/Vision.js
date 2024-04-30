@@ -27,7 +27,18 @@ const useStyles = makeStyles((theme) => ({
         display: 'flex',
         flexDirection: 'column',
         textAlign: "justify",
-        height: 'screen',
+        [theme.breakpoints.down('sm')]: {
+            marginTop: theme.spacing(0),
+            height: 'auto',
+            display: 'flex',
+            alignItems: 'center',
+            justifyContent: 'center',
+            textAlign: 'center',
+            // fontSize: "20px"
+
+        },
+
+
     },
     paper: {
         padding: theme.spacing(3),
@@ -35,14 +46,20 @@ const useStyles = makeStyles((theme) => ({
         height: 'screen',
         boxShadow: "none",
         background: 'transparent',
-        
+        [theme.breakpoints.down('sm')]: {
+            padding: theme.spacing(0),
+            width: "100%",
+            padding:"10px"
+
+
+        },
 
 
     },
     text: {
         color: theme.palette.text.primary,
         color: 'white',
-      
+        marginTop:"30px"
 
 
     },

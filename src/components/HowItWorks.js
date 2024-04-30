@@ -11,6 +11,16 @@ const useStyles = makeStyles((theme) => ({
         marginTop: theme.spacing(4),
         display: 'flex',
         flexDirection: 'column',
+        [theme.breakpoints.down('sm')]: {
+            marginTop: theme.spacing(0),
+            height: 'auto',
+            display: 'flex',
+            alignItems: 'center',
+            justifyContent: 'center',
+            textAlign: 'center',
+            // fontSize: "20px"
+
+        },
 
 
 
@@ -21,6 +31,13 @@ const useStyles = makeStyles((theme) => ({
         padding: '20px 20px',
         background: "transparent",
         boxShadow: 'none',
+        [theme.breakpoints.down('sm')]: {
+            padding: theme.spacing(0),
+            width: "100%",
+            padding:"10px"
+
+
+        },
 
 
 
