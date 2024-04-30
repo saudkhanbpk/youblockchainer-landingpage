@@ -771,7 +771,7 @@ function Avail() {
     <section id="services">
 
     </section>
-    <section id="avail" style={{width : "90%", margin: "auto",}}>
+    <section id="avail" style={{width : "90%", margin: "auto"}}>
 
       <div className={classes.root}>
         <Grid

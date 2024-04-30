@@ -1,6 +1,7 @@
 import React from 'react';
 import { makeStyles } from '@material-ui/core/styles';
 import { Typography, Container } from '@material-ui/core';
+import { WidthFull } from '@mui/icons-material';
 
 const useStyles = makeStyles((theme) => ({
     container: {
@@ -8,13 +9,30 @@ const useStyles = makeStyles((theme) => ({
         display: 'flex',
         flexDirection: 'column',
         height: '100vh',
+        width: '100%',
+        [theme.breakpoints.down('sm')]: {
+        marginTop: theme.spacing(0),
+           height:'auto',
+           display:'flex',
+           alignItems: 'center',
+           justifyContent: 'center',
+           textAlign: 'center',
+        //    fontSize:"20px"       
+        },
+
+
         
 
 
     },
     text: {
         color: 'white',
-        maxWidth: "70%",
+        width: "70%",
+        [theme.breakpoints.down('sm')]: {
+            width: '100%',
+            textAlign: 'center',
+            // fontSize:"20px"
+        },
 
     },
 }));

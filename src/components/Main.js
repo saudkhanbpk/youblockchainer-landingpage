@@ -33,7 +33,7 @@ fontFamily:"Time",
     [theme.breakpoints.down('sm')]: {
         width:"100%",
         textAlign:"center",
-        fontSize:"20px"
+        fontSize:"45px",
       },
   },
 }));
