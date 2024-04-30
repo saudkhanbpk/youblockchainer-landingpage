@@ -71,7 +71,7 @@ export default function ElevateAppBar(props) {
                   marginRight: '2vw',
                 }}
               />
-              <Box sx={{ display: { xs: 'block', sm: 'none' }, ml: "20px" }}>
+              <Box sx={{ display: { xs: 'block', sm: 'none' }, ml: "90px" }}>
                 <IconButton
                   color="inherit"
                   aria-label="open drawer"
@@ -82,7 +82,7 @@ export default function ElevateAppBar(props) {
                 </IconButton>
                 <Drawer
                   variant="temporary"
-                  anchor="right"
+                  anchor="left"
                   open={mobileOpen}
                   onClose={handleDrawerToggle}
                   ModalProps={{
