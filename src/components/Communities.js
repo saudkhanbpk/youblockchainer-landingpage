@@ -22,7 +22,8 @@ const useStyles = makeStyles((theme) => ({
     text: {
         color: theme.palette.text.primary,
         color: 'white',
-
+     
+        
 
     },
 }));

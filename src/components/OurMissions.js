@@ -15,6 +15,7 @@ const useStyles = makeStyles((theme) => ({
     text: {
         color: 'white',
         maxWidth: "70%",
+        
 
     },
 }));

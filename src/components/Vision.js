@@ -35,12 +35,14 @@ const useStyles = makeStyles((theme) => ({
         height: 'screen',
         boxShadow: "none",
         background: 'transparent',
+        
 
 
     },
     text: {
         color: theme.palette.text.primary,
         color: 'white',
+      
 
 
     },

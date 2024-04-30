@@ -17,12 +17,13 @@ const useStyles = makeStyles((theme) => ({
         boxShadow: "none",
         background: 'transparent',
         padding: '20px',
-
+      
 
     },
     text: {
         color: theme.palette.text.primary,
         color: 'white',
+        
 
 
     },
@@ -78,7 +79,7 @@ const Corporation = () => {
                             <strong style={{display: 'flex', justifyContent: 'center',}}>Support for Corporate Social Responsibility (CSR) Initiatives</strong>
                         </Typography>
                         <Typography variant="body1" className={classes.text}>
-                            : MyReelDream.ai celebrates diversity and inclusivity, making it an ideal platform for corporations to support their CSR initiatives. By partnering with diverse talents and promoting underrepresented voices, corporations can demonstrate their commitment to social responsibility and contribute to positive social change through their creative endeavors.Overall, MyReelDream.ai offers corporations a unique opportunity to harness the power of visual storytelling, drive innovation, and make a meaningful impact through their creative endeavors.
+                            MyReelDream.ai celebrates diversity and inclusivity, making it an ideal platform for corporations to support their CSR initiatives. By partnering with diverse talents and promoting underrepresented voices, corporations can demonstrate their commitment to social responsibility and contribute to positive social change through their creative endeavors.Overall, MyReelDream.ai offers corporations a unique opportunity to harness the power of visual storytelling, drive innovation, and make a meaningful impact through their creative endeavors.
 
                        
                     </Typography>

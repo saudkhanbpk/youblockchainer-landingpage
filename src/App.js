@@ -33,6 +33,7 @@ import Vision from './components/Vision';
 import HowItWorks from './components/HowItWorks';
 import Community from './components/Communities';
 import Corporation from './components/Corporation';
+import Aspiring from './components/Aspiring';
 
 
 // import About from "./components/About";
@@ -62,6 +63,17 @@ function App() {
             
           }
         />
+          <Route
+          exact
+          path="/aspiring"
+          element={
+            
+            <NavBar>
+              <Aspiring/>
+            </NavBar>
+            
+          }
+        />
         <Route
           exact
           path="/audition"
@@ -69,7 +81,7 @@ function App() {
             
             <NavBar>
               <Auditions/>
-            </NavBar>
+             </NavBar>
             
           }
         />
@@ -169,6 +181,17 @@ function App() {
             
             <NavBar>
               <Community />
+            </NavBar>
+            
+          }
+        />
+        <Route
+          exact
+          path="/blog"
+          element={
+            
+            <NavBar>
+              <Blog />
             </NavBar>
             
           }
