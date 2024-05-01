@@ -34,6 +34,9 @@ import HowItWorks from './components/HowItWorks';
 import Community from './components/Communities';
 import Corporation from './components/Corporation';
 import Aspiring from './components/Aspiring';
+import MovieProfessional from './components/MovieProfessional';
+import BehindTheScene from './components/BehindTheScene';
+import AnnualHybrid from './components/AnnualHybrid';
 
 
 // import About from "./components/About";
@@ -81,6 +84,39 @@ function App() {
             
             <NavBar>
               <Auditions/>
+             </NavBar>
+            
+          }
+        />
+         <Route
+          exact
+          path="/movieprofessional"
+          element={
+            
+            <NavBar>
+              <MovieProfessional/>
+             </NavBar>
+            
+          }
+        />
+         <Route
+          exact
+          path="/behindthescene"
+          element={
+            
+            <NavBar>
+              <BehindTheScene/>
+             </NavBar>
+            
+          }
+        />
+         <Route
+          exact
+          path="/annualhybrid"
+          element={
+            
+            <NavBar>
+              <AnnualHybrid/>
              </NavBar>
             
           }

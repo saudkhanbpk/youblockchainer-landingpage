@@ -1,22 +1,3 @@
-// import React from 'react'
-
-// const Vision = () => {
-//   return (
-//     <>
-
-//     <section>
-
-//         <p>
-//         <p>**Our Vision**</p>	
-// At MyReelDream, we envision a world where filmmaking is not just a profession, but a universal language that connects people, cultures, and ideas. We believe that everyone has a story to tell and deserves the opportunity to share it with the world. Our vision is to democratize the filmmaking process, making it accessible to aspiring talents, empowering movie professionals, and providing innovative solutions for corporations.
-
-//         </p>
-//     </section>
-//     </>
-//   )
-// }
-
-// export default Vision
 import React from 'react';
 import { makeStyles } from '@material-ui/core/styles';
 import { Typography, Container, Paper } from '@material-ui/core';

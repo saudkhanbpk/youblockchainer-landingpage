@@ -16,7 +16,7 @@ const useStyles = makeStyles((theme) => ({
            alignItems: 'center',
            justifyContent: 'center',
            textAlign: 'center',
-        //    fontSize:"20px"       
+         
         },
 
 
@@ -30,23 +30,25 @@ const useStyles = makeStyles((theme) => ({
         [theme.breakpoints.down('sm')]: {
             width: '100%',
             textAlign: 'center',
-            // fontSize:"20px"
+           
         },
 
     },
 }));
 
-const OurMissions = () => {
+const MovieProfessional = () => {
     const classes = useStyles();
 
     return (
         <Container className={classes.container}>
             <Typography variant="h5" className={classes.text}>
-                <p style={{ fontWeight: 'bold', fontSize: '40px', textAlign: 'center', }}>Mission Statement</p>
-                At myreeldream.ai, we are driven by a singular mission: to democratize the filmmaking process. We believe in empowering individuals from all walks of life, whether seasoned professionals or aspiring amateurs, to unleash their creative potential and bring their cinematic visions to life. By harnessing the power of cutting-edge technologies such as artificial intelligence, text-to-video, and smart contracts, we aim to revolutionize the entertainment industry and redefine the way films are conceived, produced, and showcased.
+                <p style={{ fontWeight: 'bold', fontSize: '40px', textAlign: 'center', }}>Movie Professional</p>
+                Showcase testimonials or success stories from industry experts who have used the platform to optimize their production cycles.
+    Emphasize features such as streamlined workflows, collaboration opportunities, and access to cutting-edge technologies.
+
             </Typography>
         </Container>
     );
 }
 
-export default OurMissions;
+export default MovieProfessional;

@@ -122,7 +122,7 @@ export default function ElevateAppBar(props) {
                         // borderRadius: "10px"
                       }}
                         className="dropdowndata">
-                        <Button className='hh ani' sx={{ color: 'white', }}>
+                        <Button  className='hh ani' sx={{ color: 'white', }}>
                           Movie Professionals
                         </Button>
                         <Button className='hh ani' onClick={() => navigate('/aspiring')} sx={{ color: 'white', }}>
@@ -137,6 +137,12 @@ export default function ElevateAppBar(props) {
                         <Button onClick={() => navigate('/community')} className='hh ani' sx={{ color: 'white', }}>
                           Community
                         </Button>
+                        <Button onClick={() => navigate('/behindthescene')}  className='hh ani' sx={{ color: 'white', }}>
+                          Behind The Scene
+                        </Button>
+                        <Button onClick={() => navigate('/annualhybrid')} className='hh ani' sx={{ color: 'white', }}>
+                    Annual Hybrid AI-Human Movie Festivals
+                    </Button>
                       </Box>
                     </Button>
                     <Button sx={{ color: 'white', textTransform: 'none', fontWeight: '600', '&:hover': { color: 'blue' } }}>
@@ -259,7 +265,7 @@ export default function ElevateAppBar(props) {
                     borderRadius: "10px"
                   }}
                     className="dropdowndata">
-                    <Button className='hh ani' sx={{ color: 'white', }}>
+                    <Button className='hh ani' onClick={()=>navigate("/movieprofessional")} sx={{ color: 'white', }}>
                       Movie Professionals
                     </Button>
                     <Button onClick= {() =>navigate('/aspiring')} className='hh ani' sx={{ color: 'white', }}>
@@ -273,6 +279,12 @@ export default function ElevateAppBar(props) {
                     </Button>
                     <Button onClick={() => navigate('/community')} className='hh ani' sx={{ color: 'white', }}>
                       Community
+                    </Button>
+                    <Button onClick={() => navigate('/behindthescene')} className='hh ani' sx={{ color: 'white', }}>
+                      Behind The Scene
+                    </Button>
+                    <Button onClick={() => navigate('/annualhybrid')} className='hh ani' sx={{ color: 'white', }}>
+                    Annual Hybrid AI-Human Movie Festivals
                     </Button>
                   </Box>
                 </Button>
