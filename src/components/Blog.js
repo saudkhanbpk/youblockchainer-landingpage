@@ -39,14 +39,14 @@ export default function Blogs() {
       title: 'PremiumBeat Blog',
       content: 'PremiumBeats blog features articles on filmmaking techniques, gear reviews, and industry trends, catering to filmmakers, videographers, and content creators',
       image: 'https://picsum.photos/id/9/5000/3269',
-     link: 'https://www.premiumbeat.com/blog/',
+      link: 'https://www.premiumbeat.com/blog/',
       author: {
         name: 'Alex Johnson',
         picture: 'https://picsum.photos/200/300',
       },
       date: 'March 20, 2024'
     },
-    
+
   ];
 
   const loadMorePosts = () => {
@@ -75,36 +75,36 @@ export default function Blogs() {
           {posts.slice(0, visiblePosts).map((post) => (
             <Grid item xs={12} sm={6} md={4} key={post._id}>
               <Box
-               
                 style={{ textDecoration: "none" }}
               >
                 <motion.div
                   whileHover={{ scale: 1.05 }}
                   whileTap={{ scale: 0.95 }}
                 >
-                  <Card style={{ marginBottom: '2rem', color: 'white',  background: "rgba(0, 0, 0, 0.418)",
-                     
-                      "&:hover": {
-                        boxShadow: "0px 8px 8px rgba(0, 0, 0, 0.5)",
-                      },}}>
+                  <Card style={{
+                    marginBottom: '2rem', color: 'white', background: "rgba(0, 0, 0, 0.418)",
+                    "&:hover": {
+                      boxShadow: "0px 8px 8px rgba(0, 0, 0, 0.5)",
+                    },
+                  }}>
                     <CardMedia
-                    style={{color: 'white',}}
+                      style={{ color: 'white', }}
                       component="img"
                       height="200"
                       image={post.image}
                       alt={post.title}
                     />
-                    <CardContent style={{color: 'white',}}>
+                    <CardContent style={{ color: 'white', }}>
                       <Typography variant="h6" component="h2">
                         {post.title}
                       </Typography>
-                      <Typography variant="body2"  component="p">
-                        {post.content}<a   style={{color: 'white', padding: '5px',}} href= {post.link} >seeMore</a>
+                      <Typography variant="body2" component="p">
+                        {post.content}<a style={{ color: 'white', padding: '5px', }} href={post.link} >seeMore</a>
                       </Typography>
-                      <div style={{ display: 'flex',  color: 'white', alignItems: 'center', justifyContent: "space-between" }}>
+                      <div style={{ display: 'flex', color: 'white', alignItems: 'center', justifyContent: "space-between" }}>
                         <div style={{ display: 'flex', alignItems: 'center', marginTop: '1rem' }}>
                           <Avatar src={post.author.picture} alt={post.author.name} style={{ marginRight: '0.5rem' }} />
-                          <Typography style={{color: 'white',}} variant="body2" color="textSecondary">
+                          <Typography style={{ color: 'white', }} variant="body2" color="textSecondary">
                             {post.author.name}
                           </Typography>
                         </div>

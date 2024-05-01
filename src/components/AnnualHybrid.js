@@ -54,8 +54,6 @@ const AnnualHybrid = () => {
     return (
         <>
             <Container className={classes.container}>
-
-
                 <Paper className={classes.paper} elevation={3}>
                     <strong className='strong' style={{ color: 'white', fontSize: '30px', display: 'flex', justifyContent: 'center', marginTop: '10px', }}>
                         Annual Hybrid AI-Human Movie Festivals
@@ -145,15 +143,11 @@ const AnnualHybrid = () => {
                         <span style={{ fontWeight: 'bold', display: 'flex', justifyContent: 'center', marginTop: '10px', }}> Film Festival Blogs and Reviews  </span>
                     </Typography>
                     <Typography style={{ marginTop: '10px', padding: '10px', letterSpacing: '1px', }} variant="body1" className={classes.text}>
-                    Film festival blogs and review websites often feature coverage of past editions, including reviews of winning films, interviews with filmmakers, and analysis of festival trends. Examples include IndieWire Festival Coverage <a style={{ color: 'white', marginTop: '10px', }} href=' https://www.indiewire.com/c/festivals/) '> Read More </a><br />
+                        Film festival blogs and review websites often feature coverage of past editions, including reviews of winning films, interviews with filmmakers, and analysis of festival trends. Examples include IndieWire Festival Coverage <a style={{ color: 'white', marginTop: '10px', }} href=' https://www.indiewire.com/c/festivals/) '> Read More </a><br />
                         <span>Variety Festival Coverage</span>
                         <a style={{ color: 'white', marginTop: '10px', }} href='https://variety.com/v/film/festivals/'> Read More </a>
                     </Typography>
-
-
-
                 </Paper>
-
             </Container>
         </>
 

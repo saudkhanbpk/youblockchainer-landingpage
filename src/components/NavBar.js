@@ -92,7 +92,7 @@ export default function ElevateAppBar(props) {
                     display: { md: "none" },
                   }}
                 >
-                  {/* Your Drawer content here */}
+                
                   <div style={{ backgroundColor: "#0047AB", height: "100%", width: "300px", display: "flex", justifyContent: "start", alignItems: "start", flexFlow: "column" }} >
 
                     <Button
@@ -119,7 +119,7 @@ export default function ElevateAppBar(props) {
                         fontSize: "20px",
                         background: 'linear-gradient(91.97deg, #002638 -39.63%, #3770FF 110.12%)',
                         width: '180px',
-                        // borderRadius: "10px"
+                       
                       }}
                         className="dropdowndata">
                         <Button  className='hh ani' sx={{ color: 'white', }}>
@@ -291,7 +291,7 @@ export default function ElevateAppBar(props) {
                 <Button sx={{ color: 'white', textTransform: 'none', fontWeight: '600', '&:hover': { color: 'blue' } }}>
                   <a onClick={() => navigate('/blog')} className='hh ani' style={{ textDecoration: 'none', color: 'white', fontSize: "16px" }}>Blog</a>
                 </Button>
-                <Button sx={{ color: 'white', textTransform: 'none', fontWeight: '600', '&:hover': { color: 'blue' } }}>
+                <Button onClick={() => navigate('/contactus')} sx={{ color: 'white', textTransform: 'none', fontWeight: '600', '&:hover': { color: 'blue' } }}>
                   <a className='hh ani' style={{ textDecoration: 'none', color: 'white', fontSize: "16px" }}>Contact Us</a>
                 </Button>
               </Box>

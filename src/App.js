@@ -4,7 +4,7 @@ import LandingPage from './LandingPage';
 import Aos from 'aos';
 import 'aos/dist/aos.css';
 import { useEffect } from 'react';
-import { BrowserRouter as Router } from 'react-router-dom';
+import { BrowserRouter as Router, useLocation } from 'react-router-dom';
 import { Navigate, Outlet, Route, Routes } from 'react-router-dom';
 import PrivacyPolicy from './components/PrivacyPolicy';
 import Knowledge from './components/Knowledge';
@@ -37,14 +37,18 @@ import Aspiring from './components/Aspiring';
 import MovieProfessional from './components/MovieProfessional';
 import BehindTheScene from './components/BehindTheScene';
 import AnnualHybrid from './components/AnnualHybrid';
+import { ScrollToTop } from './components/ScrollToTop';
 
 
 // import About from "./components/About";
 
 function App() {
+  
+
   return (
-   
+
     <Router >
+      <ScrollToTop />
       <Routes>
         <Route
           exact
@@ -59,88 +63,88 @@ function App() {
           exact
           path="/film"
           element={
-            
+
             <NavBar>
-              <FilmLocation/>
+              <FilmLocation />
             </NavBar>
-            
+
           }
         />
-          <Route
+        <Route
           exact
           path="/aspiring"
           element={
-            
+
             <NavBar>
-              <Aspiring/>
+              <Aspiring />
             </NavBar>
-            
+
           }
         />
         <Route
           exact
           path="/audition"
           element={
-            
+
             <NavBar>
-              <Auditions/>
-             </NavBar>
-            
+              <Auditions />
+            </NavBar>
+
           }
         />
-         <Route
+        <Route
           exact
           path="/movieprofessional"
           element={
-            
+
             <NavBar>
-              <MovieProfessional/>
-             </NavBar>
-            
+              <MovieProfessional />
+            </NavBar>
+
           }
         />
-         <Route
+        <Route
           exact
           path="/behindthescene"
           element={
-            
+
             <NavBar>
-              <BehindTheScene/>
-             </NavBar>
-            
+              <BehindTheScene />
+            </NavBar>
+
           }
         />
-         <Route
+        <Route
           exact
           path="/annualhybrid"
           element={
-            
+
             <NavBar>
-              <AnnualHybrid/>
-             </NavBar>
-            
+              <AnnualHybrid />
+            </NavBar>
+
           }
         />
-         <Route
+        <Route
           exact
           path="/contract"
           element={
-            
+
             <NavBar>
-              <SmartContracts/>
+              <SmartContracts />
             </NavBar>
-            
+
           }
         />
         <Route
           exact
           path="/festival"
           element={
-            
+
             <NavBar>
               <Festival />
             </NavBar>
-            
+
           }
         />
         <Route
@@ -166,7 +170,7 @@ function App() {
           path="/about"
           element={
             <NavBar>
-              <About/>
+              <About />
             </NavBar>
           }
         />
@@ -179,7 +183,7 @@ function App() {
             </NavBar>
           }
         />
-         <Route
+        <Route
           exact
           path="/about"
           element={
@@ -192,69 +196,69 @@ function App() {
           exact
           path="/OurMissions"
           element={
-            
+
             <NavBar>
               <OurMissions />
             </NavBar>
-            
+
           }
         />
-              <Route
+        <Route
           exact
           path="/howitworks"
           element={
-            
+
             <NavBar>
               <HowItWorks />
             </NavBar>
-            
+
           }
         />
-         <Route
+        <Route
           exact
           path="/community"
           element={
-            
+
             <NavBar>
               <Community />
             </NavBar>
-            
+
           }
         />
         <Route
           exact
           path="/blog"
           element={
-            
+
             <NavBar>
               <Blog />
             </NavBar>
-            
+
           }
         />
-          <Route
+        <Route
           exact
           path="/corporation"
           element={
-            
+
             <NavBar>
               <Corporation />
             </NavBar>
-            
+
           }
         />
-         <Route
+        <Route
           exact
           path="/vision"
           element={
-            
+
             <NavBar>
               <Vision />
             </NavBar>
-            
+
           }
         />
-        
+
         <Route
           exact
           path="/contactus"
