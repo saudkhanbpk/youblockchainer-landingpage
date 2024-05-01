@@ -119,6 +119,9 @@ function Video() {
         speed: 1000,
         slidesToShow: 1,
         slidesToScroll: 1,
+        autoplay: true, // Autoplay slides
+        autoplaySpeed: 2000, // Delay between autoplay slides (in milliseconds)
+        arrows: false,
     };
     const paragraph = [
         {
@@ -180,7 +183,7 @@ function Video() {
             </div>
             <div className='news1'>
 
-                <Slider {...settings} style={{display:'flex', width: '100%', justifyContent:'center' }}>
+                <Slider {...settings} style={{display:'flex', width: '100%', justifyContent:'center', marginBottom:'50px' }}>
 
                     {paragraph.map((item, index) => {
                         return <div className={classes1.carasoul} onClick={() => handleCarouselItemClick(item.link, item.para, item.title)} key={index}>

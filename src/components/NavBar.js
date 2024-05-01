@@ -67,7 +67,7 @@ export default function ElevateAppBar(props) {
                   height: '30px',
                   cursor: 'pointer',
                   width: '270px',
-                  marginLeft: {xs:'0px', md:'10px'},
+                  marginLeft: { xs: '0px', md: '10px' },
                   marginRight: '2vw',
                 }}
               />
@@ -107,7 +107,7 @@ export default function ElevateAppBar(props) {
                         },
                       }}
                       className='about_us'
-                    onClick={() => navigate('/')}
+                      onClick={() => navigate('/')}
                     >
                       <a className='hh ani' sx={{ color: 'white', }} style={{ textDecoration: 'none', color: 'white', fontSize: "16px" }}>
                         Our Services
@@ -122,20 +122,47 @@ export default function ElevateAppBar(props) {
                         // borderRadius: "10px"
                       }}
                         className="dropdowndata">
-                        <Button className='hh ani' sx={{ color: 'white', }}>
+                        <Button className='hh ani' onClick={() => {
+                          navigate('/movieprofessional');
+                          handleMenuClick();
+                        }} sx={{ color: 'white', }}>
                           Movie Professionals
                         </Button>
-                        <Button className='hh ani' onClick={() => navigate('/aspiring')} sx={{ color: 'white', }}>
+                        <Button className='hh ani' onClick={() => {
+                          navigate('/aspiring');
+                          handleMenuClick()
+                        }} sx={{ color: 'white', }}>
                           Aspiring Talents
                         </Button>
-                        <Button className='hh ani' onClick={() => navigate('/audition')} sx={{ color: 'white', }}>
+                        <Button className='hh ani' onClick={() => {
+                          navigate('/audition');
+                          handleMenuClick()
+                        }} sx={{ color: 'white', }}>
                           Audition
                         </Button>
-                        <Button onClick={() => navigate('/corporation')} className='hh ani' sx={{ color: 'white', }}>
+                        <Button onClick={() => {
+                          navigate('/corporation');
+                          handleMenuClick()
+                        }} className='hh ani' sx={{ color: 'white', }}>
                           Corporations
                         </Button>
-                        <Button onClick={() => navigate('/community')} className='hh ani' sx={{ color: 'white', }}>
+                        <Button onClick={() => {
+                          navigate('/community');
+                          handleMenuClick()
+                        }} className='hh ani' sx={{ color: 'white', }}>
                           Community
+                        </Button>
+                        <Button onClick={() => {
+                          navigate('/behindthescene');
+                          handleMenuClick()
+                        }} className='hh ani' sx={{ color: 'white', }}>
+                          Behind The Scene
+                        </Button>
+                        <Button onClick={() => {
+                          navigate('/annualhybrid');
+                          handleMenuClick()
+                        }} className='hh ani' sx={{ color: 'white', }}>
+                          Annual Hybrid AI-Human Movie Festivals
                         </Button>
                       </Box>
                     </Button>
@@ -175,22 +202,23 @@ export default function ElevateAppBar(props) {
                           Our Mission
                         </Button>
                         <Button className='hh ani' onClick={() => {
-                           handleMenuClick();
-                           navigate('/vision')}} sx={{ color: 'white', }}>
+                          handleMenuClick();
+                          navigate('/vision')
+                        }} sx={{ color: 'white', }}>
                           Vision Statement
                         </Button>
-                        <Button onClick={() => { handleMenuClick();
-                        navigate('/howitworks')}} className='hh ani' sx={{ color: 'white', }}>
+                        <Button onClick={() => {
+                          handleMenuClick();
+                          navigate('/howitworks')
+                        }} className='hh ani' sx={{ color: 'white', }}>
                           How it Works
                         </Button>
                       </Box>
                     </Button>
-                    <Button sx={{ color: 'white', textTransform: 'none', fontWeight: '600', '&:hover': { color: 'blue' } }}>
+                    <Button  onClick={()=>{navigate('/contactus')}}  sx={{ color: 'white', textTransform: 'none', fontWeight: '600', '&:hover': { color: 'blue' } }}>
                       <a className='hh ani' style={{ textDecoration: 'none', color: 'white', fontSize: "16px" }}>Contact Us</a>
                     </Button>
                   </div>
-                  {/* <div onClick={handleMenuClick}>Menu Item 2</div>
-                  <div onClick={handleMenuClick}>Menu Item 3</div> */}
                 </Drawer>
               </Box>
               <Box sx={{ display: { xs: 'none', sm: 'block', marginLeft: 'auto', } }}>
@@ -244,7 +272,7 @@ export default function ElevateAppBar(props) {
                     },
                   }}
                   className='about_us'
-                  // onClick={() => navigate('/')}
+                // onClick={() => navigate('/')}
                 >
                   <a className='hh ani' sx={{ color: 'white', }} style={{ textDecoration: 'none', color: 'white', fontSize: "16px" }}>
                     Our Services
@@ -259,13 +287,13 @@ export default function ElevateAppBar(props) {
                     borderRadius: "10px"
                   }}
                     className="dropdowndata">
-                    <Button className='hh ani' sx={{ color: 'white', }}>
+                    <Button className='hh ani' onClick={() => navigate("/movieprofessional")} sx={{ color: 'white', }}>
                       Movie Professionals
                     </Button>
-                    <Button onClick= {() =>navigate('/aspiring')} className='hh ani' sx={{ color: 'white', }}>
+                    <Button onClick={() => navigate('/aspiring')} className='hh ani' sx={{ color: 'white', }}>
                       Aspiring Talents
                     </Button>
-                    <Button  onClick={() => navigate('/audition')} className='hh ani' sx={{ color: 'white', }}>
+                    <Button onClick={() => navigate('/audition')} className='hh ani' sx={{ color: 'white', }}>
                       Audition
                     </Button>
                     <Button onClick={() => navigate('/corporation')} className='hh ani' sx={{ color: 'white', }}>
@@ -274,12 +302,18 @@ export default function ElevateAppBar(props) {
                     <Button onClick={() => navigate('/community')} className='hh ani' sx={{ color: 'white', }}>
                       Community
                     </Button>
+                    <Button onClick={() => navigate('/behindthescene')} className='hh ani' sx={{ color: 'white', }}>
+                      Behind The Scene
+                    </Button>
+                    <Button onClick={() => navigate('/annualhybrid')} className='hh ani' sx={{ color: 'white', }}>
+                      Annual Hybrid AI-Human Movie Festivals
+                    </Button>
                   </Box>
                 </Button>
                 <Button sx={{ color: 'white', textTransform: 'none', fontWeight: '600', '&:hover': { color: 'blue' } }}>
                   <a onClick={() => navigate('/blog')} className='hh ani' style={{ textDecoration: 'none', color: 'white', fontSize: "16px" }}>Blog</a>
                 </Button>
-                <Button sx={{ color: 'white', textTransform: 'none', fontWeight: '600', '&:hover': { color: 'blue' } }}>
+                <Button onClick={()=>{navigate('/contactus')}} sx={{ color: 'white', textTransform: 'none', fontWeight: '600', '&:hover': { color: 'blue' } }}>
                   <a className='hh ani' style={{ textDecoration: 'none', color: 'white', fontSize: "16px" }}>Contact Us</a>
                 </Button>
               </Box>
