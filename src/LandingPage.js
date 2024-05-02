@@ -11,6 +11,8 @@ import axios from 'axios'
 import Knowledge from './components/Knowledge'
 import Team from './components/Team'
 import Blogs from './components/Blog'
+import News from './components/News'
+import Video5 from './components/Video5'
 import ContactUs from './components/ContactUs'
 
 function LandingPage() {
@@ -28,6 +30,8 @@ function LandingPage() {
         <>
             <Avail />
             <Blogs />
+            <Video5/>
+        <News />
             <Team />
             <About />&nbsp;
             <Box sx={{ padding: { md: '0% 20%', xs: '0% 10%', } }}>

@@ -6,6 +6,9 @@
 .news2 {
     display: none;
 }
+.mainbox {
+    padding: 50px;
+}
 .box {
     display: flex;
     justify-content: center;
@@ -15,6 +18,9 @@
 @media screen and (max-width: 768px) {
     .news1 {
         display: none;
+    }
+    .mainbox {
+        padding: 10px;
     }
     .news2 {
         display: block;
