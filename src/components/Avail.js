@@ -198,7 +198,7 @@ function Avail() {
           <div className={classes.modal}>
             {selectedPlan && (
               <div style={{
-                // fontSize: "20px",
+               
 
               }}>
                 <div style={{
@@ -217,7 +217,6 @@ function Avail() {
                   id="modal-description"
                   style={{
                     width: "100%",
-                    // border: "1px solid",
                   }}
                 >
                   <span style={{

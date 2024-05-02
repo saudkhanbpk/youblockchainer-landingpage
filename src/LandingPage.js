@@ -26,18 +26,12 @@ function LandingPage() {
 
     return (
         <>
-            {/* <div data-aos="zoom-in"><Herosection /></div> */}
-            {/* <Brands />
-           
-            {/* <Artists /> */}
             <Avail />
-            {/* <Knowledge /> */}
-            
             <Blogs />
             <Team />
             <About />&nbsp;
             <Box sx={{ padding: { md: '0% 20%', xs: '0% 10%', } }}>
-                <Typography variant='h2' sx={{ fontWeight: 'bold', textAlign: 'center', fontFamily: 'Poppins', margin: '0', padding: '0', color: 'white',  fontSize: { md: '1.5rem', sm: '2rem', xs: '1.5rem' } }}><strong style={{ color: 'white' }}>Get Started</strong> with your own movie production studio for Free</Typography>
+                <Typography variant='h2' sx={{ fontWeight: 'bold', textAlign: 'center', fontFamily: 'Poppins', margin: '0', padding: '0', color: 'white', fontSize: { md: '1.5rem', sm: '2rem', xs: '1.5rem' } }}><strong style={{ color: 'white' }}>Get Started</strong> with your own movie production studio for Free</Typography>
                 <Box sx={{ display: 'flex', justifyContent: 'space-evenly' }}>
                     <Box sx={{ display: 'flex', marginTop: '0%', justifyContent: 'center', flexDirection: 'column' }}>
                         <p style={{ fontSize: '12px', color: 'white', }}>New to this website? </p>

@@ -25,7 +25,7 @@ export default function Blogs() {
     {
       _id: 2,
       title: 'Film Riot ',
-      content: 'Film Riot provides in-depth tutorials, DIY filmmaking techniques, and industry insights through their blog and YouTube channel, making it a valuable resource for filmmakers of all levels.',
+      content: 'Film Riot provides in-depth tutorials, DIY filmmaking techniques, and industry insights through their blog and YouTube channel, making it a valuable resource for filmmakers of ',
       image: 'https://picsum.photos/id/29/4000/2670',
       link: 'https://www.youtube.com/user/filmriot',
       author: {

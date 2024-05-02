@@ -11,6 +11,15 @@ const useStyles = makeStyles((theme) => ({
         height: 'screen',
         padding: '20px',
         textAlign: 'justify',
+        [theme.breakpoints.down('sm')]: {
+            marginTop: theme.spacing(0),
+               height:'auto',
+               display:'flex',
+               alignItems: 'center',
+               justifyContent: 'center',
+               textAlign: 'center',
+             
+            },
     },
     paper: {
         padding: theme.spacing(3),
@@ -19,12 +28,20 @@ const useStyles = makeStyles((theme) => ({
         boxShadow: "none",
         background: 'transparent',
         letterSpacing: '2px',
+        [theme.breakpoints.down('sm')]: {
+            width: '100%',
+            textAlign: 'center',
+            padding: "10px",
+           
+           
+        },
+
 
     },
     text: {
         color: theme.palette.text.primary,
         color: 'white',
-        letterSpacing: '2px',
+        padding:"10px"
 
 
 

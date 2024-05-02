@@ -1,0 +1,27 @@
+.news1 {
+    display: flex;
+    margin-top: 50px;
+    
+}
+.news2 {
+    display: none;
+}
+.box {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+@media screen and (max-width: 768px) {
+    .news1 {
+        display: none;
+    }
+    .news2 {
+        display: block;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        padding-left: 30px;
+    }
+    
+}

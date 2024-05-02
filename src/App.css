@@ -9,6 +9,11 @@
     height: 100%;
     }
 
+
+ .news:hover{
+    border-top: "10px solid white";
+ }   
+
   
 
 

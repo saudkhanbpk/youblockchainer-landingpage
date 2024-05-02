@@ -37,7 +37,6 @@ const CardData = ({ plan, card, handleOpenModal, classfeature, classfeaturelist,
               <Icon icon={plan.Icon} style={{
                 fontSize: "100px",
                 color: "white ",
-                // color: "#3770FF"
               }} />
               <div style={{ paddingTop: "12px" }}>
                 <Typography

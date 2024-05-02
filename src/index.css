@@ -71,9 +71,7 @@ color: rgb(182, 182, 182) !important;
   color: var(--clr-accent);
   color: rgb(154, 138, 168)
 }
-/* .hover_text{
-color: white;
-} */
+
 .textdataaa{
   color: white;
 }
@@ -87,7 +85,7 @@ color: white;
 .btn{
   background: rgba(3, 9, 97, 0.432) !important;
   border: 1px solid lightgray !important;
-
+  
 }
 .btn:hover{
    border: 1px solid white;
@@ -97,4 +95,6 @@ color: white;
   display: flex;
   justify-content: center;
 }
+
+
   
