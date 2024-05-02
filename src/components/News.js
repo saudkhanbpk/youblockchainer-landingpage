@@ -50,9 +50,8 @@ const useStyle = makeStyles((theme) => ({
         flexWrap: "wrap",
         gap: "20px",
         justifyContent: "center",
-        // width: "100%",
+     
         color: "white",
-        // height: "auto",
         marginBottom: "3%",
         [theme.breakpoints.down('sm')]: {
 
@@ -201,14 +200,6 @@ function Video() {
 
                     {paragraph.map((item, index) => {
                         return <div className={classes1.carasoul} onClick={() => handleCarouselItemClick(item.link, item.para, item.title)} key={index}>
-                            {/* <iframe
-                                style={{ width: '360px' }}
-                                title="YouTube Video"
-                                src={item.link}
-                                allow="autoplay; encrypted-media"
-                                picture-in-picture
-                                allowFullScreen
-                            /> */}
                             <img src={item.image} style={{ width: '360px',height:'180px' }}/>
                             <Typography variant='h5' style={{ color: 'white' }}>{item.title}</Typography>
                             <Typography style={{ color: 'white' }}>

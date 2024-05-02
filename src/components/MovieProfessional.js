@@ -10,17 +10,17 @@ const useStyles = makeStyles((theme) => ({
         height: '100vh',
         width: '100%',
         [theme.breakpoints.down('sm')]: {
-        marginTop: theme.spacing(0),
-           height:'auto',
-           display:'flex',
-           alignItems: 'center',
-           justifyContent: 'center',
-           textAlign: 'center',
-         
+            marginTop: theme.spacing(0),
+            height: 'auto',
+            display: 'flex',
+            alignItems: 'center',
+            justifyContent: 'center',
+            textAlign: 'center',
+                   
         },
 
 
-        
+
 
 
     },
@@ -30,6 +30,7 @@ const useStyles = makeStyles((theme) => ({
         [theme.breakpoints.down('sm')]: {
             width: '100%',
             textAlign: 'center',
+            fontSize: '18px',
            
         },
 
@@ -41,10 +42,17 @@ const MovieProfessional = () => {
 
     return (
         <Container className={classes.container}>
-            <Typography variant="h5" className={classes.text}>
+            <Typography className={classes.text}>
                 <p style={{ fontWeight: 'bold', fontSize: '40px', textAlign: 'center', }}>Movie Professional</p>
-                Showcase testimonials or success stories from industry experts who have used the platform to optimize their production cycles.
-    Emphasize features such as streamlined workflows, collaboration opportunities, and access to cutting-edge technologies.
+            </Typography>
+            <Typography style={{letterSpacing: '1px',}} className={classes.text}>
+                Optimize Production Cycles
+                Streamline your movie production business with significant efficiency gains.
+                Rapid Content Creation Effortlessly produce full-length scripts, storyboards, and trailers at unprecedented speed.
+                Expert Script Enhancement Elevate your scripts with skilled human scriptwriters at cost-effective rates.
+                Stay on Trend Craft scripts seamlessly blending the latest trends and proven successes.
+                Global Collaboration: Connect with industry professionals worldwide, fostering collaboration at reduced expenses.
+                Risk Mitigation Implement smart-contract and blockchain technologies to mitigate litigation
 
             </Typography>
         </Container>

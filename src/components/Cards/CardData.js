@@ -11,7 +11,7 @@ const CardData = ({ plan, card, handleOpenModal, classfeature, classfeaturelist,
     triggerOnce: true,
     threshold: 0.5,
   });
-  console.log("hte plain data are shown here : ",plan.Icon);
+  console.log("hte plain data are shown here : ", plan.Icon);
   return (
     <>
       <Grid item key={plan.title}>
@@ -24,10 +24,6 @@ const CardData = ({ plan, card, handleOpenModal, classfeature, classfeaturelist,
           <Card
             className={card}
             style={{
-              // backgroundColor: "#002638",
-              // background: 'linear-gradient(91.97deg, #002638 -39.63%, #3770FF 110.12%)',
-
-
               cursor: "pointer",
             }}
             onClick={() => handleOpenModal(plan)}

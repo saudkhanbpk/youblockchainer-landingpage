@@ -61,19 +61,19 @@ const Aspiring = () => {
                     <Typography variant="h5" className={`${classes.text} actortext`}>
                         <strong>Actors' Equity Association</strong> 
                     </Typography>
-                    <Typography variant="body1" className={classes.text}>
+                    <Typography style={{letterSpacing: '1px',}} variant="body1" className={classes.text}>
                         Actors' Equity Association provides resources and tips for aspiring actors, including information on training programs, union membership, and career development opportunities.
                     </Typography>
                     <Typography variant="h5" className={`${classes.text} actortext`}>
                         <strong style={{ display: 'flex', justifyContent: 'center', }}> Backstage Resources </strong>
                     </Typography>
-                    <Typography variant="body1" className={`${classes.text} actortext`}>
+                    <Typography style={{letterSpacing: '1px',}} variant="body1" className={`${classes.text} actortext`}>
                         Backstage offers a wealth of resources and articles for aspiring actors, covering topics such as audition tips, resume building, and finding representation.
                     </Typography>
                     <Typography variant="h5" className={`${classes.text} actortext`}>
                         <strong style={{ display: 'flex', justifyContent: 'center', }}>Casting Frontier Blog</strong>
                     </Typography>
-                    <Typography variant="body1" className={classes.text}>
+                    <Typography style={{letterSpacing: '1px',}} variant="body1" className={classes.text}>
                         Casting Frontier's blog features tips and advice for actors on honing their craft, building their brand, and navigating the industry as aspiring professionals.
                     </Typography>
                 </Paper>

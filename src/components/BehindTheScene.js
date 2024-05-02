@@ -50,7 +50,7 @@ const BehindTheScene = () => {
                     <Typography variant="h5" className={classes.text}>
                         <span style={{ fontWeight: 'bold', display: 'flex', justifyContent: 'center', marginTop: '10px', }}>YouTube Channels of Filmmakers</span>
                     </Typography>
-                    <Typography style={{ marginTop: '10px', padding: '10px', letterSpacing: '1px', }} variant="body1" className={classes.text}>
+                    <Typography  style={{ marginTop: '10px', padding: '10px', letterSpacing: '1px', }} variant="body1" className={classes.text}>
                         Many filmmakers share behind-the-scenes content, tutorials, and vlogs documenting their filmmaking process on YouTube. Some examples include<br />
                         StudioBinder's YouTube Channel <a style={{ color: 'white', marginTop: '10px', }} href='https://www.youtube.com/user/studiobinder '> Read More </a>
                         <br />
@@ -71,7 +71,7 @@ const BehindTheScene = () => {
                             Film School Websites and Blogs
                         </span>
                     </Typography>
-                    <Typography style={{ marginTop: '6px', padding: '10px', letterSpacing: '1px', }} variant="body1" className={classes.text}>LocationsHub Many film schools and educational institutions publish behind-the-scenes content, case studies, and student projects on their websites and blogs. Examples include <br />New York Film Academy's Blog<a style={{ color: 'white', padding: '5px', marginTop: '10px', }} href='https://www.nyfa.edu/student-resources/blog/'>Read More</a> </Typography>
+                    <Typography style={{ marginTop: '6px', padding: '10px',  letterSpacing: '1px', }} variant="body1" className={classes.text}>LocationsHub Many film schools and educational institutions publish behind-the-scenes content, case studies, and student projects on their websites and blogs. Examples include <br />New York Film Academy's Blog<a style={{ color: 'white', padding: '5px', marginTop: '10px', }} href='https://www.nyfa.edu/student-resources/blog/'>Read More</a> </Typography>
                     <Typography className={classes.text}>
                         USC School of Cinematic Arts' Newsroom<a style={{ color: 'white', padding: '5px', marginTop: '10px', }} href='https://cinema.usc.edu/news'>Read More</a>
                     </Typography>
@@ -87,7 +87,7 @@ const BehindTheScene = () => {
                     <Typography variant="body1" className={classes.text}>
                         <span style={{ fontWeight: 'bold', fontSize: '20px', letterSpacing: '2px', marginTop: '10px', }}>2.The Location Guide </span>
                     </Typography>
-                    <Typography style={{ marginTop: '6px', padding: '10px', letterSpacing: '1px', }} variant="body1" className={classes.text}>The Location Guide offers a comprehensive directory of filming locations and production services around the world, including exotic destinations and unique settings for filmmakers.<a style={{ color: 'white', padding: '5px', marginTop: '10px', }} href='https://www.thelocationguide.com/'>Read More</a></Typography>
+                    <Typography style={{ marginTop: '6px', padding: '10px', letterSpacing: '1px',  }} variant="body1" className={classes.text}>The Location Guide offers a comprehensive directory of filming locations and production services around the world, including exotic destinations and unique settings for filmmakers.<a style={{ color: 'white', padding: '5px', marginTop: '10px', }} href='https://www.thelocationguide.com/'>Read More</a></Typography>
                     <Typography variant="body1" className={classes.text}>
                         <span style={{ fontWeight: 'bold', fontSize: '20px', letterSpacing: '2px', marginTop: '15px', }}>3.Film Commission Read Mores</span>
                     </Typography>
