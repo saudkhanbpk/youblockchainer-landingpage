@@ -16,6 +16,7 @@ const useStyles = makeStyles((theme) => ({
       width: '100%', 
       padding:"1%",
       height: 'auto',
+      display:"none"
       
     },
   },

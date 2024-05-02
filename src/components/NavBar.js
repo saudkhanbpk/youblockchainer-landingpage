@@ -35,6 +35,7 @@ export default function ElevateAppBar(props) {
   const handleMenuClick = () => {
     setMobileOpen(false);
   };
+
   const url = window.location.href.split('/')[3];
   console.log(url);
 
@@ -80,6 +81,7 @@ export default function ElevateAppBar(props) {
                 >
                   {mobileOpen ? <CloseIcon sx={{ color: "white", fontSize: "30px" }} /> : <MenuIcon sx={{ color: "white", fontSize: "30px" }} />}
                 </IconButton>
+                <div style={{height:'50%'}}>
                 <Drawer
                   variant="temporary"
                   anchor="left"
@@ -89,8 +91,9 @@ export default function ElevateAppBar(props) {
                     keepMounted: true, // Better open performance on mobile.
                   }}
                   sx={{
-                    display: { md: "none" },
+                    display: { md: "none" }, position:'absolute'
                   }}
+
                 >
                   {/* Your Drawer content here */}
                   <div style={{ backgroundColor: "#0047AB", height: "100%", width: "300px", display: "flex", justifyContent: "start", alignItems: "start", flexFlow: "column" }} >
@@ -107,7 +110,6 @@ export default function ElevateAppBar(props) {
                         },
                       }}
                       className='about_us'
-                      onClick={() => navigate('/')}
                     >
                       <a className='hh ani' sx={{ color: 'white', }} style={{ textDecoration: 'none', color: 'white', fontSize: "16px" }}>
                         Our Services
@@ -119,12 +121,13 @@ export default function ElevateAppBar(props) {
                         fontSize: "20px",
                         background: 'linear-gradient(91.97deg, #002638 -39.63%, #3770FF 110.12%)',
                         width: '180px',
+                        
                         // borderRadius: "10px"
                       }}
-                        className="dropdowndata">
-                        <Button className='hh ani' onClick={() => {
-                          navigate('/movieprofessional');
+                        className="dropdowndata" >
+                        <Button  onClick={() => {
                           handleMenuClick();
+                          navigate('/movieprofessional');
                         }} sx={{ color: 'white', }}>
                           Movie Professionals
                         </Button>
@@ -167,7 +170,10 @@ export default function ElevateAppBar(props) {
                       </Box>
                     </Button>
                     <Button sx={{ color: 'white', textTransform: 'none', fontWeight: '600', '&:hover': { color: 'blue' } }}>
-                      <a className='hh ani' style={{ textDecoration: 'none', color: 'white', fontSize: "16px" }}>Blog</a>
+                      <a className='hh ani' onClick={() => {
+                        handleMenuClick();
+                        navigate('/blog');
+                      }} style={{ textDecoration: 'none', color: 'white', fontSize: "16px" }}>Blog</a>
                     </Button>
                     <Button
                       sx={{
@@ -215,11 +221,12 @@ export default function ElevateAppBar(props) {
                         </Button>
                       </Box>
                     </Button>
-                    <Button  onClick={()=>{navigate('/contactus')}}  sx={{ color: 'white', textTransform: 'none', fontWeight: '600', '&:hover': { color: 'blue' } }}>
+                    <Button onClick={() => { navigate('/contactus') }} sx={{ color: 'white', textTransform: 'none', fontWeight: '600', '&:hover': { color: 'blue' } }}>
                       <a className='hh ani' style={{ textDecoration: 'none', color: 'white', fontSize: "16px" }}>Contact Us</a>
                     </Button>
                   </div>
                 </Drawer>
+                </div>
               </Box>
               <Box sx={{ display: { xs: 'none', sm: 'block', marginLeft: 'auto', } }}>
                 <Button
@@ -313,7 +320,7 @@ export default function ElevateAppBar(props) {
                 <Button sx={{ color: 'white', textTransform: 'none', fontWeight: '600', '&:hover': { color: 'blue' } }}>
                   <a onClick={() => navigate('/blog')} className='hh ani' style={{ textDecoration: 'none', color: 'white', fontSize: "16px" }}>Blog</a>
                 </Button>
-                <Button onClick={()=>{navigate('/contactus')}} sx={{ color: 'white', textTransform: 'none', fontWeight: '600', '&:hover': { color: 'blue' } }}>
+                <Button onClick={() => { navigate('/contactus') }} sx={{ color: 'white', textTransform: 'none', fontWeight: '600', '&:hover': { color: 'blue' } }}>
                   <a className='hh ani' style={{ textDecoration: 'none', color: 'white', fontSize: "16px" }}>Contact Us</a>
                 </Button>
               </Box>
@@ -329,7 +336,7 @@ export default function ElevateAppBar(props) {
       <Footer />
       <Box sx={{ borderTop: '1px solid gray', background: 'linear-gradient(91.97deg, #002638 -39.63%, #3770FF 110.12%)', }}></Box>
       <div style={{ background: 'linear-gradient(91.97deg, #002638 -39.63%, #3770FF 110.12%)', padding: '1%' }}>
-        <p style={{ background: 'linear-gradient(91.97deg, #002638 -39.63%, #3770FF 110.12%)', color: 'white', textAlign: 'center', margin: '0', fontFamily: 'Poppins', fontSize: '15px', display: 'flex', justifyContent: 'center', alignItems: 'center' }}>
+        <p style={{ background: 'linear-gradient(91.97deg, #002638 -39.63%, #3770FF 110.12%)', color: 'white', textAlign: 'center', margin: '0', fontFamily: 'Poppins', fontSize: '15px', display: 'flex', flexWrap: 'wrap', justifyContent: 'center', alignItems: 'center' }}>
           Copyright &copy; {new Date().getFullYear()}, <strong> MYREELDREAM. </strong> All rights reserved.
           <p style={{ color: 'white' }} onClick={() => navigate('/privacy-policy')}>
             <strong style={{ cursor: 'pointer' }}> &nbsp; Privacy Policy </strong>

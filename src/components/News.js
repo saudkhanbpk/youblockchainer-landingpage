@@ -2,6 +2,10 @@ import React, { useState } from 'react';
 import { Box, Typography, makeStyles } from '@material-ui/core';
 import "./News.css"
 import Slider from 'react-slick';
+import img6 from '../images/img6.jpeg'
+import img7 from '../images/img7.jpeg'
+import img8 from '../images/img8.jpeg'
+
 import { BorderTop, Padding } from '@mui/icons-material';
 
 const useStyle = makeStyles((theme) => ({
@@ -10,8 +14,14 @@ const useStyle = makeStyles((theme) => ({
         marginBottom: "30px",
         display: "flex",
         gap: "10px",
-        fontSize: "20px"
-
+        fontSize: "20px",
+        width:'95%',
+        paddingLeft:'40px',
+        [theme.breakpoints.down('sm')]: {
+            paddingLeft:'0px',
+            width: "100%"
+        
+        }
 
     },
     empty: {
@@ -61,13 +71,14 @@ const useStyle = makeStyles((theme) => ({
         },
     },
     carasoul: {
-        // width:"380px",
-        paddingTop:'10px',
-        paddingLeft:"12px",
-        // border:'3px solid white',
-        // transition: 'border-color 0.3s ease-in-out', // Smooth transition for border color change
+        paddingTop:'20px',
+        paddingLeft:"30px",
+        outline:'0px',
         '&:hover': {
-            BorderTop: '3px solid white'
+            borderTop: '3px solid white',
+        transition:'transform 0.5s ease-in-out',
+
+
         }
     }
 }));
@@ -127,25 +138,28 @@ function Video() {
         {
             para: `The unknown story of Greek philosopher Plato’s death may have been unveiled from a newly deciphered ancient scroll, according to Italian researchers.`,
             link: "https://www.youtube.com/embed/7cjmjOj7JlA",
+            image: img7,
             title: `Scrolls discovered in Vesuvius ash reveal Plato’s burial place and final hours`,
         },
         {
             para: `Prime Minister Benjamin Netanyahu has said Israel will launch an invasion of the southern Gaza city of Rafah regardless of truce talks with Hamas.`,
             link: "https://www.youtube.com/embed/1PkO4tUcUOk" ,
+            image: img8,
             title: `Israel-Gaza war: UN chief calls Israel's airstrikes in Rafah an ‘unbearable escalation’`,
         },
         {
             para: `In August 2020, Sviatlana Tsikhanouskaya was elected president of Belarus.
             Tsikhanouskaya then fled to Lithuania in 2020 after President Alexander Lukashenko deployed a severe crackdown on protests against his disputed election win.`,
             link: "https://www.youtube.com/embed/UumnYvQvOTg",
+            image: img6,
             title: `Ukraine war: Exiled Belarus opposition leader speaks out against Russia’s threat `
         }
     ]
 
     return (
-        <Box>
+        <div className='mainbox'>
             <div className={classes1.news}>
-                <p   >News</p>
+                <p>News</p>
                 <div className={classes1.empty}></div>
 
             </div>
@@ -156,7 +170,7 @@ function Video() {
                     {isHovered2 ? (<iframe
                         title="YouTube Video"
                         className={classes1.video1}
-                        src={`${mainVideo}?autoplay=1&mute=1&controls=0`}
+                        src={`${mainVideo}?autoplay=1&mute=&controls=0`}
                         allow="autoplay; encrypted-media"
                         allowFullScreen
                     ></iframe>
@@ -187,14 +201,15 @@ function Video() {
 
                     {paragraph.map((item, index) => {
                         return <div className={classes1.carasoul} onClick={() => handleCarouselItemClick(item.link, item.para, item.title)} key={index}>
-                            <iframe
+                            {/* <iframe
                                 style={{ width: '360px' }}
                                 title="YouTube Video"
                                 src={item.link}
                                 allow="autoplay; encrypted-media"
                                 picture-in-picture
                                 allowFullScreen
-                            />
+                            /> */}
+                            <img src={item.image} style={{ width: '360px',height:'180px' }}/>
                             <Typography variant='h5' style={{ color: 'white' }}>{item.title}</Typography>
                             <Typography style={{ color: 'white' }}>
                             {expanded ? item.para : `${item.para.slice(0, 50)}...`}
@@ -214,14 +229,15 @@ function Video() {
 
                     {paragraph.map((item, index) => {
                         return <div className='box' onClick={() => handleCarouselItemClick(item.link, item.para, item.title)} key={index}>
-                            <iframe
+                            {/* <iframe
                                 style={{ width:'100%' }}
                                 title="YouTube Video"
                                 src={item.link}
                                 allow="autoplay; encrypted-media"
                                 picture-in-picture
                                 allowFullScreen
-                            />
+                            /> */}
+                              <img src={item.image} style={{ width: '360px',height:'180px' }}/>
                             <Typography variant='h5' style={{ color: 'white' }}>{item.title}</Typography>
                             <Typography style={{ color: 'white' }}>
                             {expanded ? item.para : `${item.para.slice(0, 50)}...`}
@@ -237,7 +253,7 @@ function Video() {
             </div>
 
 
-        </Box>
+        </div>
     );
 }
 
