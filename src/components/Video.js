@@ -16,10 +16,8 @@ const useStyles = makeStyles((theme) => ({
   },
   video: {
     width: '100%',
-    marginTop:'10%',
-
     height: "100%",
-
+background:'black',
     border: "0px",
     [theme.breakpoints.up('md')]: {
       width: '1200px',
@@ -149,26 +147,27 @@ function Video() {
         onMouseEnter={handleMouseEnter}
         onMouseLeave={handleMouseLeave}
       >
-        {/* {isHovered ? ( */}
+        {isHovered ? (
         <iframe
   title="Google Drive Video"
   className={classes.video}
-  src="https://bnbpictures.s3.amazonaws.com/MyReelDream+-+Intro+Video+-+V6.mp4"
-  allow="autoplay; encrypted-media"
+  src="https://player.vimeo.com/video/942225468?autoplay=1&controls=0"
   allowfullscreen
  
 ></iframe>
 
-        {/* ) : ( */}
 
-          {/* <iframe
+        ) : (
+
+           <iframe
             title="YouTube Video"
             className={classes.video}
-            src="https://bnbpictures.s3.amazonaws.com/MyReelDream+-+Intro+Video+-+V6.mp4?"
+            src="https://player.vimeo.com/video/942225468?autoplay=0&controls=0"
             allow="autoplay; encrypted-media"
             allowFullScreen
           ></iframe>
-        )} */}
+        
+        )} 
 
 
       </div>

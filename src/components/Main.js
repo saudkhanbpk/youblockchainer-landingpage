@@ -1,63 +1,62 @@
+
 import React from 'react';
-import { makeStyles, Typography } from '@material-ui/core';
+import { makeStyles } from '@material-ui/core/styles';
+import { Typography, Container } from '@material-ui/core';
 
 const useStyles = makeStyles((theme) => ({
-  root: {
-    // display: 'flex',
-    // justifyContent:"center",
-    alignItems:"center",
-    padding:"8% 0px",
-    width: '90%',
-    color:"white",
-    margin: "auto",
-    // height: '100vh',
-    fontSize:"33px",
-    [theme.breakpoints.down('sm')]: {
-      width: '100%', 
-      padding:"1%",
-      height: 'auto',
-      display:"none"
-      
-    },
-  },
-  text: {
-    width:"70%",
-    // wordSpacing:"1%",
-    // color:"#2F133C",
-    // fontSize: "33px",
+    container: {
+        marginTop: theme.spacing(4),
+        display: 'flex',
+        flexDirection: 'column',
+        height: '100vh',
+        width: '100%',
+        [theme.breakpoints.down('sm')]: {
+            marginTop: theme.spacing(0),
+            height: 'auto',
+            display: 'flex',
+            alignItems: 'center',
+            justifyContent: 'center',
+            textAlign: 'center',
+            //    fontSize:"20px"       
+        },
 
-   
-padding:'10px',
-fontFamily:"Time",
-    textAlign:'left',
-    fontWeight: "bold",
-    [theme.breakpoints.down('sm')]: {
-        width:"100%",
-        textAlign:"center",
-        fontSize:"45px",
-      },
-  },
+
+
+
+
+    },
+    text: {
+        color: 'white',
+        width: "70%",
+        fontSize:'25px',
+        [theme.breakpoints.down('sm')]: {
+            width: '100%',
+            textAlign: 'center',
+            fontSize: '18px',
+        },
+
+    },
 }));
 
-function Main() {
-  const classes = useStyles();
+const Main = () => {
+    const classes = useStyles();
 
-  return (
-    <div className={classes.root}>
-      
-      <Typography variant="h2"  className={classes.text}>
-      Welcome to MyReelDream
-      <Typography variant='h5'>MyReelDreem is your one-stop destination for all things creative. 
+    return (
+        <Container className={classes.container}>
+            <Typography className={classes.text}>
+                <p style={{ fontWeight: 'bold', fontSize: '50px', textAlign: 'center', }}>Welcome to MyReelDream</p>
+            </Typography>
+            <Typography  className={classes.text}>
+            MyReelDream is your one-stop destination for all things creative. 
         Whether you're a filmmaker, an artist, a designer, or a storyteller, 
         our platform is designed to empower you to bring your dreams to fruition.
         Discover a world of endless possibilities as you connect with like-minded creators, 
         access top-tier tools and resources, and unlock the secrets to success in your craft.
          From stunning visual effects to captivating narratives,
-         MyReelDreem is here to help you unleash your full creative potential</Typography>
-      </Typography>
-      
-    </div>
-  );
+         MyReelDreem is here to help you unleash your full creative potential
+            </Typography>
+        </Container>
+    );
 }
 
 export default Main;
