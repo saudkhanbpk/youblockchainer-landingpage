@@ -24,14 +24,16 @@ function LandingPage() {
             setVideo(res.data.video1)
         }
         func()
+
+
     }, [])
 
     return (
         <>
             <Avail />
             <Blogs />
-            <Video5/>
-        <News />
+            <Video5 />
+            <News />
             <Team />
             <About />&nbsp;
             <Box sx={{ padding: { md: '0% 20%', xs: '0% 10%', } }}>

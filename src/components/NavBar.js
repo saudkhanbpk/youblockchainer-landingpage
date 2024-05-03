@@ -171,10 +171,10 @@ export default function ElevateAppBar(props) {
                       </Box>
                     </Button>
                     <Button sx={{ color: 'white', textTransform: 'none', fontWeight: '600', '&:hover': { color: 'blue' } }}>
-                      <a className='hh ani' onClick={() => {
+                      <a className='hh ani  ' onClick={() => {
                         handleMenuClick();
                         navigate('/blog');
-                      }} style={{ textDecoration: 'none', color: 'white', fontSize: "16px" }}>Blog</a>
+                      }} style={{ textDecoration: 'none', color: 'white', fontSize: "16px",  }}>Blog</a>
                     </Button>
                     <Button
                       sx={{

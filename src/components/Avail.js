@@ -6,7 +6,6 @@ import Button from "@material-ui/core/Button";
 import Grid from "@material-ui/core/Grid";
 import Modal from "@material-ui/core/Modal";
 import { Icon } from "@iconify/react";
-
 import { useInView } from "react-intersection-observer";
 import Video from "./Video"
 import { Box } from "@material-ui/core";
@@ -16,7 +15,13 @@ import 'slick-carousel/slick/slick.css';
 import 'slick-carousel/slick/slick-theme.css';
 import img6 from '../images/img6.jpg'
 import Main from "./Main";
+import slide2 from '../images/slide2.jpg'
+import slide3 from '../images/slide3.jpg'
 import CardData from "./Cards/CardData";
+import slide4 from '../images/slide4.jpg'
+import slide5 from '../images/slide5.jpg'
+import slide6 from '../images/slide6.jpg'
+import slide1 from '../images/slide1.jpg'
 const useStyles = makeStyles((theme) => ({
   root: {
     flexGrow: 1,
@@ -315,11 +320,12 @@ function Avail() {
       <Box style={{ display: 'flex', justifyContent: 'center', }}>
         <Slider {...settings} style={{ width: '90%', height: '500px', overflowY: "clip", paddingLeft: '10px', paddingRight: '10px', }}>
 
-          <img src={img6} alt="1" sx={{ objectFit: 'cover', }} />
-          <img src={img6} alt="2" sx={{ objectFit: 'cover', }} />
-          <img src={img6} alt="3" sx={{ objectFit: 'cover', }} />
-          <img src={img6} alt="4" sx={{ objectFit: 'cover', }} />
-          <img src={img6} alt="5" sx={{ objectFit: 'cover', }} />
+          <img src={slide1} alt="1" sx={{ objectFit: 'cover', }} />
+          <img src={slide2} alt="2" sx={{ objectFit: 'cover', }} />
+          <img src={slide3} alt="3" sx={{ objectFit: 'cover', }} />
+          <img src={slide4} alt="4" sx={{ objectFit: 'cover', }} />
+          <img src={slide5} alt="5" sx={{ objectFit: 'cover', }} />
+          <img src={slide6} alt="5" sx={{ objectFit: 'cover', }} />
 
 
         </Slider>

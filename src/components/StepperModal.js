@@ -7,33 +7,29 @@ import Button from '@mui/material/Button';
 import Typography from '@mui/material/Typography';
 import { Alert, Checkbox, Chip } from '@mui/material';
 
-const steps = ['Introductory video', 'Are you an actor/movie professional'];
-
+const steps = ['Are you an actor/movie professional'];
 export default function HorizontalLinearStepper({ setOpen, video }) {
   const [activeStep, setActiveStep] = React.useState(0);
   const [skipped, setSkipped] = React.useState(new Set());
   const [checked, setChecked] = React.useState(false)
   const [checked2, setChecked2] = React.useState(false)
   const [checked3, setChecked3] = React.useState(false)
-
-
   const isStepOptional = (step) => {
-    return step === 1;
+    return false; // There are no optional steps in this version
   };
-
   const isStepSkipped = (step) => {
     return skipped.has(step);
   };
-
   const handleNext = () => {
     let newSkipped = skipped;
-    if (activeStep === 1) {
+    if (activeStep === 0) {
+      if (!checked && !checked2 && !checked3) {
+
+        return;
+      }
+
       window.open('https://app.myreeldream.ai/')
       setOpen(false)
-    }
-    else if (isStepSkipped(activeStep)) {
-      newSkipped = new Set(newSkipped.values());
-      newSkipped.delete(activeStep);
     }
 
     setActiveStep((prevActiveStep) => prevActiveStep + 1);
@@ -42,21 +38,6 @@ export default function HorizontalLinearStepper({ setOpen, video }) {
 
   const handleBack = () => {
     setActiveStep((prevActiveStep) => prevActiveStep - 1);
-  };
-
-  const handleSkip = () => {
-    if (!isStepOptional(activeStep)) {
-      // You probably want to guard against something like this,
-      // it should never occur unless someone's actively trying to break something.
-      throw new Error("You can't skip a step that isn't optional.");
-    }
-
-    setActiveStep((prevActiveStep) => prevActiveStep + 1);
-    setSkipped((prevSkipped) => {
-      const newSkipped = new Set(prevSkipped.values());
-      newSkipped.add(activeStep);
-      return newSkipped;
-    });
   };
 
   const handleReset = () => {
@@ -96,12 +77,8 @@ export default function HorizontalLinearStepper({ setOpen, video }) {
         </React.Fragment>
       ) : (
         <React.Fragment>
-          {
-            activeStep === 0 ? <>
-              {/* <video width="100%" height="315" style={{ borderRadius: '5px' }} autoPlay>
-                <source src={video} type="video/mp4" />
-              </video> */}
-            </> : <>
+          {activeStep === 0 && (
+            <>
               <Typography variant='h5' sx={{ fontWeight: 'bold', textAlign: 'center', fontFamily: 'Poppins', margin: '0', padding: '0', padding: '5%', fontSize: { md: '1.2rem', sm: '1rem', xs: '1rem' } }}><strong style={{ color: '#3770FF' }}>Start Your Journey and Unlock Opportunities</strong><br /> Join the Spotlight as an aspiring talent or Collaborate with the Best as a movie professional</Typography>
               <Box sx={{ display: 'flex', justifyContent: 'space-evenly' }}>
                 <Button>
@@ -124,23 +101,20 @@ export default function HorizontalLinearStepper({ setOpen, video }) {
                     }}
                     inputProps={{ 'aria-label': 'controlled' }}
                   />Movie professional</Button>
-                   <Button>
+                <Button>
                   <Checkbox
                     checked={checked3}
                     size='small'
                     onChange={() => {
                       setChecked3(!checked3)
                       setChecked2(true)
-                      
                     }}
                     inputProps={{ 'aria-label': 'controlled' }}
                   />Corporations</Button>
               </Box>
-              {
-                checked ? <Alert sx={{ marginTop: '5%' }} severity="info">Elevate Your Career: Connect with Aspiring Talents and Expand Your Reach to Movie Buyers, Distributors, and Producers.</Alert> : checked2 ? <Alert sx={{ marginTop: '5%' }} severity="info">Sell your services to aspiring artists and or to movie buyers, distributors, productors</Alert> : ""
-              }
+              {checked ? <Alert sx={{ marginTop: '5%' }} severity="info">Elevate Your Career: Connect with Aspiring Talents and Expand Your Reach to Movie Buyers, Distributors, and Producers.</Alert> : checked2 ? <Alert sx={{ marginTop: '5%' }} severity="info">Sell your services to aspiring artists and or to movie buyers, distributors, producers</Alert> : ""}
             </>
-          }
+          )}
           <Box sx={{ display: 'flex', flexDirection: 'row', pt: 2 }}>
             <Button
               color="inherit"
@@ -151,7 +125,7 @@ export default function HorizontalLinearStepper({ setOpen, video }) {
               Back
             </Button>
 
-            <Button onClick={handleNext} disabled={activeStep === steps.length - 1 && !checked && !checked2}>
+            <Button onClick={handleNext} disabled={activeStep === 0 && !checked && !checked2 && !checked3}>
               {activeStep === steps.length - 1 ? 'Proceed' : 'Next'}
             </Button>
           </Box>

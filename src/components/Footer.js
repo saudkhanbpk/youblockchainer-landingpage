@@ -13,14 +13,14 @@ function Footer() {
 
     const menus = [
         ["Home", "Movies", "Tv Shows", "Gallery", "Contact Us"],
-        ["About", "Logos", "Menus", "SiteMap", "Menu Item 10"],
+        ["About", "Logos", "Menus", "SiteMap", "Community"],
         ["Privacy", "Rules", "Guidens", "Ai", "Movies"],
-        ["Agents", "Our team", "Malta"]
+        ["Audition", "Our team", "Corporation"]
     ];
-   
-       
-   
-       
+
+
+
+
 
     return (
         <div style={{ background: 'linear-gradient(91.97deg, #002638 -39.63%, #3770FF 110.12%)', padding: '10px' }}>
