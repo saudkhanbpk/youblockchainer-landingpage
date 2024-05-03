@@ -15,7 +15,7 @@ export default function HorizontalLinearStepper({ setOpen, video }) {
   const [checked2, setChecked2] = React.useState(false)
   const [checked3, setChecked3] = React.useState(false)
   const isStepOptional = (step) => {
-    return false; // There are no optional steps in this version
+    return false; 
   };
   const isStepSkipped = (step) => {
     return skipped.has(step);

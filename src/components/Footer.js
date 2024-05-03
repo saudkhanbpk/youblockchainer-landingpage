@@ -24,7 +24,7 @@ function Footer() {
 
     return (
         <div style={{ background: 'linear-gradient(91.97deg, #002638 -39.63%, #3770FF 110.12%)', padding: '10px' }}>
-            <Typography sx={{ textAlign: "center", color: 'white', fontSize: '40px', fontWeight: '600', }}>MYREELDREAM</Typography>
+            <Typography sx={{ textAlign: "center", color: 'white', fontSize: '50px', fontWeight: '600', }}>MYREELDREAM</Typography>
             <Grid container rowSpacing={4} justifyContent="center" sx={{ display: 'flex', flexDirection: 'row' }}>
                 {menus.map((menu, index) => (
                     <Grid item md={2} xs={12} key={index} sx={{}}>

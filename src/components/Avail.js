@@ -25,7 +25,7 @@ import slide1 from '../images/slide1.jpg'
 const useStyles = makeStyles((theme) => ({
   root: {
     flexGrow: 1,
-    // padding: theme.spacing(4),
+   
     justifyContent: "between",
     display: "flex",
     alignItems: "center",
@@ -325,7 +325,7 @@ function Avail() {
           <img src={slide3} alt="3" sx={{ objectFit: 'cover', }} />
           <img src={slide4} alt="4" sx={{ objectFit: 'cover', }} />
           <img src={slide5} alt="5" sx={{ objectFit: 'cover', }} />
-          <img src={slide6} alt="5" sx={{ objectFit: 'cover', }} />
+          <img src={slide6} alt="6" sx={{ objectFit: 'cover', }} />
 
 
         </Slider>
