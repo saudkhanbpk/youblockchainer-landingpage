@@ -7,6 +7,8 @@ import FacebookIcon from '@mui/icons-material/Facebook';
 import TwitterIcon from '@mui/icons-material/Twitter';
 import LinkedInIcon from '@mui/icons-material/LinkedIn';
 import emailjs from 'emailjs-com';
+import { toast, ToastContainer } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
 
 const ContactUs = () => {
   const [formData, setFormData] = useState({
@@ -16,8 +18,8 @@ const ContactUs = () => {
     subject: "",
     message: ""
   });
+  const [loading, setLoading] = useState(false);
 
-  const [submitMessage, setSubmitMessage] = useState("");
 
   const handleChange = (e) => {
     setFormData({ ...formData, [e.target.name]: e.target.value });
@@ -25,24 +27,42 @@ const ContactUs = () => {
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    
+
+
+    if (
+      !formData.fullName ||
+      !formData.email ||
+      !formData.message ||
+      !formData.subject ||
+      !formData.mobileNumber
+    ) {
+      toast.error("Please fill in all required fields.");
+      return;
+    }
+
+
+    setLoading(true);
     emailjs.sendForm('service_0dpnt9l', 'template_ncvr0ws', e.target, 'Db5QHlCoFSat_5E-C')
       .then((result) => {
         console.log(result.text);
-        setSubmitMessage("Submit Successful");
+        setFormData({
+          fullName: "",
+          email: "",
+          mobileNumber: "",
+          subject: "",
+          message: ""
+        });
+        setLoading(false);
+        toast.success("Submit Successful");
       }, (error) => {
+        setLoading(false);
         console.log(error.text);
-        setSubmitMessage("Submit Failed. Please try again later.");
+        toast.error("Submit Failed. Please try again later.");
       });
-    
-    setFormData({
-      fullName: "",
-      email: "",
-      mobileNumber: "",
-      subject: "",
-      message: ""
-    });
+
+
   };
+
 
   return (
     <div className="container-fluid form-container" style={{ paddingTop: "6rem", paddingBottom: "6rem" }}>
@@ -64,12 +84,12 @@ const ContactUs = () => {
                   <PhoneIcon />&nbsp;  +1 (344) 132-3434-34
                 </div>
                 <Typography variant="h4" paragraph style={{ color: "#ffffff", paddingTop: '20px', fontWeight: '700', }}>Follow</Typography>
-                <div style={{ marginTop: "1rem",  }}>
+                <div style={{ marginTop: "1rem", }}>
                   <IconButton href="https://www.facebook.com">
-                    <FacebookIcon style={{ color: "#ffffff", fontSize: '40px', marginRight: '20px',}} />
+                    <FacebookIcon style={{ color: "#ffffff", fontSize: '40px', marginRight: '20px', }} />
                   </IconButton>
                   <IconButton href="https://twitter.com">
-                    <TwitterIcon style={{ color: "#ffffff" , fontSize: '40px', marginRight: '20px',}} />
+                    <TwitterIcon style={{ color: "#ffffff", fontSize: '40px', marginRight: '20px', }} />
                   </IconButton>
                   <IconButton href="https://www.linkedin.com">
                     <LinkedInIcon style={{ color: "#ffffff", fontSize: '40px', marginRight: '20px', }} />
@@ -96,14 +116,14 @@ const ContactUs = () => {
                     <TextField label="Enter Your Message" required multiline rows={4} fullWidth name="message" value={formData.message} onChange={handleChange} />
                   </div>
                   <div className="form-row row mb-0" style={{ marginBottom: "1rem" }}>
-                    <Button type="submit" variant="contained" color="primary">Submit</Button>
+                    <Button type="submit" disabled={loading} variant="contained" color="primary">Submit</Button>
                   </div>
                 </Paper>
               </form>
-              {submitMessage && <div className="submit-message">{submitMessage}</div>}
             </Grid>
           </Grid>
         </motion.div>
+        <ToastContainer />
       </Container>
     </div>
   );
