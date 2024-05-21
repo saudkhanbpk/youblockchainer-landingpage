@@ -4,6 +4,7 @@ import { Typography, Container, Paper } from '@material-ui/core';
 import ModalData from './Modals/Modal';
 import ArtificialContent from './TextModal/ArtificialContent';
 import TexttoVideo from './TextModal/TextToVideo';
+import VideoW from './Video/VideoW';
 
 const useStyles = makeStyles((theme) => ({
     container: {
@@ -26,7 +27,7 @@ const useStyles = makeStyles((theme) => ({
 
     },
     paper: {
-        width: '75%',
+        width: '70%',
         padding: theme.spacing(3),
         padding: '20px 20px',
         background: "transparent",
@@ -72,11 +73,12 @@ const HowItWorks = () => {
             <Container className={classes.container}>
                 <Paper className={classes.paper} elevation={3}>
                     <Typography variant="h5" className={classes.text}>
-                        <strong style={{ color: 'white', fontSize: '40px', display: 'flex', justifyContent: 'center', }}>
+                        <strong style={{ color: 'white', fontSize: '40px', display: 'flex', justifyContent: 'center', marginBottom:'15px' }}>
                             How It Works
                         </strong>
                     </Typography>
-                    <Typography style={{ letterSpacing: '1px', }} className={classes.text}>
+                    <VideoW />
+                    <Typography style={{ letterSpacing: '1px', marginTop:"15px" }} className={classes.text}>
                         Welcome to our platform where cutting-edge technologies converge to revolutionize the world of filmmaking. In this section, we delve into the seamless integration of Artificial Intelligence (AI), Text-to-Video technologies, and Smart Contracts, showcasing how these innovations work together to empower users and elevate the filmmaking process.
                     </Typography>
                     <Typography variant='h5'>

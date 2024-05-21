@@ -1,6 +1,7 @@
 import React from 'react';
 import { makeStyles } from '@material-ui/core/styles';
 import { Typography, Container, Paper } from '@material-ui/core';
+import VisionVideo from './Video/VisionVideo';
 
 const useStyles = makeStyles((theme) => ({
     container: {
@@ -53,9 +54,10 @@ const Vision = () => {
         <>
             <Container className={classes.container}>
                 <Paper className={classes.paper} elevation={3}>
-                    <strong className='strong' style={{ color: 'white', fontSize: '40px', display: 'flex', justifyContent: 'center', }}>
+                    <strong className='strong' style={{ color: 'white', fontSize: '40px', display: 'flex', justifyContent: 'center', marginBottom:'15px' }}>
                         Our Vision
                     </strong>
+                    <VisionVideo/>
                     <Typography style={{letterSpacing: '1px',}} variant="body1" className={classes.text}>
                         Our vision at myreeldream.ai is to create a vibrant and inclusive ecosystem where creativity knows no bounds. We envision a future where anyone with a story to tell can easily transform their ideas into captivating visual experiences, regardless of financial constraints or technical expertise. By fostering collaboration, providing access to resources, and offering unparalleled opportunities for exploration and expression, we aspire to inspire a new generation of filmmakers and revolutionize the way stories are shared and experienced around the globe.
                     </Typography>

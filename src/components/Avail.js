@@ -48,6 +48,9 @@ const useStyles = makeStyles((theme) => ({
     },
     width: "350px",
     height: "470px",
+    [theme.breakpoints.down('sm')]: {
+      width: "333px",
+  },
 
 
   },
@@ -118,6 +121,7 @@ function Avail() {
     pauseOnHover: true,
     pauseOnFocus: true,
     pauseOnDotsHover: true,
+    arrows: false
   };
 
   const handleOpenModal = (plan) => {
@@ -188,7 +192,8 @@ function Avail() {
           spacing={1}
           style={{
             display: "flex",
-            justifyContent: "space-between",
+            gap:'50px',
+            justifyContent: "center",
             justifyItems: "center",
             padding: "5px",
           }}

@@ -97,10 +97,11 @@ const ContactUs = () => {
                   </div>
                   <div className="form-row row mb-0" style={{ marginBottom: "1rem" }}>
                     <Button type="submit" variant="contained" color="primary">Submit</Button>
+                    {submitMessage && <div style={{color:'green', padding:'20px'}} className="submit-message ">{submitMessage}</div>}
                   </div>
                 </Paper>
               </form>
-              {submitMessage && <div className="submit-message">{submitMessage}</div>}
+             
             </Grid>
           </Grid>
         </motion.div>

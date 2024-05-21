@@ -17,14 +17,14 @@ const useStyles = makeStyles((theme) => ({
   video: {
     width: '100%',
     height: "100%",
-background:'black',
+    background: 'black',
     border: "0px",
     [theme.breakpoints.up('md')]: {
       width: '1200px',
 
     },
     [theme.breakpoints.down('md')]: {
-      borderRadius: 0
+      borderRadius: 0,
 
     },
   },
@@ -148,26 +148,26 @@ function Video() {
         onMouseLeave={handleMouseLeave}
       >
         {isHovered ? (
-        <iframe
-  title="Google Drive Video"
-  className={classes.video}
-  src="https://player.vimeo.com/video/942225468?autoplay=1&controls=0"
-  allowfullscreen
- 
-></iframe>
+          <iframe
+          title="Google Drive Video"
+          className={classes.video}
+          src="https://player.vimeo.com/video/942225468?autoplay=1&controls=0&muted=0"
+          allow="autoplay; encrypted-media"
+          allowFullScreen
+        ></iframe>
 
 
         ) : (
 
-           <iframe
+          <iframe
             title="YouTube Video"
             className={classes.video}
             src="https://player.vimeo.com/video/942225468?autoplay=0&controls=0"
             allow="autoplay; encrypted-media"
             allowFullScreen
           ></iframe>
-        
-        )} 
+
+        )}
 
 
       </div>
@@ -221,13 +221,13 @@ function Video() {
           onMouseLeave={handleMouseLeave4}>
 
           {isHovered4 ? (
-          <iframe
-            title="YouTube Video"
-            className={classes2.video2}
-            src="https://www.youtube.com/embed/3eGP6im8AZA?autoplay=1&mute=1&controls=0"
-            allow="autoplay; encrypted-media"
-            allowFullScreen
-          ></iframe>
+            <iframe
+              title="YouTube Video"
+              className={classes2.video2}
+              src="https://www.youtube.com/embed/3eGP6im8AZA?autoplay=1&mute=1&controls=0"
+              allow="autoplay; encrypted-media"
+              allowFullScreen
+            ></iframe>
           ) : (
             <iframe
               title="YouTube Video"
@@ -286,6 +286,6 @@ function Video() {
       {/* Your other content here */}
     </div>
   );
-} 
+}
 
 export default Video;

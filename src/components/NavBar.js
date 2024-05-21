@@ -1,4 +1,5 @@
 import React from 'react';
+import './Navbar.css';
 import PropTypes from 'prop-types';
 import AppBar from '@mui/material/AppBar';
 import Box from '@mui/material/Box';
@@ -42,7 +43,7 @@ export default function ElevateAppBar(props) {
   return (
     <>
 
-      <Box className="app" sx={{ display: 'flex', }}>
+      <Box className="app" sx={{ display: 'flex',width:'100%' }}>
         <CssBaseline />
         <AppBar
           component='nav'
@@ -67,13 +68,14 @@ export default function ElevateAppBar(props) {
                 sx={{
                   height: '30px',
                   cursor: 'pointer',
-                  width: '270px',
+                  width: 'fit-content',
                   marginLeft: { xs: '0px', md: '10px' },
-                  marginRight: '2vw',
+                  // marginRight: '2vw',
                 }}
               />
-              <Box sx={{ display: { xs: 'block', sm: 'none' }, ml: "90px" }}>
+              <Box sx={{ display: { xs: 'block', sm: 'none' }}}>
                 <IconButton
+                className='icons'
                   color="inherit"
                   aria-label="open drawer"
                   edge="start"
