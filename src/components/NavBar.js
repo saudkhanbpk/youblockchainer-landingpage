@@ -1,4 +1,5 @@
 import React from 'react';
+// {sideLink === "clients" && <Clients show={show} setShow={setShow} setShowSidebar={setShowSidebar} />}
 import './Navbar.css';
 import PropTypes from 'prop-types';
 import AppBar from '@mui/material/AppBar';

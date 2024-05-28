@@ -30,6 +30,9 @@ const useStyles = makeStyles((theme) => ({
     display: "flex",
     alignItems: "center",
     padding: "0px",
+    [theme.breakpoints.down("sm")]: {
+      marginTop:'100px',
+    },
   },
   card: {
     display: "flex",
@@ -59,6 +62,15 @@ const useStyles = makeStyles((theme) => ({
     fontWeight: "bold",
     marginBottom: theme.spacing(1),
 
+
+  },
+  video: {
+    width:'100%',
+    height:'70vh',
+    border:'none',
+    [theme.breakpoints.down("sm")]: {
+      height:'100%',
+    },
 
   },
   price: {
@@ -178,9 +190,9 @@ function Avail() {
 
   return (<>
     <Main />
-    <Box sx={{ width: "90%", margin: "auto" }}>
-      <Video />
-    </Box >
+    {/* <Box sx={{ width: "90%", margin: "auto" }}>
+      {/* <Video /> */}
+    {/* </Box >  */}
     <section id="services">
 
     </section>
@@ -241,6 +253,13 @@ function Avail() {
                   }}>
                     Additional Ideas: -<br />
                   </span>
+                  <iframe
+          title="Google Drive Video"
+          className={classes.video}
+          src="https://player.vimeo.com/video/942225468?autoplay=1&controls=0&muted=0"
+          allow="autoplay; encrypted-media"
+          allowFullScreen
+        ></iframe>
                   <Typography style={{
                     fontFamily:
                       'Jost, ui-sans-serif, system-ui, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji"',
@@ -323,7 +342,7 @@ function Avail() {
     </section>
     <section style={{ width: '100%', height: '100vh', marginTop: '6%', }}>
       <Box style={{ display: 'flex', justifyContent: 'center', }}>
-        <Slider {...settings} style={{ width: '90%', height: '500px', overflowY: "clip", paddingLeft: '10px', paddingRight: '10px', }}>
+        <Slider {...settings} style={{ width: '80%', height: '500px', overflowY: "clip", paddingLeft: '10px', paddingRight: '10px', }}>
 
           <img src={slide1} alt="1" sx={{ objectFit: 'cover', }} />
           <img src={slide2} alt="2" sx={{ objectFit: 'cover', }} />
