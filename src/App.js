@@ -38,6 +38,7 @@ import MovieProfessional from './components/MovieProfessional';
 import BehindTheScene from './components/BehindTheScene';
 import AnnualHybrid from './components/AnnualHybrid';
 import { ScrollToTop } from './components/ScrollToTop';
+import Modalpage from './components/Modalpage';
 
 
 // import About from "./components/About";
@@ -99,6 +100,17 @@ function App() {
 
             <NavBar>
               <MovieProfessional />
+            </NavBar>
+
+          }
+        />
+        <Route
+          exact
+          path="/modalpage"
+          element={
+
+            <NavBar>
+              <Modalpage/>
             </NavBar>
 
           }

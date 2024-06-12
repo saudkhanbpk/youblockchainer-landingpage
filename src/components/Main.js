@@ -6,15 +6,16 @@ import { Typography, Container, Box } from '@material-ui/core';
 const useStyles = makeStyles((theme) => ({
     container: {
 
-        marginTop: theme.spacing(4),
+        marginTop: theme.spacing(8),
         display: 'flex',
-        gap: '15px',
+        gap: '20px',
         height: '100vh',
         width: '100%',
         [theme.breakpoints.down('sm')]: {
             marginTop: theme.spacing(0),
             height: 'auto',
             display: 'flex',
+            gap:"20px",
             flexDirection: 'column',
             alignItems: 'center',
             justifyContent: 'center',
@@ -31,7 +32,11 @@ const useStyles = makeStyles((theme) => ({
     video:{
         width: "100%",
         height: "100%",
+        borderRadius: "20px",
+        boxShadow: "15px 10px  blue ",
+
         border:"none",
+        // transform: "scaleX(1.2)",
         [theme.breakpoints.down('sm')]: {
             width: '100%',
             height: '100%',
@@ -40,10 +45,19 @@ const useStyles = makeStyles((theme) => ({
 
     },
     videoContainer: {
-backgroundColor:'black',
-width:'100vh',
-height:'60vh',
-marginTop:'28px',
+     
+    
+      backgroundColor:'black',
+      width:'80vh',
+      height:'50vh',
+      marginTop:'28px',
+      [theme.breakpoints.up('md')]: {
+        boxShadow: "-15px -15px  blue ",
+        borderRadius: "20px",
+      transform: "perspective(1000px) rotateY(25deg)",
+      },
+      
+
    [theme.breakpoints.down('sm')]: {
             width: '100%',
             height: '100%',
@@ -54,18 +68,16 @@ marginTop:'10px',
     },
     text: {
         color: 'white',
-        width: "21%",
+        width: "32%",
         marginTop:'33px',
+        fontSize:'18px',
         [theme.breakpoints.down('sm')]: {
             width: '100%',
             textAlign: 'center',
             marginTop:'30px',
             fontSize: '18px',
         },
-        [theme.breakpoints.up('xl')]: {
-            fontSize: '18px',
-            // styles for large screens 
-          }
+      
 
     },
 }));
