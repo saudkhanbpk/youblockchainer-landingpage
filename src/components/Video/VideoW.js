@@ -8,6 +8,12 @@ const useStyles = makeStyles((theme) => ({
         alignItems: 'center',
         width: '93%',
         height: "auto",
+        boxShadow: "-20px -20px blue",
+        borderRadius:"20px",
+        marginTop:'52px',
+        marginBottom:'55px',
+
+        transform: "perspective(1000px) rotateY(20deg)",
         // marginTop: "8%",
         // marginBottom: "6%", 
         [theme.breakpoints.down('sm')]: {
@@ -20,6 +26,8 @@ const useStyles = makeStyles((theme) => ({
         height: "430px",
         background: 'black',
         border: "0px",
+        boxShadow: "20px 20px  blue ",
+        borderRadius: "10px",
         [theme.breakpoints.up('md')]: {
             width: '1200px',
 

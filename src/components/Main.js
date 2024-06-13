@@ -7,6 +7,7 @@ const useStyles = makeStyles((theme) => ({
     container: {
 
         marginTop: theme.spacing(8),
+     
         display: 'flex',
         gap: '20px',
         height: '100vh',
@@ -21,13 +22,15 @@ const useStyles = makeStyles((theme) => ({
             justifyContent: 'center',
             textAlign: 'center',
         },
-        [theme.breakpoints.up('xl')]: {
-            display: 'flex',
-        gap: '15px',
-        height: '100vh',
-        width: '100%',
-            // styles for large screens only
-          }
+        // [theme.breakpoints.up('lg')]: {
+        //   marginTop: theme.spacing(8),
+        //   display: 'flex',
+        //   rowGap: '20px',
+        //   columnGap: '20px',
+        //   height: '100vh',
+        //   width: '100%',
+        //   // styles for large screens only
+        // }
     },
     video:{
         width: "100%",
@@ -40,6 +43,8 @@ const useStyles = makeStyles((theme) => ({
         [theme.breakpoints.down('sm')]: {
             width: '100%',
             height: '100%',
+        boxShadow: "0px 0px 0",
+
 
         },
 
@@ -68,7 +73,8 @@ marginTop:'10px',
     },
     text: {
         color: 'white',
-        width: "32%",
+        width: "33%",
+      
         marginTop:'33px',
         fontSize:'18px',
         [theme.breakpoints.down('sm')]: {
